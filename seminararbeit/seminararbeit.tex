@@ -6,6 +6,27 @@
 \usepackage{geometry}
 \usepackage{scrpage2}
 
+%\usepackage[T1]{fontenc}
+%\usepackage[utf8]{inputenc}
+%\usepackage[ngerman]{babel}
+%\usepackage[backend=biber,style=alphabetic]{biblatex}
+% die bib-Datei laden:
+%\addbibresource{literatur.bib}
+
+%http://golatex.de/wichtige-hinweise-erstellung-von-literaturverzeichnissen-t11964.html
+%\usepackage{biblatex}
+%\addbibresource{literatur.bib} 
+
+\usepackage[style=authoryear,backend=biber]{biblatex}
+\addbibresource{literatur.bib}
+
+%\bibliographystyle{dinalpha}
+
+% deutsche Silbentrennung
+%\usepackage[ngerman]{babel}
+
+%\usepackage[round]{natbib}
+
 \geometry{bindingoffset=0.5cm, lmargin=2cm, rmargin=2cm, bmargin=2cm, tmargin=1.5cm}
 
 %Abstand von Seite oben zu Kopfzeile
@@ -18,11 +39,17 @@
 \pagestyle{scrheadings}
 
 
+%\bibliographystyle{alphadin}
+
+
 \begin{document}
 
 \input{titelseite} 
 
-
+%\parencite{aristotle:physics} 
+%\cite{wilde} 
+%\citation{wilde}
+%\printbibliography
 
 \newpage
 %https://www.namsu.de/Extra/strukturen/Inhaltsverzeichnis.html
@@ -38,5 +65,5 @@
 
 
 
-
 \end{document}
+
