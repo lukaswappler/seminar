@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210 64-bit) (preloaded format=pdflatex 2017.4.2)  2 APR 2017 16:35
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210 64-bit) (preloaded format=pdflatex 2017.4.2)  2 APR 2017 16:52
 entering extended mode
 **"D:/Eigene Dateien/09 Studium/01912_Seminar/git/seminar/seminararbeit/seminar
 arbeit.tex"
@@ -202,17 +202,42 @@ Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 ge2.sty"
 Package: scrpage2 2017/01/03 v3.22 KOMA-Script package (page head and foot)
 LaTeX Info: Redefining \pagemark on input line 174.
+) ("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\nameref.sty"
+Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\refcount.sty"
+Package: refcount 2016/05/16 v3.5 Data extraction from label references (HO)
+)
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\gettitlestring.sty"
+Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\kvoptions.sty"
+Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
+
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\kvsetkeys.sty"
+Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
+
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\etexcmds.sty"
+Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
+
+("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\ifluatex.sty"
+Package: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+)
+Package etexcmds Info: Could not find \expanded.
+(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
+(etexcmds)             that some package has redefined \expanded.
+(etexcmds)             In the latter case, load this package earlier.
+))))
+\c@section@level=\count93
+LaTeX Info: Redefining \ref on input line 355.
+LaTeX Info: Redefining \pageref on input line 355.
 )
 ("C:\Users\Lukas Wappler\AppData\Roaming\MiKTeX\2.9\tex\latex\biblatex\biblatex
 .sty"
 Package: biblatex 2016/12/05 v3.7 programmable bibliographies (PK/JW/AB)
  ("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\pdftexcmds.sty"
 Package: pdftexcmds 2016/05/21 v0.22 Utility functions of pdfTeX for LuaTeX (HO
-)
-
-("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\ifluatex.sty"
-Package: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
-Package ifluatex Info: LuaTeX not detected.
 )
 Package pdftexcmds Info: LuaTeX not detected.
 Package pdftexcmds Info: \pdf@primitive is available.
@@ -222,24 +247,12 @@ Package pdftexcmds Info: \pdfdraftmode found.
 ("C:\Users\Lukas Wappler\AppData\Roaming\MiKTeX\2.9\tex\latex\etoolbox\etoolbox
 .sty"
 Package: etoolbox 2017/01/02 v2.4 e-TeX tools for LaTeX (JAW)
-\etb@tempcnta=\count93
-) ("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\kvoptions.sty"
-Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
-
-("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\kvsetkeys.sty"
-Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
-
-("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\etexcmds.sty"
-Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
-Package etexcmds Info: Could not find \expanded.
-(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
-(etexcmds)             that some package has redefined \expanded.
-(etexcmds)             In the latter case, load this package earlier.
-)))
+\etb@tempcnta=\count94
+)
 ("C:\Users\Lukas Wappler\AppData\Roaming\MiKTeX\2.9\tex\latex\logreq\logreq.sty
 "
 Package: logreq 2010/08/04 v1.0 xml request logger
-\lrq@indent=\count94
+\lrq@indent=\count95
 
 ("C:\Users\Lukas Wappler\AppData\Roaming\MiKTeX\2.9\tex\latex\logreq\logreq.def
 "
@@ -256,49 +269,49 @@ ty"
 ("C:\Users\Lukas Wappler\AppData\Roaming\MiKTeX\2.9\tex\generic\xstring\xstring
 .tex"
 \@xs@message=\write3
-\integerpart=\count95
-\decimalpart=\count96
+\integerpart=\count96
+\decimalpart=\count97
 )
 Package: xstring 2013/10/13  v1.7c  String manipulations (C Tellechea)
 )
-\c@tabx@nest=\count97
-\c@listtotal=\count98
-\c@listcount=\count99
-\c@liststart=\count100
-\c@liststop=\count101
-\c@citecount=\count102
-\c@citetotal=\count103
-\c@multicitecount=\count104
-\c@multicitetotal=\count105
-\c@instcount=\count106
-\c@maxnames=\count107
-\c@minnames=\count108
-\c@maxitems=\count109
-\c@minitems=\count110
-\c@citecounter=\count111
-\c@savedcitecounter=\count112
-\c@uniquelist=\count113
-\c@uniquename=\count114
-\c@refsection=\count115
-\c@refsegment=\count116
-\c@maxextratitle=\count117
-\c@maxextratitleyear=\count118
-\c@maxextrayear=\count119
-\c@maxextraalpha=\count120
-\c@abbrvpenalty=\count121
-\c@highnamepenalty=\count122
-\c@lownamepenalty=\count123
-\c@maxparens=\count124
-\c@parenlevel=\count125
-\blx@tempcnta=\count126
-\blx@tempcntb=\count127
-\blx@tempcntc=\count128
-\blx@maxsection=\count129
-\blx@maxsegment@0=\count130
-\blx@notetype=\count131
-\blx@parenlevel@text=\count132
-\blx@parenlevel@foot=\count133
-\blx@sectionciteorder@0=\count134
+\c@tabx@nest=\count98
+\c@listtotal=\count99
+\c@listcount=\count100
+\c@liststart=\count101
+\c@liststop=\count102
+\c@citecount=\count103
+\c@citetotal=\count104
+\c@multicitecount=\count105
+\c@multicitetotal=\count106
+\c@instcount=\count107
+\c@maxnames=\count108
+\c@minnames=\count109
+\c@maxitems=\count110
+\c@minitems=\count111
+\c@citecounter=\count112
+\c@savedcitecounter=\count113
+\c@uniquelist=\count114
+\c@uniquename=\count115
+\c@refsection=\count116
+\c@refsegment=\count117
+\c@maxextratitle=\count118
+\c@maxextratitleyear=\count119
+\c@maxextrayear=\count120
+\c@maxextraalpha=\count121
+\c@abbrvpenalty=\count122
+\c@highnamepenalty=\count123
+\c@lownamepenalty=\count124
+\c@maxparens=\count125
+\c@parenlevel=\count126
+\blx@tempcnta=\count127
+\blx@tempcntb=\count128
+\blx@tempcntc=\count129
+\blx@maxsection=\count130
+\blx@maxsegment@0=\count131
+\blx@notetype=\count132
+\blx@parenlevel@text=\count133
+\blx@parenlevel@foot=\count134
+\blx@sectionciteorder@0=\count135
 \labelnumberwidth=\skip56
 \labelalphawidth=\skip57
 \biblabelsep=\skip58
@@ -309,9 +322,9 @@ Package: xstring 2013/10/13  v1.7c  String manipulations (C Tellechea)
 \bibhang=\skip63
 \blx@bcfin=\read1
 \blx@bcfout=\write4
-\c@mincomprange=\count135
-\c@maxcomprange=\count136
-\c@mincompwidth=\count137
+\c@mincomprange=\count136
+\c@maxcomprange=\count137
+\c@mincompwidth=\count138
 Package biblatex Info: Trying to load biblatex default data model...
 Package biblatex Info: ... file 'blx-dm.def' found.
 
@@ -321,72 +334,72 @@ Package biblatex Info: Trying to load biblatex style data model...
 Package biblatex Info: ... file 'authoryear.dbx' not found.
 Package biblatex Info: Trying to load biblatex custom data model...
 Package biblatex Info: ... file 'biblatex-dm.cfg' not found.
-\c@afterword=\count138
-\c@savedafterword=\count139
-\c@annotator=\count140
-\c@savedannotator=\count141
-\c@author=\count142
-\c@savedauthor=\count143
-\c@bookauthor=\count144
-\c@savedbookauthor=\count145
-\c@commentator=\count146
-\c@savedcommentator=\count147
-\c@editor=\count148
-\c@savededitor=\count149
-\c@editora=\count150
-\c@savededitora=\count151
-\c@editorb=\count152
-\c@savededitorb=\count153
-\c@editorc=\count154
-\c@savededitorc=\count155
-\c@foreword=\count156
-\c@savedforeword=\count157
-\c@holder=\count158
-\c@savedholder=\count159
-\c@introduction=\count160
-\c@savedintroduction=\count161
-\c@namea=\count162
-\c@savednamea=\count163
-\c@nameb=\count164
-\c@savednameb=\count165
-\c@namec=\count166
-\c@savednamec=\count167
-\c@translator=\count168
-\c@savedtranslator=\count169
-\c@shortauthor=\count170
-\c@savedshortauthor=\count171
-\c@shorteditor=\count172
-\c@savedshorteditor=\count173
-\c@labelname=\count174
-\c@savedlabelname=\count175
-\c@institution=\count176
-\c@savedinstitution=\count177
-\c@lista=\count178
-\c@savedlista=\count179
-\c@listb=\count180
-\c@savedlistb=\count181
-\c@listc=\count182
-\c@savedlistc=\count183
-\c@listd=\count184
-\c@savedlistd=\count185
-\c@liste=\count186
-\c@savedliste=\count187
-\c@listf=\count188
-\c@savedlistf=\count189
-\c@location=\count190
-\c@savedlocation=\count191
-\c@organization=\count192
-\c@savedorganization=\count193
-\c@origlocation=\count194
-\c@savedoriglocation=\count195
-\c@origpublisher=\count196
-\c@savedorigpublisher=\count197
-\c@publisher=\count198
-\c@savedpublisher=\count199
-\c@language=\count266
-\c@savedlanguage=\count267
-\c@pageref=\count268
-\c@savedpageref=\count269
+\c@afterword=\count139
+\c@savedafterword=\count140
+\c@annotator=\count141
+\c@savedannotator=\count142
+\c@author=\count143
+\c@savedauthor=\count144
+\c@bookauthor=\count145
+\c@savedbookauthor=\count146
+\c@commentator=\count147
+\c@savedcommentator=\count148
+\c@editor=\count149
+\c@savededitor=\count150
+\c@editora=\count151
+\c@savededitora=\count152
+\c@editorb=\count153
+\c@savededitorb=\count154
+\c@editorc=\count155
+\c@savededitorc=\count156
+\c@foreword=\count157
+\c@savedforeword=\count158
+\c@holder=\count159
+\c@savedholder=\count160
+\c@introduction=\count161
+\c@savedintroduction=\count162
+\c@namea=\count163
+\c@savednamea=\count164
+\c@nameb=\count165
+\c@savednameb=\count166
+\c@namec=\count167
+\c@savednamec=\count168
+\c@translator=\count169
+\c@savedtranslator=\count170
+\c@shortauthor=\count171
+\c@savedshortauthor=\count172
+\c@shorteditor=\count173
+\c@savedshorteditor=\count174
+\c@labelname=\count175
+\c@savedlabelname=\count176
+\c@institution=\count177
+\c@savedinstitution=\count178
+\c@lista=\count179
+\c@savedlista=\count180
+\c@listb=\count181
+\c@savedlistb=\count182
+\c@listc=\count183
+\c@savedlistc=\count184
+\c@listd=\count185
+\c@savedlistd=\count186
+\c@liste=\count187
+\c@savedliste=\count188
+\c@listf=\count189
+\c@savedlistf=\count190
+\c@location=\count191
+\c@savedlocation=\count192
+\c@organization=\count193
+\c@savedorganization=\count194
+\c@origlocation=\count195
+\c@savedoriglocation=\count196
+\c@origpublisher=\count197
+\c@savedorigpublisher=\count198
+\c@publisher=\count199
+\c@savedpublisher=\count266
+\c@language=\count267
+\c@savedlanguage=\count268
+\c@pageref=\count269
+\c@savedpageref=\count270
 \shorthandwidth=\skip64
 \shortjournalwidth=\skip65
 \shortserieswidth=\skip66
@@ -406,13 +419,13 @@ Package biblatex Info: ... file 'biblatex.def' found.
 ("C:\Users\Lukas Wappler\AppData\Roaming\MiKTeX\2.9\tex\latex\biblatex\biblatex
 .def"
 File: biblatex.def 2016/12/05 v3.7 biblatex compatibility (PK/JW/AB)
-\c@textcitecount=\count270
-\c@textcitetotal=\count271
-\c@textcitemaxnames=\count272
-\c@biburlnumpenalty=\count273
-\c@biburlucpenalty=\count274
-\c@biburllcpenalty=\count275
-\c@smartand=\count276
+\c@textcitecount=\count271
+\c@textcitetotal=\count272
+\c@textcitemaxnames=\count273
+\c@biburlnumpenalty=\count274
+\c@biburlucpenalty=\count275
+\c@biburllcpenalty=\count276
+\c@smartand=\count277
 )
 Package biblatex Info: Trying to load bibliography style 'authoryear'...
 Package biblatex Info: ... file 'authoryear.bbx' found.
@@ -426,8 +439,8 @@ Package biblatex Info: ... file 'standard.bbx' found.
 ("C:\Users\Lukas Wappler\AppData\Roaming\MiKTeX\2.9\tex\latex\biblatex\bbx\stan
 dard.bbx"
 File: standard.bbx 2016/12/05 v3.7 biblatex bibliography style (PK/JW/AB)
-\c@bbx:relatedcount=\count277
-\c@bbx:relatedtotal=\count278
+\c@bbx:relatedcount=\count278
+\c@bbx:relatedtotal=\count279
 ))
 Package biblatex Info: Trying to load citation style 'authoryear'...
 Package biblatex Info: ... file 'authoryear.cbx' found.
@@ -449,78 +462,43 @@ Package biblatex Info: ... file 'biblatex.cfg' found.
 ("C:\Users\Lukas Wappler\AppData\Roaming\MiKTeX\2.9\tex\latex\biblatex\biblatex
 .cfg"
 File: biblatex.cfg 
-)) ("C:\Program Files\MiKTeX 2.9\tex\generic\babel\babel.sty"
-Package: babel 2016/04/23 3.9r The Babel package
-
-*************************************
-* Local config file bblopts.cfg used
-*
-("C:\Users\Lukas Wappler\AppData\Roaming\MiKTeX\2.9\tex\latex\arabi\bblopts.cfg
-"
-File: bblopts.cfg 2005/09/08 v0.1 add Arabic and Farsi to \errhelp {Use `` for 
-a simple double quote character.}\errmessage {german: The command "d is undefin
-ed}``declared\protect {\grmnU@D 1ex{\setbox \z@ \hbox {\char 127}\dimen@ -.45ex
-\advance \dimen@ \ht \z@ \fontdimen 5\font \dimen@ }\accent 127\fontdimen 5\fon
-t \grmnU@D o}\penalty \@M \hskip \z@skip ptions of babel
-) ("C:\Program Files\MiKTeX 2.9\tex\latex\babel-german\ngerman.ldf"
-Language: ngerman 2016/11/02 v2.9 German support for babel (new orthography)
-
-("C:\Program Files\MiKTeX 2.9\tex\latex\babel-german\ngermanb.ldf"
-Language: ngermanb 2016/11/02 v2.9 German support for babel (new orthography)
-
-("C:\Program Files\MiKTeX 2.9\tex\generic\babel\babel.def"
-File: babel.def 2016/04/23 3.9r Babel common definitions
-\babel@savecnt=\count279
-\U@D=\dimen114
-)
-Package babel Info: Making " an active character on input line 125.
-)))
-Package biblatex Info: Trying to load language 'ngerman'...
-Package biblatex Info: ... file 'ngerman.lbx' found.
-
-("C:\Users\Lukas Wappler\AppData\Roaming\MiKTeX\2.9\tex\latex\biblatex\lbx\nger
-man.lbx"
-File: ngerman.lbx 2016/12/05 v3.7 biblatex localization (PK/JW/AB)
-Package biblatex Info: Trying to load language 'german'...
-Package biblatex Info: ... file 'german.lbx' found.
-
-("C:\Users\Lukas Wappler\AppData\Roaming\MiKTeX\2.9\tex\latex\biblatex\lbx\germ
-an.lbx"
-File: german.lbx 2016/12/05 v3.7 biblatex localization (PK/JW/AB)
 ))
+Package biblatex Info: Trying to load language 'english'...
+Package biblatex Info: ... file 'english.lbx' found.
 
-Package biblatex Warning: 'babel/polyglossia' detected but 'csquotes' missing.
-(biblatex)                Loading 'csquotes' recommended.
-
+("C:\Users\Lukas Wappler\AppData\Roaming\MiKTeX\2.9\tex\latex\biblatex\lbx\engl
+ish.lbx"
+File: english.lbx 2016/12/05 v3.7 biblatex localization (PK/JW/AB)
+)
 \@quotelevel=\count280
 \@quotereset=\count281
-(seminararbeit.aux)
+ (seminararbeit.aux)
 \openout1 = `seminararbeit.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 45.
-LaTeX Font Info:    ... okay on input line 45.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 45.
-LaTeX Font Info:    ... okay on input line 45.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 45.
-LaTeX Font Info:    ... okay on input line 45.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 45.
-LaTeX Font Info:    ... okay on input line 45.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 45.
-LaTeX Font Info:    ... okay on input line 45.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 45.
-LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 47.
+LaTeX Font Info:    ... okay on input line 47.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 47.
+LaTeX Font Info:    ... okay on input line 47.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 47.
+LaTeX Font Info:    ... okay on input line 47.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 47.
+LaTeX Font Info:    ... okay on input line 47.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 47.
+LaTeX Font Info:    ... okay on input line 47.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 47.
+LaTeX Font Info:    ... okay on input line 47.
 
 ("C:\Users\Lukas Wappler\AppData\Roaming\MiKTeX\2.9\tex\context\base\supp-pdf.m
 kii"
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count282
-\scratchdimen=\dimen115
+\scratchdimen=\dimen114
 \scratchbox=\box28
 \nofMPsegments=\count283
 \nofMParguments=\count284
 \everyMPshowfont=\toks16
 \MPscratchCnt=\count285
-\MPscratchDim=\dimen116
+\MPscratchDim=\dimen115
 \MPnumerator=\count286
 \makeMPintoPDFobject=\count287
 \everyMPtoPDFconversion=\toks17
@@ -584,105 +562,9 @@ Package biblatex Info: Automatic encoding selection.
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'seminararbeit.bbl' found.
 (seminararbeit.bbl)
-Package biblatex Info: Reference section=0 on input line 45.
-Package biblatex Info: Reference segment=0 on input line 45.
-
-! Illegal parameter number in definition of \grmn@originalTeX.
-<to be read again> 
-                   \egroup 
-l.45 \begin{document}
-                     
-You meant to type ## instead of #, right?
-Or maybe a } was forgotten somewhere earlier, and things
-are all screwed up? I'm going to assume that you meant ##.
-
-! Illegal parameter number in definition of \grmn@originalTeX.
-<to be read again> 
-                   1
-l.45 \begin{document}
-                     
-You meant to type ## instead of #, right?
-Or maybe a } was forgotten somewhere earlier, and things
-are all screwed up? I'm going to assume that you meant ##.
-
-! Undefined control sequence.
-\bbl@nonfrenchspacing ->\sfcode `\.3000\sfcode `\?
-                                                  3000\sfcode `\!3000\sfcode...
-l.45 \begin{document}
-                     
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-\lbx@lfromlang ->\iffieldundef 
-                               {origlanguage} {} {\bibstring {from\thefield ...
-l.45 \begin{document}
-                     
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-\lbx@lfromlang ...f {origlanguage} {} {\bibstring 
-                                                  {from\thefield {origlangua...
-l.45 \begin{document}
-                     
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-\lbx@lfromlang ...} {} {\bibstring {from\thefield 
-                                                  {origlanguage}}\space }
-l.45 \begin{document}
-                     
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-\lbx@sfromlang ->\iffieldundef 
-                               {origlanguage} {} {\bibstring {from\thefield ...
-l.45 \begin{document}
-                     
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-\lbx@sfromlang ...f {origlanguage} {} {\bibstring 
-                                                  {from\thefield {origlangua...
-l.45 \begin{document}
-                     
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-! Undefined control sequence.
-\lbx@sfromlang ...} {} {\bibstring {from\thefield 
-                                                  {origlanguage}}\space }
-l.45 \begin{document}
-                     
-The control sequence at the end of the top line
-of your error message was never \def'ed. If you have
-misspelled it (e.g., `\hobx'), type `I' and the correct
-spelling (e.g., `I\hbox'). Otherwise just continue,
-and I'll forget about whatever was undefined.
-
-(titelseite.tex
+Package biblatex Info: Reference section=0 on input line 47.
+Package biblatex Info: Reference segment=0 on input line 47.
+ (titelseite.tex
 Package epstopdf Info: Source file: <./logo/logo.eps>
 (epstopdf)                    date: 2016-09-05 16:48:52
 (epstopdf)                    size: 1308 bytes
@@ -737,6 +619,12 @@ chapter 1.
 
 ]
 chapter 2.
+Missing character: There is no Ã in font cmr12!
+Missing character: There is no ¤ in font cmr12!
+Missing character: There is no Ã in font cmr12!
+Missing character: There is no ¼ in font cmr12!
+Missing character: There is no Ã in font cmr12!
+Missing character: There is no ¶ in font cmr12!
 Missing character: There is no â in font cmssbx10!
 Missing character: There is no € in font cmssbx10!
 Missing character: There is no ™ in font cmssbx10!
@@ -758,612 +646,7 @@ Missing character: There is no Ÿ in font cmr10!
 [5
 
 
-]
-! Improper alphabetic constant.
-<to be read again> 
-                   \unhbox 
-l.26 
-     
-A one-character control sequence belongs after a ` mark.
-So I'm essentially inserting \0 here.
-
-! Missing number, treated as zero.
-<to be read again> 
-                   \unhbox 
-l.26 
-     
-A number should have been here; I inserted `0'.
-(If you can't figure out why I needed to see a number,
-look up `weird error' in the index to The TeXbook.)
-
-! Parameters must be numbered consecutively.
-<to be read again> 
-                   \egroup 
-l.26 
-     
-I've inserted the digit you should have used after the #.
-Type `1' to delete what you did use.
-
-! Improper alphabetic constant.
-<to be read again> 
-                   \unhbox 
-l.26 
-     
-A one-character control sequence belongs after a ` mark.
-So I'm essentially inserting \0 here.
-
-! Improper alphabetic constant.
-<to be read again> 
-                   \mskip 
-l.26 
-     
-A one-character control sequence belongs after a ` mark.
-So I'm essentially inserting \0 here.
-
-! Missing number, treated as zero.
-<to be read again> 
-                   \mskip 
-l.26 
-     
-A number should have been here; I inserted `0'.
-(If you can't figure out why I needed to see a number,
-look up `weird error' in the index to The TeXbook.)
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.26 
-     
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Improper alphabetic constant.
-<to be read again> 
-                   \mskip 
-l.26 
-     
-A one-character control sequence belongs after a ` mark.
-So I'm essentially inserting \0 here.
-
-! Missing number, treated as zero.
-<to be read again> 
-                   \mskip 
-l.26 
-     
-A number should have been here; I inserted `0'.
-(If you can't figure out why I needed to see a number,
-look up `weird error' in the index to The TeXbook.)
-
-! Improper alphabetic constant.
-<to be read again> 
-                   \mskip 
-l.26 
-     
-A one-character control sequence belongs after a ` mark.
-So I'm essentially inserting \0 here.
-
-! Missing number, treated as zero.
-<to be read again> 
-                   \mskip 
-l.26 
-     
-A number should have been here; I inserted `0'.
-(If you can't figure out why I needed to see a number,
-look up `weird error' in the index to The TeXbook.)
-
-! Improper alphabetic constant.
-<to be read again> 
-                   \protect 
-l.26 
-     
-A one-character control sequence belongs after a ` mark.
-So I'm essentially inserting \0 here.
-
-! Missing number, treated as zero.
-<to be read again> 
-                   \protect 
-l.26 
-     
-A number should have been here; I inserted `0'.
-(If you can't figure out why I needed to see a number,
-look up `weird error' in the index to The TeXbook.)
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.26 
-     
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-[6]
-! Improper alphabetic constant.
-<to be read again> 
-                   \unhbox 
-l.37 N
-      am liber tempor cum soluta nobis eleifend option congue nihil imperdie...
-A one-character control sequence belongs after a ` mark.
-So I'm essentially inserting \0 here.
-
-! Missing number, treated as zero.
-<to be read again> 
-                   \unhbox 
-l.37 N
-      am liber tempor cum soluta nobis eleifend option congue nihil imperdie...
-A number should have been here; I inserted `0'.
-(If you can't figure out why I needed to see a number,
-look up `weird error' in the index to The TeXbook.)
-
-! Parameters must be numbered consecutively.
-<to be read again> 
-                   \egroup 
-l.37 N
-      am liber tempor cum soluta nobis eleifend option congue nihil imperdie...
-I've inserted the digit you should have used after the #.
-Type `1' to delete what you did use.
-
-! Improper alphabetic constant.
-<to be read again> 
-                   \unhbox 
-l.37 N
-      am liber tempor cum soluta nobis eleifend option congue nihil imperdie...
-A one-character control sequence belongs after a ` mark.
-So I'm essentially inserting \0 here.
-
-! Improper alphabetic constant.
-<to be read again> 
-                   \mskip 
-l.37 N
-      am liber tempor cum soluta nobis eleifend option congue nihil imperdie...
-A one-character control sequence belongs after a ` mark.
-So I'm essentially inserting \0 here.
-
-! Missing number, treated as zero.
-<to be read again> 
-                   \mskip 
-l.37 N
-      am liber tempor cum soluta nobis eleifend option congue nihil imperdie...
-A number should have been here; I inserted `0'.
-(If you can't figure out why I needed to see a number,
-look up `weird error' in the index to The TeXbook.)
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.37 N
-      am liber tempor cum soluta nobis eleifend option congue nihil imperdie...
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Improper alphabetic constant.
-<to be read again> 
-                   \mskip 
-l.37 N
-      am liber tempor cum soluta nobis eleifend option congue nihil imperdie...
-A one-character control sequence belongs after a ` mark.
-So I'm essentially inserting \0 here.
-
-! Missing number, treated as zero.
-<to be read again> 
-                   \mskip 
-l.37 N
-      am liber tempor cum soluta nobis eleifend option congue nihil imperdie...
-A number should have been here; I inserted `0'.
-(If you can't figure out why I needed to see a number,
-look up `weird error' in the index to The TeXbook.)
-
-! Improper alphabetic constant.
-<to be read again> 
-                   \mskip 
-l.37 N
-      am liber tempor cum soluta nobis eleifend option congue nihil imperdie...
-A one-character control sequence belongs after a ` mark.
-So I'm essentially inserting \0 here.
-
-! Missing number, treated as zero.
-<to be read again> 
-                   \mskip 
-l.37 N
-      am liber tempor cum soluta nobis eleifend option congue nihil imperdie...
-A number should have been here; I inserted `0'.
-(If you can't figure out why I needed to see a number,
-look up `weird error' in the index to The TeXbook.)
-
-! Improper alphabetic constant.
-<to be read again> 
-                   \protect 
-l.37 N
-      am liber tempor cum soluta nobis eleifend option congue nihil imperdie...
-A one-character control sequence belongs after a ` mark.
-So I'm essentially inserting \0 here.
-
-! Missing number, treated as zero.
-<to be read again> 
-                   \protect 
-l.37 N
-      am liber tempor cum soluta nobis eleifend option congue nihil imperdie...
-A number should have been here; I inserted `0'.
-(If you can't figure out why I needed to see a number,
-look up `weird error' in the index to The TeXbook.)
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.37 N
-      am liber tempor cum soluta nobis eleifend option congue nihil imperdie...
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-[7]
-! Improper alphabetic constant.
-<to be read again> 
-                   \unhbox 
-l.48 
-     
-A one-character control sequence belongs after a ` mark.
-So I'm essentially inserting \0 here.
-
-! Missing number, treated as zero.
-<to be read again> 
-                   \unhbox 
-l.48 
-     
-A number should have been here; I inserted `0'.
-(If you can't figure out why I needed to see a number,
-look up `weird error' in the index to The TeXbook.)
-
-! Parameters must be numbered consecutively.
-<to be read again> 
-                   \egroup 
-l.48 
-     
-I've inserted the digit you should have used after the #.
-Type `1' to delete what you did use.
-
-! Improper alphabetic constant.
-<to be read again> 
-                   \unhbox 
-l.48 
-     
-A one-character control sequence belongs after a ` mark.
-So I'm essentially inserting \0 here.
-
-! Improper alphabetic constant.
-<to be read again> 
-                   \mskip 
-l.48 
-     
-A one-character control sequence belongs after a ` mark.
-So I'm essentially inserting \0 here.
-
-! Missing number, treated as zero.
-<to be read again> 
-                   \mskip 
-l.48 
-     
-A number should have been here; I inserted `0'.
-(If you can't figure out why I needed to see a number,
-look up `weird error' in the index to The TeXbook.)
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.48 
-     
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Improper alphabetic constant.
-<to be read again> 
-                   \mskip 
-l.48 
-     
-A one-character control sequence belongs after a ` mark.
-So I'm essentially inserting \0 here.
-
-! Missing number, treated as zero.
-<to be read again> 
-                   \mskip 
-l.48 
-     
-A number should have been here; I inserted `0'.
-(If you can't figure out why I needed to see a number,
-look up `weird error' in the index to The TeXbook.)
-
-! Improper alphabetic constant.
-<to be read again> 
-                   \mskip 
-l.48 
-     
-A one-character control sequence belongs after a ` mark.
-So I'm essentially inserting \0 here.
-
-! Missing number, treated as zero.
-<to be read again> 
-                   \mskip 
-l.48 
-     
-A number should have been here; I inserted `0'.
-(If you can't figure out why I needed to see a number,
-look up `weird error' in the index to The TeXbook.)
-
-! Improper alphabetic constant.
-<to be read again> 
-                   \protect 
-l.48 
-     
-A one-character control sequence belongs after a ` mark.
-So I'm essentially inserting \0 here.
-
-! Missing number, treated as zero.
-<to be read again> 
-                   \protect 
-l.48 
-     
-A number should have been here; I inserted `0'.
-(If you can't figure out why I needed to see a number,
-look up `weird error' in the index to The TeXbook.)
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.48 
-     
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-[8]
-! Improper alphabetic constant.
-<to be read again> 
-                   \unhbox 
-l.58 
-     
-A one-character control sequence belongs after a ` mark.
-So I'm essentially inserting \0 here.
-
-! Missing number, treated as zero.
-<to be read again> 
-                   \unhbox 
-l.58 
-     
-A number should have been here; I inserted `0'.
-(If you can't figure out why I needed to see a number,
-look up `weird error' in the index to The TeXbook.)
-
-! Parameters must be numbered consecutively.
-<to be read again> 
-                   \egroup 
-l.58 
-     
-I've inserted the digit you should have used after the #.
-Type `1' to delete what you did use.
-
-! Improper alphabetic constant.
-<to be read again> 
-                   \unhbox 
-l.58 
-     
-A one-character control sequence belongs after a ` mark.
-So I'm essentially inserting \0 here.
-
-! Improper alphabetic constant.
-<to be read again> 
-                   \mskip 
-l.58 
-     
-A one-character control sequence belongs after a ` mark.
-So I'm essentially inserting \0 here.
-
-! Missing number, treated as zero.
-<to be read again> 
-                   \mskip 
-l.58 
-     
-A number should have been here; I inserted `0'.
-(If you can't figure out why I needed to see a number,
-look up `weird error' in the index to The TeXbook.)
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.58 
-     
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Improper alphabetic constant.
-<to be read again> 
-                   \mskip 
-l.58 
-     
-A one-character control sequence belongs after a ` mark.
-So I'm essentially inserting \0 here.
-
-! Missing number, treated as zero.
-<to be read again> 
-                   \mskip 
-l.58 
-     
-A number should have been here; I inserted `0'.
-(If you can't figure out why I needed to see a number,
-look up `weird error' in the index to The TeXbook.)
-
-! Improper alphabetic constant.
-<to be read again> 
-                   \mskip 
-l.58 
-     
-A one-character control sequence belongs after a ` mark.
-So I'm essentially inserting \0 here.
-
-! Missing number, treated as zero.
-<to be read again> 
-                   \mskip 
-l.58 
-     
-A number should have been here; I inserted `0'.
-(If you can't figure out why I needed to see a number,
-look up `weird error' in the index to The TeXbook.)
-
-! Improper alphabetic constant.
-<to be read again> 
-                   \protect 
-l.58 
-     
-A one-character control sequence belongs after a ` mark.
-So I'm essentially inserting \0 here.
-
-! Missing number, treated as zero.
-<to be read again> 
-                   \protect 
-l.58 
-     
-A number should have been here; I inserted `0'.
-(If you can't figure out why I needed to see a number,
-look up `weird error' in the index to The TeXbook.)
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.58 
-     
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-[9]) (chapter/ausblick.tex
-! Improper alphabetic constant.
-<to be read again> 
-                   \unhbox 
-l.1 \newpage
-            
-A one-character control sequence belongs after a ` mark.
-So I'm essentially inserting \0 here.
-
-! Missing number, treated as zero.
-<to be read again> 
-                   \unhbox 
-l.1 \newpage
-            
-A number should have been here; I inserted `0'.
-(If you can't figure out why I needed to see a number,
-look up `weird error' in the index to The TeXbook.)
-
-! Parameters must be numbered consecutively.
-<to be read again> 
-                   \egroup 
-l.1 \newpage
-            
-I've inserted the digit you should have used after the #.
-Type `1' to delete what you did use.
-
-! Improper alphabetic constant.
-<to be read again> 
-                   \unhbox 
-l.1 \newpage
-            
-A one-character control sequence belongs after a ` mark.
-So I'm essentially inserting \0 here.
-
-! Improper alphabetic constant.
-<to be read again> 
-                   \mskip 
-l.1 \newpage
-            
-A one-character control sequence belongs after a ` mark.
-So I'm essentially inserting \0 here.
-
-! Missing number, treated as zero.
-<to be read again> 
-                   \mskip 
-l.1 \newpage
-            
-A number should have been here; I inserted `0'.
-(If you can't figure out why I needed to see a number,
-look up `weird error' in the index to The TeXbook.)
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.1 \newpage
-            
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Improper alphabetic constant.
-<to be read again> 
-                   \mskip 
-l.1 \newpage
-            
-A one-character control sequence belongs after a ` mark.
-So I'm essentially inserting \0 here.
-
-! Missing number, treated as zero.
-<to be read again> 
-                   \mskip 
-l.1 \newpage
-            
-A number should have been here; I inserted `0'.
-(If you can't figure out why I needed to see a number,
-look up `weird error' in the index to The TeXbook.)
-
-! Improper alphabetic constant.
-<to be read again> 
-                   \mskip 
-l.1 \newpage
-            
-A one-character control sequence belongs after a ` mark.
-So I'm essentially inserting \0 here.
-
-! Missing number, treated as zero.
-<to be read again> 
-                   \mskip 
-l.1 \newpage
-            
-A number should have been here; I inserted `0'.
-(If you can't figure out why I needed to see a number,
-look up `weird error' in the index to The TeXbook.)
-
-! Improper alphabetic constant.
-<to be read again> 
-                   \protect 
-l.1 \newpage
-            
-A one-character control sequence belongs after a ` mark.
-So I'm essentially inserting \0 here.
-
-! Missing number, treated as zero.
-<to be read again> 
-                   \protect 
-l.1 \newpage
-            
-A number should have been here; I inserted `0'.
-(If you can't figure out why I needed to see a number,
-look up `weird error' in the index to The TeXbook.)
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.1 \newpage
-            
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-[10]
+] [6] [7] [8] [9]) (chapter/ausblick.tex [10]
 chapter 4.
 ) (chapter/anhang.tex [11
 
@@ -1384,13 +667,13 @@ Package logreq Info: Writing requests to 'seminararbeit.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 11344 strings out of 493333
- 200591 string characters out of 3139169
- 748476 words of memory out of 3000000
- 14731 multiletter control sequences out of 15000+200000
+ 11117 strings out of 493333
+ 197969 string characters out of 3139169
+ 725232 words of memory out of 3000000
+ 14519 multiletter control sequences out of 15000+200000
  12520 words of font info for 43 fonts, out of 3000000 for 9000
- 1145 hyphenation exceptions out of 8191
- 46i,13n,66p,8895b,1654s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 1141 hyphenation exceptions out of 8191
+ 54i,10n,66p,8895b,1120s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Pr
 ogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Fil
 es/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX
@@ -1399,7 +682,7 @@ s/type1/public/amsfonts/cm/cmr7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/pu
 blic/amsfonts/cm/cmsl12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/ams
 fonts/cm/cmssbx10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/
 cm/cmti12.pfb>
-Output written on seminararbeit.pdf (13 pages, 131394 bytes).
+Output written on seminararbeit.pdf (13 pages, 125874 bytes).
 PDF statistics:
  80 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
