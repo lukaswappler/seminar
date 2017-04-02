@@ -1,7 +1,7 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.10.22)  2 APR 2017 10:20
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.10.22)  2 APR 2017 10:39
 entering extended mode
-**"D:/Eigene Dateien/09 Studium/01912_Seminar/arbeit/arbeit/seminararbeit.tex"
-("D:/Eigene Dateien/09 Studium/01912_Seminar/arbeit/arbeit/seminararbeit.tex"
+**"D:/Eigene Dateien/09 Studium/01912_Seminar/git/seminar/seminararbeit.tex"
+("D:/Eigene Dateien/09 Studium/01912_Seminar/git/seminar/seminararbeit.tex"
 LaTeX2e <2016/03/31> patch level 3
 Babel <3.9r> and hyphenation patterns for 75 language(s) loaded.
 
@@ -199,22 +199,21 @@ Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 ge2.sty"
 Package: scrpage2 2016/06/14 v3.21 KOMA-Script package (page head and foot)
 LaTeX Info: Redefining \pagemark on input line 174.
-)
-No file seminararbeit.aux.
+) (seminararbeit.aux)
 \openout1 = `seminararbeit.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 85.
-LaTeX Font Info:    ... okay on input line 85.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 85.
-LaTeX Font Info:    ... okay on input line 85.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 85.
-LaTeX Font Info:    ... okay on input line 85.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 85.
-LaTeX Font Info:    ... okay on input line 85.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 85.
-LaTeX Font Info:    ... okay on input line 85.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 85.
-LaTeX Font Info:    ... okay on input line 85.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 21.
+LaTeX Font Info:    ... okay on input line 21.
 
 ("C:\Users\Lukas Wappler\AppData\Roaming\MiKTeX\2.9\tex\context\base\supp-pdf.m
 kii"
@@ -307,6 +306,7 @@ G,.JBIG2,.JB2,.eps]
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
+(titelseite.tex
 Package epstopdf Info: Source file: <./logo/logo.eps>
 (epstopdf)                    date: 2016-09-05 16:48:52
 (epstopdf)                    size: 1308 bytes
@@ -315,37 +315,43 @@ Package epstopdf Info: Source file: <./logo/logo.eps>
 (epstopdf)                    size: 8327 bytes
 (epstopdf)             Command: <epstopdf --outfile=./logo/logo-eps-converted-t
 o.pdf ./logo/logo.eps>
-(epstopdf)             \includegraphics on input line 100.
+(epstopdf)             \includegraphics on input line 8.
 Package epstopdf Info: Output file is already uptodate.
+
 <./logo/logo-eps-converted-to.pdf, id=1, 421.575pt x 421.575pt>
 File: ./logo/logo-eps-converted-to.pdf Graphic file (type pdf)
 
 <use ./logo/logo-eps-converted-to.pdf>
-Package pdftex.def Info: ./logo/logo-eps-converted-to.pdf used on input line 10
-0.
+Package pdftex.def Info: ./logo/logo-eps-converted-to.pdf used on input line 8.
+
 (pdftex.def)             Requested size: 22.76228pt x 22.75891pt.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <24.88> on input line 103.
+(Font)              <24.88> on input line 11.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <20.74> on input line 103.
+(Font)              <20.74> on input line 11.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <17.28> on input line 103.
- [1
+(Font)              <17.28> on input line 11.
+) [1
 
 {C:/Users/Lukas Wappler/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map} <./l
 ogo/logo-eps-converted-to.pdf>]
-No file seminararbeit.toc.
+(seminararbeit.toc
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <12> on input line 3.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 3.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 3.
+Missing character: There is no â in font cmr12!
+Missing character: There is no € in font cmr12!
+Missing character: There is no ™ in font cmr12!
+Missing character: There is no Ã in font cmr12!
+Missing character: There is no ¶ in font cmr12!
+)
 \tf@toc=\write3
 \openout3 = `seminararbeit.toc'.
 
-(chapter/einleitung.tex
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 1.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 1.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 1.
- [2
+ (chapter/einleitung.tex [2
 
 
 ]
@@ -393,13 +399,13 @@ chapter 6.
 
 ] (seminararbeit.aux) ) 
 Here is how much of TeX's memory you used:
- 4443 strings out of 493334
- 75630 string characters out of 3139225
- 238441 words of memory out of 3000000
- 7926 multiletter control sequences out of 15000+200000
+ 4458 strings out of 493334
+ 75917 string characters out of 3139225
+ 238476 words of memory out of 3000000
+ 7934 multiletter control sequences out of 15000+200000
  12173 words of font info for 42 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 49i,9n,66p,8883b,328s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 49i,9n,66p,8881b,330s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts
 /cm/cmmi12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr1
 0.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:
@@ -407,7 +413,7 @@ Here is how much of TeX's memory you used:
 Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Program Files/MiKT
 eX 2.9/fonts/type1/public/amsfonts/cm/cmsl12.pfb><C:/Program Files/MiKTeX 2.9/f
 onts/type1/public/amsfonts/cm/cmssbx10.pfb>
-Output written on seminararbeit.pdf (13 pages, 106886 bytes).
+Output written on seminararbeit.pdf (13 pages, 111517 bytes).
 PDF statistics:
  76 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)

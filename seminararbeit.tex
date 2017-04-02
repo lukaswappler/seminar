@@ -1,27 +1,12 @@
-%\documentclass[a4paper,12pt]{scrbook}
 \documentclass[a4paper,12pt,oneside]{scrbook} 
 
 \usepackage{german}
-%\usepackage{fancyhdr}
 \usepackage{graphicx}
 
 \usepackage{geometry}
 \usepackage{scrpage2}
-%\usepackage{bindingoffset=3cm}
 
-%\usepackage{scrpage2}
-%\pagestyle{headings}
-%\clearscrheadfoot
-
-%\geometry{verbose,a4paper,tmargin=25mm,bmargin=25mm,lmargin=15mm,rmargin=20mm}
 \geometry{bindingoffset=0.5cm, lmargin=2cm, rmargin=2cm, bmargin=2cm, tmargin=1.5cm}
-%\usepackage[left=30mm,right=20mm,top=25mm,bottom=25mm]{geometry}
-
-%\setlength{\headheight}{2.3cm}
-
-
-%\setlength{\footheight}{1.5cm}
-%\setlength{\textheight}{2.3cm}
 
 %Abstand von Seite oben zu Kopfzeile
 \setlength{\headheight}{1.5cm}
@@ -29,90 +14,14 @@
 \setlength{\headsep}{0.7cm}
 \setlength{\textheight}{245mm}
 
-%\pagestyle{fancy}
-
 
 \pagestyle{scrheadings}
-%\clearscrheadfoot
-%%\lohead[\pagemark]{\headmark}
-%%\rohead[\pagemark]{\pagemark}
-
-%%\lehead[\pagemark]{\pagemark}
-%%\rehead[\pagemark]{\headmark}
-
-
-
-%%\chead{\automark}
-
-%%\foot{}
-
-%\pagestyle{scrheadings}
-%\ihead{}
-%\chead{}
-%\ohead{09.10.2016}
-%\ohead{\leftmark}
-%\ofoot[\pagemark]{\pagemark}
-
-%\ofoot{\pagemark}
-
-%\addtolength{\headsep}{-2\baselineskip}
-%\addtolength{\topmargin}{.5\baselineskip}
-
-%\fancyhead[L]{Titel} %Kopfzeile links
-%\fancyhead[C]{} %zentrierte Kopfzeile
-%\fancyhead[R]{Name} %Kopfzeile rechts
-
-%\fancyhead[L]{\small{\textbf{Internship report \hspace{1.6cm}
-
-
-%https://www.latex-kurs.de/fragen/schriftgroesse.html
-
-%Even Odd
-%\fancyfoot[OR]{\thepage} 
-%\fancyfoot[EL]{\thepage} 
-
-%\fancyhf{} %alle Kopf- und Fußzeilenfelder bereinigen
-%\fancyhead[L]{\normalsize\upshape\nouppercase\leftmark}
-%\fancyhead[R]{\normalsize\upshape Apache Spark}
-%\fancyfoot[L]{}
-%\fancyfoot[C]{\thepage}
-%\fancyfoot[R]{}
-
-%\renewcommand{\headrulewidth}{0pt}
-%\renewcommand{\footrulewidth}{0pt}
 
 
 \begin{document}
 
-\thispagestyle{empty}
+\input{titelseite} 
 
-
-
-%\markboth{Petra Mustermann, Thema 3: \textit{Name des Themas}}{}
-%\cfoot{}
-
-\begin{center}
-\begin{huge}
-\vspace*{3cm}
-   \begin{minipage}{\textwidth}
-     \vspace*{\fill}
-    \begin{center}
-       \includegraphics[width=0.8cm]{./logo/logo.eps} FernUniversit"at in Hagen
-    \end{center}
-     \vfill
-   \end{minipage}
-   -\\
-   Seminar 01912 / 19912 \\
-   im Sommersemester 2017 \\[2em]
-   \glqq{}Skallierbare verteilte Datenanalyse\grqq{} \\[2cm]
-\end{huge}
-\begin{large}
-   Thema 2.3\\[1em]
-   Spark\\[3cm]
-   Referent: Lukas Wappler
-\end{large}
-
-\end{center}
 
 
 \newpage
