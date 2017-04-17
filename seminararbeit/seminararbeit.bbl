@@ -19,30 +19,36 @@
 
 \refsection{0}
   \sortlist[entry]{nyt/global/}
-    \entry{wilde}{book}{}
-      \name{author}{1}{}{%
-        {{uniquename=0,hash=068b52ec919d1d2dd18d7f9d15ae7bf3}{%
-           family={Wilde},
+    \entry{AAWS15}{book}{}
+      \name{author}{2}{}{%
+        {{uniquename=0,hash=e55b943118d5ce5044c739bba62afa4a}{%
+           family={Owen},
+           familyi={O\bibinitperiod},
+           given={Sandy\bibnamedelimb Ryza\bibnamedelimb -\bibnamedelimb Uri\bibnamedelimb Laserson\bibnamedelimb -\bibnamedelima Sean},
+           giveni={S\bibinitperiod\bibinitdelim R\bibinitperiod\bibinitdelim \bibinithyphendelim \bibinithyphendelim \bibinitperiod\bibinitdelim U\bibinitperiod\bibinitdelim L\bibinitperiod\bibinitdelim \bibinithyphendelim \bibinithyphendelim \bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+        {{uniquename=0,hash=0dea4b204ddd58dc8ae7393fac30d967}{%
+           family={Wills},
            familyi={W\bibinitperiod},
-           given={Oscar},
-           giveni={O\bibinitperiod}}}%
+           given={Josh},
+           giveni={J\bibinitperiod}}}%
       }
-      \list{publisher}{2}{%
-        {Leonard Smithers}%
-        {Company}%
+      \list{location}{1}{%
+        {1005 Gravenstein Highway North}%
       }
-      \strng{namehash}{068b52ec919d1d2dd18d7f9d15ae7bf3}
-      \strng{fullhash}{068b52ec919d1d2dd18d7f9d15ae7bf3}
-      \strng{authornamehash}{068b52ec919d1d2dd18d7f9d15ae7bf3}
-      \strng{authorfullhash}{068b52ec919d1d2dd18d7f9d15ae7bf3}
-      \field{sortinit}{W}
-      \field{sortinithash}{6d25b3eefe5aa2147d1f339686808918}
+      \list{publisher}{1}{%
+        {O'Reilly Media, Inc.}%
+      }
+      \strng{namehash}{a0db5690fc58b622edabce076bfbc9c4}
+      \strng{fullhash}{a0db5690fc58b622edabce076bfbc9c4}
+      \strng{authornamehash}{a0db5690fc58b622edabce076bfbc9c4}
+      \strng{authorfullhash}{a0db5690fc58b622edabce076bfbc9c4}
+      \field{sortinit}{O}
+      \field{sortinithash}{f5d80ef71b5b58852663ecfd775b175a}
       \field{labeldatesource}{year}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{series}{English and American drama of the Nineteenth Century}
-      \field{title}{The Importance of Being Earnest: A Trivial Comedy for Serious People}
-      \field{year}{1899}
+      \field{title}{Advanced Analytics with Spark}
+      \field{year}{2015}
     \endentry
   \endsortlist
 \endrefsection
