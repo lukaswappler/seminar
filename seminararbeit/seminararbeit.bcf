@@ -4,11 +4,11 @@
   <bcf:options component="biber" type="global">
     <bcf:option type="singlevalued">
       <bcf:key>output_encoding</bcf:key>
-      <bcf:value>ascii</bcf:value>
+      <bcf:value>utf8</bcf:value>
     </bcf:option>
     <bcf:option type="singlevalued">
       <bcf:key>input_encoding</bcf:key>
-      <bcf:value>ascii</bcf:value>
+      <bcf:value>utf8</bcf:value>
     </bcf:option>
     <bcf:option type="singlevalued">
       <bcf:key>debug</bcf:key>
@@ -2145,6 +2145,7 @@
   </bcf:bibdata>
   <bcf:section number="0">
     <bcf:citekey order="1">AAWS15</bcf:citekey>
+    <bcf:citekey order="2">AAWS15</bcf:citekey>
   </bcf:section>
   <bcf:sortlist section="0" name="nyt/global/" type="entry" sortscheme="nyt" sortnamekeyscheme="global" labelprefix="">
   <bcf:sorting>

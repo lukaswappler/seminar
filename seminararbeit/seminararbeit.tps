@@ -14,11 +14,11 @@ NormalPos.top=26
 NormalPos.right=1703
 NormalPos.bottom=452
 Class=LaTeXView
-Document=seminararbeit.tex
+Document=chapter\hauptteil.tex
 
 [Frame0_View0,0]
-TopLine=0
-Cursor=164
+TopLine=114
+Cursor=7648
 
 [Frame1]
 Flags=0
@@ -36,7 +36,7 @@ Document=chapter\fazit.tex
 
 [Frame1_View0,0]
 TopLine=0
-Cursor=1070
+Cursor=36
 
 [Frame2]
 Flags=0
@@ -53,8 +53,8 @@ Class=BibTeXView
 Document=literatur.bib
 
 [Frame2_View0,0]
-TopLine=21
-Cursor=286
+TopLine=0
+Cursor=214
 
 [Frame3]
 Flags=0
@@ -68,49 +68,13 @@ NormalPos.top=26
 NormalPos.right=1703
 NormalPos.bottom=452
 Class=LaTeXView
-Document=chapter\literaturverzeichnis.tex
+Document=seminararbeit.tex
 
 [Frame3_View0,0]
 TopLine=0
-Cursor=10
-
-[Frame4]
-Flags=0
-ShowCmd=1
-MinPos.x=-1
-MinPos.y=-1
-MaxPos.x=-1
-MaxPos.y=-1
-NormalPos.left=4
-NormalPos.top=26
-NormalPos.right=1703
-NormalPos.bottom=452
-Class=LaTeXView
-Document=chapter\ausblick.tex
-
-[Frame4_View0,0]
-TopLine=0
-Cursor=0
-
-[Frame5]
-Flags=0
-ShowCmd=1
-MinPos.x=-1
-MinPos.y=-1
-MaxPos.x=-1
-MaxPos.y=-1
-NormalPos.left=4
-NormalPos.top=26
-NormalPos.right=1703
-NormalPos.bottom=452
-Class=LaTeXView
-Document=chapter\hauptteil.tex
-
-[Frame5_View0,0]
-TopLine=0
-Cursor=564
+Cursor=635
 
 [SessionInfo]
-FrameCount=6
-ActiveFrame=5
+FrameCount=4
+ActiveFrame=0
 
