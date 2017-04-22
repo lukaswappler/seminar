@@ -12,9 +12,43 @@ Der Code liegt auf GitHub\footnote{GitHub: Todo } und ist f\"ur jeden zug\"angli
 Apache Spark besteht im wesentlichen aus f\"unf Modulen: Spark Core, Spark SQL, Spark Streaming, MLlib Machine Learning Library und GraphX. 
 Die Module werden in den folgenden Kapitel n\"aher beleuchtet. 
 Dar\"uber hinaus wird in Kapitel \ref{sec_sparkr} noch eine weiteres interessantes Modul vorgestellt welches nicht direkt zum Kern geh\"ort, SparkR.
-Die Aufteilung in die verschiedenen Module macht er sehr gut m\"oglich nur einen Teil der Module zu verwenden. 
+Die Aufteilung in die verschiedenen Module macht er sehr gut möglich nur einen Teil der Module zu verwenden. 
 
+\newpage
 \subsection{Grundlage des Systems (Spark-Core \& RDD’s)}\label{sec_sparkcore}
+
+Spark Core ist der grundlegende Auführungs-Engine der Spark Plattform. Alle anderen Komponenten bauen auf diesen Kern auf.
+Der Kern liefert zum Beispiel die Möglichkeit der Berechnungen direkt im Arbeitsspeicher. 
+Das grundlegende Programm-Model wie die RDD's und die API's für die verschiedenen Sprachen (Java, Scala und Python).  \footnote{Vgl. \cite{DATABRICK_ABOUT}} \\
+In der \autoref{fig:spark_core} sind die einzelnen Bausteine innerhalb der Spark Core Komponenten / API zu sehen. 
+ 
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=\textwidth]{./bilder/spark_core.png}
+  \caption{Spark Core}\label{fig:spark_core}
+\end{figure}
+
+\noindent
+Die Paralelle Verarbeitung wird über den Spark Context realisiert. Der Spark Context wird im eigentlich Programm erzeugt und ist in der Regel dann mit einem Cluster Manager verbunden. Dieser wiederum kennst alle Workernode, die dann die eigentlichen Aufgaben ausführen. Die \autoref{fig:spark_cluster} zeigt wie Spark Context, Cluster Manager und die Worker Node's zusammen agieren. Damit verteilt über viele Nodes Aufgaben wird eine Datenstrukturen benötigt, die dafür ausgelegt sind. \footnote{Vgl. \cite[101]{BDS16}}
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=\textwidth,height=50mm]{./bilder/cluster-overview.png}
+  \caption{Spark Cluster aus \cite{SPCLUSTER}}\label{fig:spark_cluster}
+\end{figure}
+
+
+
+\noindent
+Resilent Distirbuted Datasets (RDD's) zu deutsch elastische, verteilte Datensätze ist die primäre Datenabstraktion in Apache Spark. 
+Ein RDD entspricht einer partitionierten Sammlung an Daten. Somit können die Partitionen auf verschiedene Systeme (bzw. Worker) verteilt werden.  \\
+Nach der Erstellung sind RDD's nur lesbar. Es ist also nur möglich ein einmal definiertes RDD durch Anwendungen von globalen Operationen in ein neues RDD zu überführen. Die Operationen werden dann auf allen Partitionen des RDD's angewendet. \\
+\noindent
+Man unterscheidet bei den Operationen zwischen Transformationen (z.B.: filter oder join) und Aktionen (z.B.: reduce, count, collect oder foreach). Transformationen bilden ein RDD auf ein anderes RDD ab. Aktionen bilden ein RDD auf eine andere Domäne ab.\\ %Todo hier nochmal forschen was das bedeutet
+\noindent
+Eine Folge von Operationen wird Lineage \footnote{RDD Lineage: Logischer Ablaufplan der einzelnen Operationen. Hilft Daten wiederherzustellen falls Fehler aufgetreten sind.} eines RDD's genannt.\footnote{Vgl. \cite{ZC+12}}
+
+
 
 \newpage
 \subsection{SQL-Abfragen mit (Spark-SQL \& Data Frames)}
@@ -40,16 +74,41 @@ Todo, auf Catalyst eingehen.
 
 
 %eventuell in die Performance section
-Gerade bei SQL ists es enorm wichtig sich für die richtigen Anweisungen zu entscheiden um keine langsamen Operationen zu haben. 
+Gerade bei SQL ist es enorm wichtig sich für die richtigen Anweisungen zu entscheiden um keine langsamen Operationen zu haben. 
 Hier gibt es sehr große Geschwindigkeitsunterschiede.
 
 \newpage
 \subsection{Verarbeitung von Datenströmen (Spark-Streaming)}
 
+%Hier nochmal nachlesen, das sieht ganz gut aus. https://www.infoq.com/articles/apache-spark-streaming
+
+Die Spark-Streaming Bilbliothek ermöglicht das Verarbeiten von Datenströmen. Auch hier dienen die RDD's als Grundlage. Die RDD's werden DStreams erweitert. DStreams (discretized streams) sind Objekte, die Informationen enthalten, die in Verbindung mit Zeit stehen. DStreams sind intern eine Sequenz von RDD's und werden aus diesem Grund diskrete Streams genannt.
+Auch DStreams haben die bereits aus \ref{sec_sparkcore} bekannten zwei Operationen (Transformation und Aktion). \\
+
+\noindent
+Um Datenströme zu empfangen wird ein Empfänger (Receiver) auf einem Worker-Knoten gestartet. Die eingehenden Daten werden in keinen Datenblöcken gespeichert. Dafür werden die Daten innerhalb eines vorgegebenen Zeitfenster gepuffert. Pro Zeitfenster werden die Daten in dem Puffer in eine Partition eines RDD abgelegt.\footnote{Vgl. \cite{BDS16}} \\
+
+\noindent
+In der Spark-Streaming Bilbliothek sind bereits einige Empfänger wie Kafka\footnote{Apache Kafka dient zur Verarbeitung von Datenströmen dient.}, Twitter\footnote{Twitter: ist ein Mikrobloggingdinst. Nutzer können über das Portal Kurznachrichten verbreiten. } oder TCP-Sockets\footnote{TCP-Sockets: Sind Kommunkationsendpunkte, die zur Netzwerkkommunikation genutzt werden. } enthalten. \\
+In der \autoref{fig:spark_streaming} ist der Ablauf vom Eingang der Daten über die Verarbeitung bis hin zur Ausgabe bzw. Speicherung dargestellt.
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=\textwidth]{./bilder/spark_streaming.jpg}
+  \caption{Spark Streaming Ablauf \cite{INFOQ_STREAMING}}\label{fig:spark_streaming}
+\end{figure}
+
+
+
+
+
+\newpage
 \subsection{Berechnungen auf Graphen (GraphX)}
 
+\newpage
 \subsection{Maschinelles Lernen (MLlib)}
 
+\newpage
 \subsection{Skalierung von R Programmen (SparkR)}\label{sec_sparkr}
 
 \newpage
@@ -105,17 +164,20 @@ Die Dateiformate können strukturiert (z.B.: CSV, Object Files), semi-strukturie
 
 Unter den Mitwirkenden(Contributors) zählen über 400 Entwickler aus über 100 Unternehmen, Stand 2014 \\
 Es gibt über 500 produktive Installationen. %PAPER: Scaling Spark in the Real World
+
 %http://spark.apache.org/community.html
-Seit einigen Jahren finden weltweit jährlich unter dem Namen Spark Summit Konferenzen statt.\\
-%https://www.heise.de/developer/meldung/Big-Data-Umfrage-zur-Verbreitung-zu-Apache-Spark-2529126.html
-Heise.de beauftrage 2015 eine Umfrage in der 2136 Teilnehmer befragt wurden. Diese gaben an, dass 31\% Prozent den Einsatz derzeit prüfen. 13\% Nutzen bereits Apache Spark und 20\% planten den Einsatz noch in dem damaligen Jahr.
+Seit einigen Jahren finden weltweit jährlich unter dem Namen Spark Summit Konferenzen statt. \cite{SPCOM}\\
+
+
+
+%DONE: https://www.heise.de/developer/meldung/Big-Data-Umfrage-zur-Verbreitung-zu-Apache-Spark-2529126.html
+\noindent
+Heise.de beauftrage 2015 eine Umfrage in der 2136 Teilnehmer befragt wurden \cite{HEISEBIGDATA}. Diese gaben an, dass 31\% Prozent den Einsatz derzeit prüfen. 13\% Nutzen bereits Apache Spark und 20\% planten den Einsatz noch in dem damaligen Jahr.
 Scala lag als Programmiersprache mit großen Abstand vorn. Die Nutzung innerhalb verschiedener Berufsgruppen war sehr ähnlich. Mit 16\%  lag bei den Telekommunikationsunternehmen der Einsatz am höchsten. Eine detaillierte Übersicht ist in \autoref{fig:nutzung} zu sehen.
 \begin{figure}[h]
   \centering
   \includegraphics[width=\textwidth]{./excel/Nutzung.png}
   \caption{Einsatz \& Verbreitung}\label{fig:nutzung}
 \end{figure}
-
-%https://www.heise.de/developer/meldung/Big-Data-Umfrage-zur-Verbreitung-zu-Apache-Spark-2529126.html
 
 

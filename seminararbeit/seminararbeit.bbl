@@ -18,15 +18,84 @@
 
 
 \refsection{0}
-  \sortlist[entry]{nyt/global/}
+  \sortlist[entry]{ynt/global/}
+    \entry{ZC+12}{report}{}
+      \name{author}{8}{}{%
+        {{hash=00dc518b94dfa6349c86e70661a1a5ef}{%
+           family={Zaharia},
+           familyi={Z\bibinitperiod},
+           given={Matei},
+           giveni={M\bibinitperiod}}}%
+        {{hash=c5a8ae0d5f065be17aae440a9eb11c79}{%
+           family={Chowdhury},
+           familyi={C\bibinitperiod},
+           given={Mosharaf},
+           giveni={M\bibinitperiod}}}%
+        {{hash=f8b27ed8b503bc3e7b32fc53bace3697}{%
+           family={Das},
+           familyi={D\bibinitperiod},
+           given={Tathagata},
+           giveni={T\bibinitperiod}}}%
+        {{hash=aec50de877bd49b0c55f7067c573cd4f}{%
+           family={Dave},
+           familyi={D\bibinitperiod},
+           given={Ankur},
+           giveni={A\bibinitperiod}}}%
+        {{hash=d251a0164bf62f51597ff98c3705b1da}{%
+           family={Justin\bibnamedelima Ma},
+           familyi={J\bibinitperiod\bibinitdelim M\bibinitperiod},
+           given={Murphy\bibnamedelima McCauley},
+           giveni={M\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=9fc5630d12e8b22a1d2351a530caa51b}{%
+           family={Franklin},
+           familyi={F\bibinitperiod},
+           given={Michael\bibnamedelima J.},
+           giveni={M\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=8d2fd528d2484047352789c731e250a5}{%
+           family={Shenker},
+           familyi={S\bibinitperiod},
+           given={Scott},
+           giveni={S\bibinitperiod}}}%
+        {{hash=51d9ef26181e2e8a9dc546b401e0bb26}{%
+           family={Stoica},
+           familyi={S\bibinitperiod},
+           given={Ion},
+           giveni={I\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {University of California, Berkeley}%
+      }
+      \strng{namehash}{43b7683e391995e2f59755c9e939df3c}
+      \strng{fullhash}{d405961b257e92b2d490ee9bb9b14d3d}
+      \strng{authornamehash}{43b7683e391995e2f59755c9e939df3c}
+      \strng{authorfullhash}{d405961b257e92b2d490ee9bb9b14d3d}
+      \field{labelalpha}{Zah+12}
+      \field{sortinit}{2}
+      \field{sortinithash}{0aa614ace9f3a40ef5a67e7f7a184048}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Resilient Distributed Datasets: A Fault-Tolerant Abstraction for In-Memory Cluster Computing}
+      \field{type}{Forschungsspapier}
+      \field{year}{2012}
+    \endentry
     \entry{AAWS15}{book}{}
-      \name{author}{2}{}{%
-        {{uniquename=0,hash=e55b943118d5ce5044c739bba62afa4a}{%
+      \name{author}{4}{}{%
+        {{hash=9ae16c59bf0e23a300d7e96ae2b24851}{%
+           family={Ryza},
+           familyi={R\bibinitperiod},
+           given={Sandy},
+           giveni={S\bibinitperiod}}}%
+        {{hash=2720311cf5a4fd4950df1a986be721ee}{%
+           family={Laserson},
+           familyi={L\bibinitperiod},
+           given={Uri},
+           giveni={U\bibinitperiod}}}%
+        {{hash=986a2d6ae7825bc2c86c3b6b82dfacfe}{%
            family={Owen},
            familyi={O\bibinitperiod},
-           given={Sandy\bibnamedelimb Ryza\bibnamedelimb -\bibnamedelimb Uri\bibnamedelimb Laserson\bibnamedelimb -\bibnamedelima Sean},
-           giveni={S\bibinitperiod\bibinitdelim R\bibinitperiod\bibinitdelim \bibinithyphendelim \bibinithyphendelim \bibinitperiod\bibinitdelim U\bibinitperiod\bibinitdelim L\bibinitperiod\bibinitdelim \bibinithyphendelim \bibinithyphendelim \bibinitperiod\bibinitdelim S\bibinitperiod}}}%
-        {{uniquename=0,hash=0dea4b204ddd58dc8ae7393fac30d967}{%
+           given={Sean},
+           giveni={S\bibinitperiod}}}%
+        {{hash=0dea4b204ddd58dc8ae7393fac30d967}{%
            family={Wills},
            familyi={W\bibinitperiod},
            given={Josh},
@@ -38,17 +107,196 @@
       \list{publisher}{1}{%
         {O'Reilly Media, Inc.}%
       }
-      \strng{namehash}{a0db5690fc58b622edabce076bfbc9c4}
-      \strng{fullhash}{a0db5690fc58b622edabce076bfbc9c4}
-      \strng{authornamehash}{a0db5690fc58b622edabce076bfbc9c4}
-      \strng{authorfullhash}{a0db5690fc58b622edabce076bfbc9c4}
-      \field{sortinit}{O}
-      \field{sortinithash}{f5d80ef71b5b58852663ecfd775b175a}
-      \field{labeldatesource}{year}
+      \strng{namehash}{5dfde570d513f5a9c876438297891eef}
+      \strng{fullhash}{7efecabd449f4afdf8f2f7e982727ac6}
+      \strng{authornamehash}{5dfde570d513f5a9c876438297891eef}
+      \strng{authorfullhash}{7efecabd449f4afdf8f2f7e982727ac6}
+      \field{labelalpha}{Ryz+15}
+      \field{sortinit}{2}
+      \field{sortinithash}{0aa614ace9f3a40ef5a67e7f7a184048}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Advanced Analytics with Spark}
       \field{year}{2015}
+    \endentry
+    \entry{HEISEBIGDATA}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=ee719756eed38df4e4208c5d5192e85a}{%
+           family={Schmidt},
+           familyi={S\bibinitperiod},
+           given={Julia},
+           giveni={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{ee719756eed38df4e4208c5d5192e85a}
+      \strng{fullhash}{ee719756eed38df4e4208c5d5192e85a}
+      \strng{authornamehash}{ee719756eed38df4e4208c5d5192e85a}
+      \strng{authorfullhash}{ee719756eed38df4e4208c5d5192e85a}
+      \field{labelalpha}{Sch15}
+      \field{sortinit}{2}
+      \field{sortinithash}{0aa614ace9f3a40ef5a67e7f7a184048}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{1}
+      \field{title}{Big Data: Umfrage zur Verbreitung zu Apache Spark}
+      \field{year}{2015}
+      \verb{url}
+      \verb https://www.heise.de/developer/meldung/Big-Data-Umfrage-zur-Verbreitung-zu-Apache-Spark-2529126.html
+      \endverb
+    \endentry
+    \entry{BDS16}{book}{}
+      \name{author}{2}{}{%
+        {{hash=4b1e815e72c7dd947bd09fdba4b69ece}{%
+           family={Estrada},
+           familyi={E\bibinitperiod},
+           given={Raul},
+           giveni={R\bibinitperiod}}}%
+        {{hash=15ed8ed37da0acf06ca0a0813acba6a4}{%
+           family={Ruiz},
+           familyi={R\bibinitperiod},
+           given={Isaac},
+           giveni={I\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {New York, 233 Spring Street}%
+      }
+      \list{publisher}{1}{%
+        {Springer Science + Business Media}%
+      }
+      \strng{namehash}{0b4d4a795b586f0ec9860c0cb9e7c213}
+      \strng{fullhash}{0b4d4a795b586f0ec9860c0cb9e7c213}
+      \strng{authornamehash}{0b4d4a795b586f0ec9860c0cb9e7c213}
+      \strng{authorfullhash}{0b4d4a795b586f0ec9860c0cb9e7c213}
+      \field{labelalpha}{ER16}
+      \field{sortinit}{2}
+      \field{sortinithash}{0aa614ace9f3a40ef5a67e7f7a184048}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Big Data SMACK}
+      \field{year}{2016}
+    \endentry
+    \entry{SPCOM}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=8514f80a2c717fcca8ef0674f335b126}{%
+           family={Foundation},
+           familyi={F\bibinitperiod},
+           given={Apache\bibnamedelima Software},
+           giveni={A\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+      }
+      \strng{namehash}{8514f80a2c717fcca8ef0674f335b126}
+      \strng{fullhash}{8514f80a2c717fcca8ef0674f335b126}
+      \strng{authornamehash}{8514f80a2c717fcca8ef0674f335b126}
+      \strng{authorfullhash}{8514f80a2c717fcca8ef0674f335b126}
+      \field{labelalpha}{Fou17}
+      \field{sortinit}{2}
+      \field{sortinithash}{0aa614ace9f3a40ef5a67e7f7a184048}
+      \field{extraalpha}{1}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{4}
+      \field{title}{Apache Spark Community}
+      \field{year}{2017}
+      \verb{url}
+      \verb http://spark.apache.org/community.html
+      \endverb
+    \endentry
+    \entry{DATABRICK_ABOUT}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=8514f80a2c717fcca8ef0674f335b126}{%
+           family={Foundation},
+           familyi={F\bibinitperiod},
+           given={Apache\bibnamedelima Software},
+           giveni={A\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+      }
+      \strng{namehash}{8514f80a2c717fcca8ef0674f335b126}
+      \strng{fullhash}{8514f80a2c717fcca8ef0674f335b126}
+      \strng{authornamehash}{8514f80a2c717fcca8ef0674f335b126}
+      \strng{authorfullhash}{8514f80a2c717fcca8ef0674f335b126}
+      \field{labelalpha}{Fou17}
+      \field{sortinit}{2}
+      \field{sortinithash}{0aa614ace9f3a40ef5a67e7f7a184048}
+      \field{extraalpha}{2}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{4}
+      \field{title}{Apache Spark Ecosystem}
+      \field{year}{2017}
+      \verb{url}
+      \verb https://databricks.com/spark/about
+      \endverb
+    \endentry
+    \entry{INFOQ_STREAMING}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=8514f80a2c717fcca8ef0674f335b126}{%
+           family={Foundation},
+           familyi={F\bibinitperiod},
+           given={Apache\bibnamedelima Software},
+           giveni={A\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+      }
+      \strng{namehash}{8514f80a2c717fcca8ef0674f335b126}
+      \strng{fullhash}{8514f80a2c717fcca8ef0674f335b126}
+      \strng{authornamehash}{8514f80a2c717fcca8ef0674f335b126}
+      \strng{authorfullhash}{8514f80a2c717fcca8ef0674f335b126}
+      \field{labelalpha}{Fou17}
+      \field{sortinit}{2}
+      \field{sortinithash}{0aa614ace9f3a40ef5a67e7f7a184048}
+      \field{extraalpha}{3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{4}
+      \field{title}{Apache Spark Ecosystem}
+      \field{year}{2017}
+      \verb{url}
+      \verb https://www.infoq.com/articles/apache-spark-streaming
+      \endverb
+    \endentry
+    \entry{SPCLUSTER}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=8514f80a2c717fcca8ef0674f335b126}{%
+           family={Foundation},
+           familyi={F\bibinitperiod},
+           given={Apache\bibnamedelima Software},
+           giveni={A\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+      }
+      \strng{namehash}{8514f80a2c717fcca8ef0674f335b126}
+      \strng{fullhash}{8514f80a2c717fcca8ef0674f335b126}
+      \strng{authornamehash}{8514f80a2c717fcca8ef0674f335b126}
+      \strng{authorfullhash}{8514f80a2c717fcca8ef0674f335b126}
+      \field{labelalpha}{Fou17}
+      \field{sortinit}{2}
+      \field{sortinithash}{0aa614ace9f3a40ef5a67e7f7a184048}
+      \field{extraalpha}{4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{4}
+      \field{title}{Cluster Mode Overview}
+      \field{year}{2017}
+      \verb{url}
+      \verb https://spark.apache.org/docs/1.1.0/cluster-overview.html
+      \endverb
+    \endentry
+    \entry{DATABRICK_SPARK_2_0}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=d51822577d294804a15a2ae278bfb6be}{%
+           family={Inc.},
+           familyi={I\bibinitperiod},
+           given={Databricks},
+           giveni={D\bibinitperiod}}}%
+      }
+      \strng{namehash}{d51822577d294804a15a2ae278bfb6be}
+      \strng{fullhash}{d51822577d294804a15a2ae278bfb6be}
+      \strng{authornamehash}{d51822577d294804a15a2ae278bfb6be}
+      \strng{authorfullhash}{d51822577d294804a15a2ae278bfb6be}
+      \field{labelalpha}{Inc17}
+      \field{sortinit}{2}
+      \field{sortinithash}{0aa614ace9f3a40ef5a67e7f7a184048}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{4}
+      \field{title}{Technical Preview of Apache Spark 2.0 Now on Databricks}
+      \field{year}{2017}
+      \verb{url}
+      \verb https://databricks.com/blog/2016/05/11/apache-spark-2-0-technical-preview-easier-faster-and-smarter.html
+      \endverb
     \endentry
   \endsortlist
 \endrefsection

@@ -1,2 +1,38 @@
 \newpage
 \chapter{Ausblick \& Weiterentwicklung} 
+
+Immer mehr Firmen führen Apache Spark ein oder Nutzen es bereits. Dieser Trend sollte auch weiterhin so bleiben. 
+
+
+\noindent
+Seit der Einführung von Apachae Spark im Jahr 2010 wird die Software kontinuierlich verbessert und weiterentwickelt. Vieles hat die Community dazu beigetragen, die aufgrund der Open-Source Software dazu in der Lage ist aktiv daran mit zu arbeiten. Auch das wird zukünftig weiter gehen. Im ersten Quartal 2017 gab es über 717 commits.\\
+
+\noindent
+%https://databricks.com/blog/2016/05/11/apache-spark-2-0-technical-preview-easier-faster-and-smarter.html
+Von der Version 1.6 auf die Version 2.0 gab es nochmal einen relativ starken Performancegewinn. Vermutlich wird man solche Performance steigerungen nicht mehr so leicht erreichen, aber dennoch sollten sich an den Werten auch zukünftig noch etwas nach unten verändern. Eine Übersicht der Performanceänderungen ist in der Tabelle \ref{tab:spark_2_0} zu sehen.\footnote{Vgl. \cite{DATABRICK_SPARK_2_0}}
+
+
+\begin{table}[h]
+  \centering
+		
+		  \begin{tabular}[t]{|l|l|l|}
+    \hline
+		
+		\rowcolor[gray]{.9}
+		
+				primitive	 & Spark 1.6 &  Spark 2.0 \\ \hline				
+				filter &	15ns &	1.1ns \\ \hline				
+				sum w/o group &	14ns &	0.9ns \\ \hline				
+				sum w/ group &	79ns &	10.7ns \\ \hline				
+				hash join	& 115ns	& 4.0ns \\ \hline				
+				sort (8-bit entropy)	& 620ns	 & 5.3ns \\ \hline				
+
+  \end{tabular}
+		
+  \caption{cost per row (single thread)}\label{tab:spark_2_0}
+\end{table}
+
+
+
+\noindent
+Zukünftig ist denkbar, das noch weitere Komponenten so wie zum Beispiel SparkR dazu kommen. Auch das Anbinden weiterer Datenquellen wird sicherlich weiter gehen

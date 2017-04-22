@@ -17,8 +17,8 @@ Class=LaTeXView
 Document=chapter\hauptteil.tex
 
 [Frame0_View0,0]
-TopLine=114
-Cursor=7648
+TopLine=0
+Cursor=265
 
 [Frame1]
 Flags=0
@@ -36,7 +36,7 @@ Document=chapter\fazit.tex
 
 [Frame1_View0,0]
 TopLine=0
-Cursor=36
+Cursor=128
 
 [Frame2]
 Flags=0
@@ -54,7 +54,7 @@ Document=literatur.bib
 
 [Frame2_View0,0]
 TopLine=0
-Cursor=214
+Cursor=12
 
 [Frame3]
 Flags=0
@@ -76,5 +76,5 @@ Cursor=635
 
 [SessionInfo]
 FrameCount=4
-ActiveFrame=0
+ActiveFrame=1
 
