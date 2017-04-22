@@ -1,35 +1,53 @@
 \newpage
 \chapter{Apache Spark} 
 
-Apache Spark wurde ist ein Open Source Framework, dass ermöglicht Software verteilt \"uber ein Cluster auszuführen. Dar\"uber hinaus ist die Programmier-Modell mit Apache Spark sehr elegant und einfach gehalten. [\cite{AAWS15}] \\
-Im Rahmen eine Forschungsprojekts ist Apache Spark entstanden. Das Forschungsprojekt wurde 2009 in der Universtiy of California in Berkeley im sogenannten AMPLab\footnote{AMPLab: Todo} ins Leben gerufen. Seit 2010 steht es als Open Source Software unter der BSD-Lizenz \footnote{BSD-Lizenz (Berkeley Software Distribution-Lizenz): bezeichnet eine Gruppe von Lizenzen, die eine breitere Wiederverwertung erlaubt.} zur Verfügung. Das Projekt wird seit 2013 von der Apache Software Foundation\footnote{Apache Software Foundation: TODO} weitergef\"uhrt. Seit 2014 ist es dort als Top Level Projekt eingestuft. Zum aktuellen Zeitpunkt steht Apache Spark unter der Apache 2.0 Lizenz\footnote{Apache 2.0 Lizenz: Die Software darf frei verwendet und ver\"andert werden. Zus\"atzlich gibt es nur wenige Auflagen.} zur Verf\"ugung. \\
-Der Code liegt auf GitHub\footnote{GitHub: Todo } und ist f\"ur jeden zug\"anglich. Bis zum 10.04.2017 gab es bereits 51 Releases, 19,365 commits und 1,053 contributors\footnote{contributors: Todo }.
+Apache Spark ist ein Open Source Framework, dass ermöglicht verteilt über ein Cluster Programme und Algorithmen auszuführen. Zusätzlich ist das Prgrammierodell bzw. die API zum schreiben solcher Programme sehr einfach und elegant gehalten. \cite{AAWS15} \\
+
+\noindent
+Das Framework ist im Rahmen eine Forschungsprojekts entstanden. Das Forschungsprojekt wurde 2009 in der Universtiy of California in Berkeley im sogenannten AMPLab\footnote{AMPLab: ist ein Labor der Berkeley Universität in Californien, die sich auch Big-Data Analysen spezialisiert hat } ins Leben gerufen. Seit 2010 steht es als Open Source Software unter der BSD-Lizenz \footnote{BSD-Lizenz (Berkeley Software Distribution-Lizenz): bezeichnet eine Gruppe von Lizenzen, die eine breitere Wiederverwertung erlaubt.} zur Verfügung. Das Projekt wird seit 2013 von der Apache Software Foundation\footnote{Apache Software Foundation: Ist eine ehrenamtlich arbeitende Organisation, die die Apache-Projekte fördert.} weitergeführt. Seit 2014 ist es dort als Top Level Projekt eingestuft. Zum aktuellen Zeitpunkt steht Apache Spark unter der Apache 2.0 Lizenz\footnote{Apache 2.0 Lizenz: Die Software darf frei verwendet und verändert werden. Zusätzlich gibt es nur wenige Auflagen.} zur Verfügung. \\
+
 
 % \ref{sec_sparkr} %\nameref{sec_sparkr} .
 
 \section{Kern-Bibliotheken / Komponenten}
 
-Apache Spark besteht im wesentlichen aus f\"unf Modulen: Spark Core, Spark SQL, Spark Streaming, MLlib Machine Learning Library und GraphX. 
-Die Module werden in den folgenden Kapitel n\"aher beleuchtet. 
-Dar\"uber hinaus wird in Kapitel \ref{sec_sparkr} noch eine weiteres interessantes Modul vorgestellt welches nicht direkt zum Kern geh\"ort, SparkR.
-Die Aufteilung in die verschiedenen Module macht er sehr gut möglich nur einen Teil der Module zu verwenden. 
+Apache Spark besteht im wesentlichen aus fünf Modulen: Spark Core, Spark SQL, Spark Streaming, MLlib Machine Learning Library und GraphX. \\
+\noindent
+Während Spark Core die Kern-Komponente bildet und alle notwendigen Bausteine für das Framework mitbringt sind die anderen Module auf dem Spark Core Module aufbauen und befassen sich mit spezielleren Bereichen wie SQL, Streaming, maschinelles Lernen oder Graphenberechnungen. In \autoref{fig:spark_core} ist noch einmal eine Übersicht der Komponenten. \\
+\noindent
+Die Module werden in den folgenden Kapitel von \ref{sec_sparkcore} bis \ref{sec_sparkmlib} näher beleuchtet. \\
 
-\newpage
-\subsection{Grundlage des Systems (Spark-Core \& RDD’s)}\label{sec_sparkcore}
+\noindent
+Dar\"uber hinaus wird in Kapitel \ref{sec_sparkr} SparkR vorgestellt. Das Module gehört nicht direkt, jedoch bietet es interessante Möglichkeiten Datenanylsen mit R zu optimieren bzw. zu beschleunigen.
 
-Spark Core ist der grundlegende Auführungs-Engine der Spark Plattform. Alle anderen Komponenten bauen auf diesen Kern auf.
-Der Kern liefert zum Beispiel die Möglichkeit der Berechnungen direkt im Arbeitsspeicher. 
-Das grundlegende Programm-Model wie die RDD's und die API's für die verschiedenen Sprachen (Java, Scala und Python).  \footnote{Vgl. \cite{DATABRICK_ABOUT}} \\
-In der \autoref{fig:spark_core} sind die einzelnen Bausteine innerhalb der Spark Core Komponenten / API zu sehen. 
- 
+%Die Aufteilung in die verschiedenen Module macht es sehr gut möglich nur einen Teil der Module zu verwenden. 
+
 \begin{figure}[h]
   \centering
   \includegraphics[width=\textwidth]{./bilder/spark_core.png}
   \caption{Spark Core}\label{fig:spark_core}
 \end{figure}
 
+
+
+
+
+
+
+
+
+\newpage
+\subsection{Grundlage des Systems (Spark-Core \& RDD’s)}\label{sec_sparkcore}
+%der grundlegende Auführungs-Engine 
+Spark Core ist Grundlage der Spark Plattform. Alle anderen Komponenten bauen auf diesen Kern auf. Alle grundlegenden infrastrukturellen Funktionen sind darin enthalten. Darunter zählen diue Aufgabenverwaltung, das Scheduling sowie I/O Funktionen.
+Der Kern liefert zum Beispiel die Möglichkeit der Berechnungen direkt im Arbeitsspeicher. 
+Das grundlegende Programmiermodell wie das Arbeiten mit den RDD's und die API's für die verschiedenen Sprachen (Java, Scala und Python).  \footnote{Vgl. \cite{DATABRICK_ABOUT}} \\
+In der \autoref{fig:spark_core} sind die einzelnen Bausteine innerhalb der Spark Core Komponenten / API zu sehen. 
+ 
+
+%%Korrekturgelesen.
 \noindent
-Die Paralelle Verarbeitung wird über den Spark Context realisiert. Der Spark Context wird im eigentlich Programm erzeugt und ist in der Regel dann mit einem Cluster Manager verbunden. Dieser wiederum kennst alle Workernode, die dann die eigentlichen Aufgaben ausführen. Die \autoref{fig:spark_cluster} zeigt wie Spark Context, Cluster Manager und die Worker Node's zusammen agieren. Damit verteilt über viele Nodes Aufgaben wird eine Datenstrukturen benötigt, die dafür ausgelegt sind. \footnote{Vgl. \cite[101]{BDS16}}
+Die parallele Verarbeitung wird über den Spark Context realisiert. Der Spark Context wird im eigentlich Programm erzeugt und ist in der Regel dann mit einem Cluster Manager verbunden. Dieser wiederum kennst alle Workernode, die dann die eigentlichen Aufgaben ausführen. Die \autoref{fig:spark_cluster} zeigt wie Spark Context, Cluster Manager und die Worker Node's zusammen agieren. Damit verteilt über viele Nodes Aufgaben wird eine Datenstrukturen benötigt, die dafür ausgelegt sind. \footnote{Vgl. \cite[101]{BDS16}}
 
 \begin{figure}[h]
   \centering
@@ -106,7 +124,7 @@ In der \autoref{fig:spark_streaming} ist der Ablauf vom Eingang der Daten über 
 \subsection{Berechnungen auf Graphen (GraphX)}
 
 \newpage
-\subsection{Maschinelles Lernen (MLlib)}
+\subsection{Maschinelles Lernen (MLlib)}\label{sec_sparkmlib}
 
 \newpage
 \subsection{Skalierung von R Programmen (SparkR)}\label{sec_sparkr}
