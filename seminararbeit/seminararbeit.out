@@ -1,0 +1,18 @@
+\BOOKMARK [0][-]{chapter.1}{Einleitung}{}% 1
+\BOOKMARK [0][-]{chapter.2}{Apache Spark}{}% 2
+\BOOKMARK [1][-]{section.2.1}{Kern-Bibliotheken / Komponenten}{chapter.2}% 3
+\BOOKMARK [2][-]{subsection.2.1.1}{Grundlage des Systems \(Spark-Core \046 RDD\220s\)}{section.2.1}% 4
+\BOOKMARK [2][-]{subsection.2.1.2}{SQL-Abfragen mit \(Spark-SQL \046 Data Frames\)}{section.2.1}% 5
+\BOOKMARK [2][-]{subsection.2.1.3}{Verarbeitung von Datenstr\366men \(Spark-Streaming\)}{section.2.1}% 6
+\BOOKMARK [2][-]{subsection.2.1.4}{Berechnungen auf Graphen \(GraphX\)}{section.2.1}% 7
+\BOOKMARK [2][-]{subsection.2.1.5}{Maschinelles Lernen \(MLlib\)}{section.2.1}% 8
+\BOOKMARK [2][-]{subsection.2.1.6}{Skalierung von R Programmen \(SparkR\)}{section.2.1}% 9
+\BOOKMARK [1][-]{section.2.2}{Mehrere Komponenten im Verbund}{chapter.2}% 10
+\BOOKMARK [1][-]{section.2.3}{Performance}{chapter.2}% 11
+\BOOKMARK [2][-]{subsection.2.3.1}{Besonderheiten bei der Speichernutzung}{section.2.3}% 12
+\BOOKMARK [2][-]{subsection.2.3.2}{Netzwerk und I/O-Traffic}{section.2.3}% 13
+\BOOKMARK [1][-]{section.2.4}{Nutzung \046 Verbreitung}{chapter.2}% 14
+\BOOKMARK [0][-]{chapter.3}{Fazit}{}% 15
+\BOOKMARK [0][-]{chapter.4}{Ausblick \046 Weiterentwicklung}{}% 16
+\BOOKMARK [0][-]{chapter.5}{Anhang}{}% 17
+\BOOKMARK [0][-]{chapter.6}{Literaturverzeichnis}{}% 18
