@@ -289,6 +289,77 @@
       \verb https://www.heise.de/developer/meldung/Big-Data-Umfrage-zur-Verbreitung-zu-Apache-Spark-2529126.html
       \endverb
     \endentry
+    \entry{VYL+16}{report}{}
+      \name{author}{10}{}{%
+        {{hash=721534f33cd88b3753e3bb459468783f}{%
+           family={Venkataraman},
+           familyi={V\bibinitperiod},
+           given={Shivaram},
+           giveni={S\bibinitperiod}}}%
+        {{hash=9cebeff55132aa441f26afb504ef6a29}{%
+           family={Yang},
+           familyi={Y\bibinitperiod},
+           given={Zongheng},
+           giveni={Z\bibinitperiod}}}%
+        {{hash=dfafd64b4da8908562304387c1d8152d}{%
+           family={Liu},
+           familyi={L\bibinitperiod},
+           given={Davies},
+           giveni={D\bibinitperiod}}}%
+        {{hash=882d47329b54117fb0b9bba0fecb0e2b}{%
+           family={Liang},
+           familyi={L\bibinitperiod},
+           given={Eric},
+           giveni={E\bibinitperiod}}}%
+        {{hash=80fefb2302ba2e6a800e4875f8e662a3}{%
+           family={Meng},
+           familyi={M\bibinitperiod},
+           given={Hossein\bibnamedelimb Falaki\bibnamedelima Xiangrui},
+           giveni={H\bibinitperiod\bibinitdelim F\bibinitperiod\bibinitdelim X\bibinitperiod}}}%
+        {{hash=125f074bf46e8a83339101fd94d088e2}{%
+           family={Xin},
+           familyi={X\bibinitperiod},
+           given={Reynold},
+           giveni={R\bibinitperiod}}}%
+        {{hash=dfd14c69d2338ce9cf556c819a32d286}{%
+           family={Ghodsi},
+           familyi={G\bibinitperiod},
+           given={Ali},
+           giveni={A\bibinitperiod}}}%
+        {{hash=37be38e43f957d78e9807b819eb7a72b}{%
+           family={Franklin},
+           familyi={F\bibinitperiod},
+           given={Michael},
+           giveni={M\bibinitperiod}}}%
+        {{hash=51d9ef26181e2e8a9dc546b401e0bb26}{%
+           family={Stoica},
+           familyi={S\bibinitperiod},
+           given={Ion},
+           giveni={I\bibinitperiod}}}%
+        {{hash=00dc518b94dfa6349c86e70661a1a5ef}{%
+           family={Zaharia},
+           familyi={Z\bibinitperiod},
+           given={Matei},
+           giveni={M\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {AMPLab UC Berkeley, Databricks Inc., MIT CSAIL}%
+      }
+      \strng{namehash}{e2149e5de1af492676870d0504d37d98}
+      \strng{fullhash}{4773be5af1a266dc89b33754150c0685}
+      \strng{authornamehash}{e2149e5de1af492676870d0504d37d98}
+      \strng{authorfullhash}{4773be5af1a266dc89b33754150c0685}
+      \field{labelalpha}{Ven+15}
+      \field{sortinit}{2}
+      \field{sortinithash}{0aa614ace9f3a40ef5a67e7f7a184048}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{11}
+      \field{number}{11}
+      \field{title}{SparkR: Scaling R Programs with Spark}
+      \field{type}{Forschungsspapier}
+      \field{year}{2015}
+    \endentry
     \entry{ZXW+16}{report}{}
       \name{author}{14}{}{%
         {{hash=448b02ff39b24be33fabaac34808c36a}{%
@@ -558,6 +629,31 @@
       \field{year}{2017}
       \verb{url}
       \verb http://spark.apache.org/docs/latest/graphx-programming-guide.html
+      \endverb
+    \endentry
+    \entry{SPMLLIB}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=8514f80a2c717fcca8ef0674f335b126}{%
+           family={Foundation},
+           familyi={F\bibinitperiod},
+           given={Apache\bibnamedelima Software},
+           giveni={A\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+      }
+      \strng{namehash}{8514f80a2c717fcca8ef0674f335b126}
+      \strng{fullhash}{8514f80a2c717fcca8ef0674f335b126}
+      \strng{authornamehash}{8514f80a2c717fcca8ef0674f335b126}
+      \strng{authorfullhash}{8514f80a2c717fcca8ef0674f335b126}
+      \field{labelalpha}{Fou17}
+      \field{sortinit}{2}
+      \field{sortinithash}{0aa614ace9f3a40ef5a67e7f7a184048}
+      \field{extraalpha}{6}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{4}
+      \field{title}{ML Pipelines - Spark 2.1.0 Documentation}
+      \field{year}{2017}
+      \verb{url}
+      \verb http://spark.apache.org/docs/latest/ml-pipeline.html
       \endverb
     \endentry
     \entry{GITHUB}{misc}{}
