@@ -1,0 +1,360 @@
+FernUniversit at in Hagen
+-
+Seminar 01912 / 19912
+im Sommersemester 2017
+"
+Skallierbare verteilte Datenanalyse\
+Thema 2.3
+Spark
+Referent: Lukas Wappler
+Inhaltsverzeichnis
+1 Einleitung 3
+2 Apache Spark 4
+2.1 Kern-Bibliotheken / Komponenten . . . . . . . . . . . . . . . . . . . . . . . 4
+2.1.1 Grundlage des Systems (Spark-Core & RDD’s) . . . . . . . . . . . . . 6
+2.1.2 SQL-Abfragen mit (Spark-SQL & Data Frames) . . . . . . . . . . . . 7
+2.1.3 Verarbeitung von Datenstr omen (Spark-Streaming) . . . . . . . . . . 8
+2.1.4 Berechnungen auf Graphen (GraphX) . . . . . . . . . . . . . . . . . . 9
+2.1.5 Maschinelles Lernen (MLlib) . . . . . . . . . . . . . . . . . . . . . . . 10
+2.1.6 Skalierung von R Programmen (SparkR) . . . . . . . . . . . . . . . . 11
+2.2 Mehrere Komponenten im Verbund . . . . . . . . . . . . . . . . . . . . . . . 12
+2.3 Performance . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 13
+2.3.1 Besonderheiten bei der Speichernutzung . . . . . . . . . . . . . . . . 13
+2.3.2 Netzwerk und I/O-Tra c . . . . . . . . . . . . . . . . . . . . . . . . 14
+2.4 Nutzung & Verbreitung . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 14
+3 Fazit 16
+4 Ausblick & Weiterentwicklung 17
+5 Anhang 18
+6 Literaturverzeichnis 19
+2
+1 Einleitung
+3
+2 Apache Spark
+Apache Spark ist ein Open Source Framework, dass erm oglicht verteilt  uber ein Cluster
+Programme und Algorithmen auszuf uhren. Zus atzlich ist das Prgrammierodell bzw. die API
+zum schreiben solcher Programme sehr einfach und elegant gehalten. [Ryz+15]
+Das Framework ist im Rahmen eine Forschungsprojekts entstanden. Das Forschungsprojekt
+wurde 2009 in der Universtiy of California in Berkeley im sogenannten AMPLab1 ins Leben
+gerufen. Seit 2010 steht es als Open Source Software unter der BSD-Lizenz 2 zur Verf ugung.
+Das Projekt wird seit 2013 von der Apache Software Foundation3 weitergef uhrt. Seit 2014
+ist es dort als Top Level Projekt eingestuft. Zum aktuellen Zeitpunkt steht Apache Spark
+unter der Apache 2.0 Lizenz4 zur Verf ugung.
+2.1 Kern-Bibliotheken / Komponenten
+Apache Spark besteht im wesentlichen aus f unf Modulen: Spark Core, Spark SQL, Spark
+Streaming, MLlib Machine Learning Library und GraphX. Zur Nutzung der Komponenten
+gibt es eine Umfrage aus dem Jahr 2015 in Abbildung 2.2 zu sehen.
+Abbildung 2.1: Nutzung der Komponenten [ZAH+15]
+W ahrend Spark Core die Kern-Komponente bildet und alle notwendigen Bausteine f ur das
+Framework mitbringt sind die anderen Module auf dem Spark Core Module aufbauen und
+befassen sich mit spezielleren Bereichen wie SQL, Streaming, maschinelles Lernen oder Gra-
+phenberechnungen. In Abbildung 2.2 ist noch einmal eine  Ubersicht der Komponenten.
+1AMPLab: ist ein Labor der Berkeley Universit at in Californien, die sich auch Big-Data Analysen spezia-
+lisiert hat
+2BSD-Lizenz (Berkeley Software Distribution-Lizenz): bezeichnet eine Gruppe von Lizenzen, die eine brei-
+tere Wiederverwertung erlaubt.
+3Apache Software Foundation: Ist eine ehrenamtlich arbeitende Organisation, die die Apache-Projekte
+f ordert.
+4Apache 2.0 Lizenz: Die Software darf frei verwendet und ver andert werden. Zus atzlich gibt es nur wenige
+Au agen.
+4
+2 Apache Spark
+Die Module werden in den folgenden Kapitel von 2.1.1 bis 2.1.5 n aher beleuchtet.
+Dar uber hinaus wird in Kapitel 2.1.6 SparkR vorgestellt. Das Module geh ort nicht direkt,
+jedoch bietet es interessante M oglichkeiten Datenanylsen mit R zu optimieren bzw. zu be-
+schleunigen.
+Abbildung 2.2: Spark Core
+5
+2 Apache Spark
+2.1.1 Grundlage des Systems (Spark-Core & RDD’s)
+Spark Core ist Grundlage der Spark Plattform. Alle anderen Komponenten bauen auf diesen
+Kern auf. Alle grundlegenden infrastrukturellen Funktionen sind darin enthalten. Darunter
+z ahlen diue Aufgabenverwaltung, das Scheduling sowie I/O Funktionen. Der Kern liefert
+zum Beispiel die M oglichkeit der Berechnungen direkt im Arbeitsspeicher. Das grundlegende
+Programmiermodell wie das Arbeiten mit den RDD’s und die API’s f ur die verschiedenen
+Sprachen (Java, Scala und Python). 5
+In der Abbildung 2.2 sind die einzelnen Bausteine innerhalb der Spark Core Komponenten
+/ API zu sehen.
+Die parallele Verarbeitung wird  uber den Spark Context realisiert. Der Spark Context wird
+im eigentlich Programm erzeugt und ist in der Regel dann mit einem Cluster Manager
+verbunden. Dieser wiederum kennst alle Worker Nodes, die dann die eigentlichen Aufgaben
+ausf uhren. Die Abbildung 2.3 zeigt wie Spark Context, Cluster Manager und die Worker
+Nodes zusammen agieren. Damit die Aufgaben  uber viele Nodes verteilt werden k onnen
+wird eine Datenstruktur ben otigt, die daf ur ausgelegt sind. 6
+Abbildung 2.3: Spark Cluster aus [Fou17d]
+Die Resilent Distirbuted Datasets (RDD’s) zu deutsch elastische, verteilte Datens atze er-
+ledigen diese Aufgabe. Es ist die prim are Datenabstraktion in Apache Spark. Ein RDD
+entspricht einer partitionierten Sammlung an Daten. Somit k onnen die Partitionen auf ver-
+schiedene Systeme (bzw. Worker) verteilt werden.
+Nach der Erstellung sind RDD’s nur lesbar. Es ist also nur m oglich ein einmal de niertes
+RDD durch anwendung globaler Operationen in ein neues RDD zu  uberf uhren. Die Opera-
+tionen werden dann auf allen Partitionen des RDD’s angewendet.
+Man unterscheidet bei den Operationen zwischen Transformationen (z.B.:  lter oder join)
+und Aktionen (z.B.: reduce, count, collect oder foreach). Transformationen bilden ein RDD
+auf ein anderes RDD ab. Aktionen bilden ein RDD auf eine andere Dom ane ab.
+Eine Folge von Operationen wird Lineage 7 eines RDD’s genannt.8
+5Vgl. [Fou17b]
+6Vgl. [ER16, S. 101]
+7RDD Lineage: Logischer Ablaufplan der einzelnen Operationen. Hilft Daten wiederherzustellen falls Fehler
+aufgetreten sind.
+8Vgl. [Zah+12]
+6
+2 Apache Spark
+2.1.2 SQL-Abfragen mit (Spark-SQL & Data Frames)
+Spark-SQL wurde 2014 ver o entlicht. Die Komponente geh ort zu den Komponenten aus der
+Spark-Familie, die am meisten weiterentwickelt werden. Spark-SQL entstammt dem Apache-
+Shark. Man wollte die Probleme die es in Apache Shark gab l osen.
+1. Mit Apache Shark ist es nur m oglich auf Daten im Hive9 Katalog zuzugreifen.
+2. Shark l asst sich nur  uber selbst geschriebene SQL’s aufrufen.
+3. Hive ist nur f ur MapReduce optimiert
+Es werden zwei wesentliche Anwendungsf alle kombiniert. Zum einen erm oglicht es relationale
+Querys zu schreiben und zum anderen prozedurale Algorithmen einzusetzen. Daf ur werden
+neben den RDD’s die DataFrames als weitere Datenstruktur eingef uhrt.
+Die Abfragen werden zuerst in den DataFrame-Objekten gespeichert. Erst nach der Initiali-
+sierung werden diese SQL’s dann ausgewertet. F ur die Auswertung und Optimierung kommt
+Catalyst10 zum Einsatz. Nach der Auswertung werden die Abfragen gegebenenfalls oppti-
+miert und danach in Spark-Optionen auf RDD’s  ubersetzt. In Abbildung 2.4 sind die Phasen
+vom SQL-Query bis hin zu den RDD’s dargestellt. In den Boxen mit abgerundenten Ecken
+be nden sich Catalyst-Trees.
+Abbildung 2.4: Phasen der Query Planung in Spark SQL [Arm+15b]
+Mit Spark-SQL hat man erreicht auf relationale Daten zuzugreifen. Es wurde eine hohe
+Performance aufgrund etablierter DBMS-Techniken erreicht. Neue Datenquellen lassen sich
+leicht anschlie en und integrieren. Zus atzliche Erweiterungen wie maschinelles Lernen und
+Berechnungen von Graphen sind zus atzlich nutzbar.11
+9Apache Hive: Ist eine Erweiterung f ur Hadoop und erm oglicht Abfragen  uber SQL zu nutzen.
+10Catalyst: Ist eine Optimierungsengine f ur relationale Ausdr ucke.
+11Vgl. [Arm+15b]
+7
+2 Apache Spark
+2.1.3 Verarbeitung von Datenstr omen (Spark-Streaming)
+Die Spark-Streaming Bibliothek erm oglicht das Verarbeiten von Datenstr omen. Auch hier
+dienen die RDD’s als Grundlage. Die RDD’s werden zu DStreams erweitert. DStreams (dis-
+cretized streams) sind Objekte, die Informationen enthalten, die in Verbindung mit Zeit ste-
+hen. DStreams sind intern eine Sequenz von RDD’s und werden aus diesem Grund diskrete
+Streams genannt. Auch DStreams haben die bereits aus 2.1.1 bekannten zwei Operationen
+(Transformation und Aktion).
+Um Datenstr ome zu empfangen wird ein Empf anger (Receiver) auf einem Worker-Knoten
+gestartet. Die eingehenden Daten werden in kleinen Datenbl ocken gespeichert. Daf ur werden
+die Daten innerhalb eines vorgegebenen Zeitfenster gepu ert. Pro Zeitfenster werden die
+Daten in dem Pu er in eine Partition eines RDD abgelegt.12
+In der Spark-Streaming Bilbliothek sind bereits einige Empf anger wie Kafka13, Twitter14
+oder TCP-Sockets15 enthalten.
+Abbildung 2.5 zeigt den Ablauf vom Eingang der Daten  uber die Verarbeitung bis hin zur
+Ausgabe auf zum Beispiel Dashboard oder der Speicherung in Datenbankbanken.
+Abbildung 2.5: Spark Streaming Ablauf [Fou17c]
+12Vgl. [ER16]
+13Apache Kafka dient zur Verarbeitung von Datenstr omen dient.
+14Twitter: ist ein Mikrobloggingdinst. Nutzer k onnen  uber das Portal Kurznachrichten verbreiten.
+15TCP-Sockets: Sind Kommunkationsendpunkte, die zur Netzwerkkommunikation genutzt werden.
+8
+2 Apache Spark
+2.1.4 Berechnungen auf Graphen (GraphX)
+Das GraphX Framework erm oglicht die Berechnungen auf Graphen. Die Grundlage sind
+auch hier die RDD’s. Also Graphenstrukturen werden Property-Graphen genutzt. Property-
+Graphen sind gerichtete Multigraphen. Das hei t der Grpah besteht aus Ecken(Konten) und
+Kanten. An den Kanten k onnen Eigenschaften hinterlegt sein.
+In dem GraphX Framework werden diese Graphen aus Tupeln aus RDDs gebildet. In dem
+ersten RDD sind die Ecken und in dem zweiten die Kanten enthalten. Um die Graphen
+auf mehrere Maschinen zu verteilen werden diese entlang der Kante geteilt. Man spricht
+hier vom sogenannten Edge Cut Verfahren. Eine einzelne Ecke kann somit auf mehreren
+Maschinen existieren. Um  Anderungen an einer Ecke  uber alle Kopien auf den Maschinen
+zu propagieren wird zus atzlich eine Routing-Tabelle gep egt.  Uber diese sind alle Kopien
+von Ecken bekannt und bei  Anderungen einer Ecke werden alle Maschinen entsprechend
+informiert. In der folgenden Abbildung 2.6 ist ein verteilter Property-Graph abgebildet.
+Zus atzlich sind die verschiedenen RDD’s f ur Knoten(Vertex), Kanten(Edge) und die Routing-
+Tabelle abgebildet.
+Abbildung 2.6: Property-Graph mit den dezugeh origen RDD’s [Fou17e]
+9
+2 Apache Spark
+2.1.5 Maschinelles Lernen (MLlib)
+Die Maschinen Lernen Bibliothek (Machine Leanng library) biete die M oglichkeit typische
+Mischinelle-Lern-Algorythmen auf verteilen Spark-Systemen zu nutzen. Zur Datenabstrak-
+tion wird das bereits in 2.1.2 erw ahnte DataFrame genutzt.
+In einem Maschienenlernprgramm l auft eine Sequenz von Algorithmen (Pipeline) ab um die
+Daten zu verarbeiten und davon zu lernen. Daf ur gibt es in der MLlib Transformers und
+Estimator als Pipeline-Komponenten). Die Transformers ver andern die DataFrames. Das
+Dataframe wird gelesen, die Daten werden anders strukturiert oder aufbereitet und in einem
+neuen DataFrame wieder ausgegeben. Diese nutzen die Methode transform()
+Die Estimators sind Abstraktionen eines Lernalgorithmus. Sie erzeugen Transformer aus dem
+ ubergebenen DataFrame. Diese nutzen die Methode  t() Eine Pipeline selbst ist wiederum
+ein Estimator.
+Das Zusammenspiel zwischen Trasformers und Estimators ist in der Abbildung 2.7 beispiel-
+haft dargestellt. Ein Text wird eingelesen. In den ersten zwei Schritten (Tokenizer und Ha-
+shingTF) arbeiten Transformatoren. In dem dritten Schritt arbeitet ein Estimator (Logistic
+Regression)
+Abbildung 2.7: MLlib Pipeline [Fou17f]
+10
+2 Apache Spark
+2.1.6 Skalierung von R Programmen (SparkR)
+SparkR ist eine R Packet das es erm oglicht eine einfache Obe  ache bereitstellt um Apache
+Spark von R aus zu nutzen. Spark R stellt das bereits bekannte DataFrame bereit welche
+die Operationen wie selection,  ltering oder aggregation bereitstellt. Also genau die Opera-
+tionen die aus R dem Anwender bereits bekannt sind. F ur gro e Datens atze kann SparkR
+zus atzlich auf maschinelles Lernen  uber MLlib zur uckgreifen.
+Um das zu erm oglichen ist eine Br ucke von R hin zum Spark Context bzw. den Nodes /
+Workern notwendig. Das Architekturschaubild in Abbildung 2.8 zeigt diesen Ansatz.
+Abbildung 2.8: SparkR Architektur [Ven+15]
+R hat den Nachteil, dass es zur Laufzeit nur auf einem einzelnen Thread arbeitet. Die-
+se H urde kann mit der SparkR Erweiterung genommen werden. Mithilfe der Verarbeitung
+auf vielen Kernen und zus atzlich des In-Memory Cachings von Spark kann ein sehr gro er
+Laufzeitgewinn erziehlt werden 16
+16Vgl. [Ven+15]
+11
+2 Apache Spark
+2.2 Mehrere Komponenten im Verbund
+12
+2 Apache Spark
+2.3 Performance
+Analysen von Performance Probleme erweisen sich mitunter als sehr schwierig. Apache Spark
+bringt zwar die seitene ektfreie API mit, jedoch kann trotzdem eine Menge schief gehen. F ur
+Entwickler ist es immer schwer im Hinterkopf zu behalten, dass Operationen auf vielen ver-
+teilten Rechnern ablaufen.
+ Uber eine Webbasierte  Ubersicht, die in Abbildung 2.9 zu sehen ist,ist es M oglich Informatio-
+nen zu dann aktuell laufenden Auswertungen und Dauer von Ergebnissen etc. zu bekommen.
+17
+Abbildung 2.9: Spark Web UI: Zusammenfassung der Worker
+Speziell beim Thema SQL-Abfragen ist es enorm wichtig sich f ur die richtigen Anweisungen
+zu entscheiden um keine langsamen Operationen zu haben. Hier gibt es sehr gro e Geschwin-
+digkeitsunterschiede.
+2.3.1 Besonderheiten bei der Speichernutzung
+Die Wahl einer geeigneten bzw. speichere zienten Datenstruktur wir oftmals untersch atzt.
+Spark geht davon aus, eine Datei in Bl ock einer bestimmten Gr o e geladen wird. In der
+Regel 128MB. Zu beachten ist jedoch, dass beim dekomprimieren gr o ere Bl ocke entstehen
+k onnen. So k onnen aus 128MB schnell 3-4GB gro e Bl ocke in dekompriemierten Zustand
+17Vgl. [Ryz+15, S. 12]
+13
+2 Apache Spark
+werden.
+Um das Speichermanagement zu verbessern wurde ein per-node allocator implementiert.
+Dieser verwaltet den Speicher auf einer Node. Der Speicher wir in drei Bereiche geteilt.
+Speicher zum verarbeiten der Daten. Speicher f ur die hash-tables bei Joins oder Aggretaions
+Speicher f ur  unrolling Bl ocke, um zu pr ufen ob die einzulesenden Bl ocke nach dem entpacken
+immer noch klein genug sind damit diese gecached werden k onnen. Damit l auft das System
+robust  uber f ur Anwendungsbereiche mit sehr vielen Nodes sowie mit ganz wenigen.18
+2.3.2 Netzwerk und I/O-Tra c
+Mit Apache Spark wurden schon Operationen bei denen  uber 8000 Nodes involviert waren
+und  uber 1PB an Daten verarbeitet wurden durchgef uhrt. Das beansprucht nat urlich die
+I/O Schicht enorm.
+Um I/O Probleme zu vermeiden, bzw. diese besser in den Gri zu bekommen wurde als
+Basis das Netty-Framework19 verwendet.
+ Zero-copy I/O:
+Daten werden direkt von der Festplatte zu dem Socket kopiert. Das vermeidet Last an
+der CPU bei Kontextwechseln und entlastet zus atzlich den JVM20 garbage collector21
+ O -heap network bu er management:
+Netty verwaltet einige Speichertabellen au erhalb des Java Heap Speichers um Pro-
+bleme mit den JVS garbage collector zu vermeiden.
+ Mehrfache Verbindungen:
+Jeder Spark worker kann mehrere Verbindungen parallel bearbeiten.
+2.4 Nutzung & Verbreitung
+Durch die Unterst utzung der drei Programmiersprachen skala, pathon und java ist die Arbeit
+mit Apache Spark einfacher, als wenn es nur einen einzige exotische Programmiersprache zur
+Nutzung g abe.
+Apache Spark unterst utzt zudem noch verschiedene Datenquellen und Dateiformate. Zu den
+Datenquellen z ahlen die das Dateisystem S322 von Amazon und das HDFS23. Die Datei-
+formate k onnen strukturiert (z.B.: CSV, Object Files), semi-strukturiert (z.B.: JSON) und
+unstrukturiert (z.B.: Textdatei) sein.
+Unter den Mitwirkenden(Contributors) z ahlen  uber 400 Entwickler aus  uber 100 Unterneh-
+men, Stand 2014.
+18Vgl. [Arm+15a]
+19Netty: High-Performance Netzwerk Framework
+20JVM: Todo
+21garbage collector: Todo
+22S3 (Simple Storage Service): ist ein Filehosting-Dienst von Amazon der beliebig gro e Datenmengen
+speichern kann
+23HDFS (Hadoop Distributed File System): Ist ein hochverf ugbares Dateisystem zu Speicherung sehr gro er
+Datenmengen
+14
+2 Apache Spark
+Es gibt  uber 500 produktive Installationen. [Arm+15a]
+Seit einigen Jahren  nden weltweit j ahrlich unter dem Namen Spark Summit Konferenzen
+statt. [Fou17a]
+Heise.de beauftrage 2015 eine Umfrage in der 2136 Teilnehmer befragt wurden [Sch15]. Diese
+gaben an, dass 31% Prozent den Einsatz derzeit pr ufen. 13% Nutzen bereits Apache Spark
+und 20% planten den Einsatz noch in dem damaligen Jahr. Scala lag als Programmiersprache
+mit gro en Abstand vorn. Die Nutzung innerhalb verschiedener Berufsgruppen war sehr
+ ahnlich. Mit 16% lag bei den Telekommunikationsunternehmen der Einsatz am h ochsten.
+Eine detaillierte  Ubersicht ist in Abbildung 2.10 zu sehen.
+Abbildung 2.10: Einsatz & Verbreitung
+15
+3 Fazit
+16
+4 Ausblick & Weiterentwicklung
+Immer mehr Firmen f uhren Apache Spark ein oder Nutzen es bereits. Dieser
+Trend sollte auch weiterhin so bleiben.
+Seit der Einf uhrung von Apache Spark im Jahr 2010 wird die Software kon-
+tinuierlich verbessert und weiterentwickelt. Vieles hat die Community dazu
+beigetragen, die aufgrund der Open-Source Software dazu in der Lage ist
+aktiv daran mit zu arbeiten. Die Kommunikation innerhalb der Community
+ ndet im wesentlichen  uber o zielle Mailinglisten und einem Ticket-System
+der Apache Foundation statt. Der Code liegt auf GitHub1 und ist  o entlich
+f ur jeden zug anglich. Bis zum 10.04.2017 gab es bereits 51 Releases oder
+Release-Kandidaten, 19,365 commits und 1,053 contributors2. Auch das wird
+zuk unftig weiter gehen. Im ersten Quartal 2017 gab es  uber 717 commits. Ein
+Einbruch der Aktivit at ist momentan nicht zu erkennen. 3
+Von der Version 1.6 auf die Version 2.0 gab es nochmal eine relativ starke Per-
+formancesteigerung. Vermutlich wird man solche Performancesteigerungen
+nicht mehr so leicht erreichen, aber dennoch sollten sich an den Geschwin-
+digkeiten auch zuk unftig noch etwas nach unten ver andern. Eine  Ubersicht
+der Performance anderungen ist in der Tabelle 4.1 zu sehen.4
+primitive Spark 1.6 Spark 2.0
+ lter 15ns 1.1ns
+sum w/o group 14ns 0.9ns
+sum w/ group 79ns 10.7ns
+hash join 115ns 4.0ns
+sort (8-bit entropy) 620ns 5.3ns
+Tabelle 4.1: Kosten pro Zeile (cost per row) auf einem einzelnen Thread
+Zuk unftig ist denkbar, das noch weitere Komponenten so wie zum Beispiel
+SparkR dazu kommen. Auch das Anbinden weiterer Datenquellen wird sehr
+wahrscheinlich weiter vorangetrieben werden.
+1GitHub: Ist ein webbassierter Onlinedienst, der die M oglichkeit biete Softwareprojekt mit der Versions-
+verwaltung Git dort zu speichern.
+2contributors: Sind Beitragende, die zum Projekt mit Schreiben von Code beigetragen haben.
+3Vgl. [Git17]
+4Vgl. [Dat17]
+17
+5 Anhang
+18
+6 Literaturverzeichnis
+B ucher
+[Ryz+15] Sandy Ryza u. a. Advanced Analytics with Spark. 1005 Gravenstein Highway
+North: O’Reilly Media, Inc., 2015.
+[ER16] Raul Estrada und Isaac Ruiz. Big Data SMACK. New York, 233 Spring Street:
+Springer Science + Business Media, 2016.
+Papers
+[Zah+12] Matei Zaharia u. a. Resilient Distributed Datasets: A Fault-Tolerant Abstraction
+for In-Memory Cluster Computing. Forschungsspapier. University of California,
+Berkeley, 2012.
+[Arm+15a] Michael Armbrust u. a. Scaling Spark in the Real World: Performance and
+Usability. Forschungsspapier. Databricks Inc.; MIT CSAIL, 2015.
+[Arm+15b] Michael Armbrusty u. a. Spark SQL: Relational Data Processing in Spark. For-
+schungsspapier. Databricks Inc.; MIT CSAIL; AMPLab, UC Berkeley, Juni
+2015.
+[Ven+15] Shivaram Venkataraman u. a. SparkR: Scaling R Programs with Spark. For-
+schungsspapier 11. AMPLab UC Berkeley, Databricks Inc., MIT CSAIL, Nov.
+2015.
+[ZAH+15] MATEI ZAHARIA u. a. Apache Spark: A Uni ed Engine for Big Data Proces-
+sing. Forschungsspapier 11. COMMUNICATIONS OF THE ACM, Nov. 2015.
+Internet
+[Sch15] Julia Schmidt. Big Data: Umfrage zur Verbreitung zu Apache Spark. Jan. 2015.
+url: https://www.heise.de/developer/meldung/Big-Data-Umfrage-zur-
+Verbreitung-zu-Apache-Spark-2529126.html.
+[Dat17] Inc. Databricks. Technical Preview of Apache Spark 2.0 Now on Databricks.
+Apr. 2017. url: https://databricks.com/blog/2016/05/11/apache-
+spark-2-0-technical-preview-easier-faster-and-smarter.html.
+[Fou17a] Apache Software Foundation. Apache Spark Community. Apr. 2017. url: http:
+//spark.apache.org/community.html.
+[Fou17b] Apache Software Foundation. Apache Spark Ecosystem. Apr. 2017. url: https:
+//databricks.com/spark/about.
+19
+6 Literaturverzeichnis
+[Fou17c] Apache Software Foundation. Apache Spark Ecosystem. Apr. 2017. url: https:
+//www.infoq.com/articles/apache-spark-streaming.
+[Fou17d] Apache Software Foundation. Cluster Mode Overview. Apr. 2017. url: https:
+//spark.apache.org/docs/1.1.0/cluster-overview.html.
+[Fou17e] Apache Software Foundation. GraphX - Spark 2.1.0 Documentation. Apr. 2017.
+url: http://spark.apache.org/docs/latest/graphx- programming-
+guide.html.
+[Fou17f] Apache Software Foundation. ML Pipelines - Spark 2.1.0 Documentation. Apr.
+2017. url: http://spark.apache.org/docs/latest/ml-pipeline.html.
+[Git17] Inc. GitHub. apache/spark: Mirror of Apache Spark. Apr. 2017. url: https:
+//github.com/apache/spark.
+20
