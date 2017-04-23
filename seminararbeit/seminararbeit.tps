@@ -17,8 +17,8 @@ Class=LaTeXView
 Document=chapter\hauptteil.tex
 
 [Frame0_View0,0]
-TopLine=48
-Cursor=3032
+TopLine=228
+Cursor=14262
 
 [Frame1]
 Flags=0
@@ -53,8 +53,8 @@ Class=BibTeXView
 Document=literatur.bib
 
 [Frame2_View0,0]
-TopLine=97
-Cursor=3943
+TopLine=66
+Cursor=2846
 
 [Frame3]
 Flags=0
@@ -90,7 +90,7 @@ Document=chapter\literaturverzeichnis.tex
 
 [Frame4_View0,0]
 TopLine=0
-Cursor=84
+Cursor=320
 
 [Frame5]
 Flags=0
@@ -107,10 +107,10 @@ Class=LaTeXView
 Document=chapter\ausblick.tex
 
 [Frame5_View0,0]
-TopLine=0
-Cursor=749
+TopLine=26
+Cursor=2165
 
 [SessionInfo]
 FrameCount=6
-ActiveFrame=0
+ActiveFrame=5
 
