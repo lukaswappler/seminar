@@ -78,6 +78,152 @@
       \field{type}{Forschungsspapier}
       \field{year}{2012}
     \endentry
+    \entry{ADD+15}{report}{}
+      \name{author}{10}{}{%
+        {{hash=8eafad8289b06f72c2e8b7caf80a413a}{%
+           family={Armbrust},
+           familyi={A\bibinitperiod},
+           given={Michael},
+           giveni={M\bibinitperiod}}}%
+        {{hash=f8b27ed8b503bc3e7b32fc53bace3697}{%
+           family={Das},
+           familyi={D\bibinitperiod},
+           given={Tathagata},
+           giveni={T\bibinitperiod}}}%
+        {{hash=850738cf4f5fab2f3fdf3f53eb467f63}{%
+           family={Davidson},
+           familyi={D\bibinitperiod},
+           given={Aaron},
+           giveni={A\bibinitperiod}}}%
+        {{hash=dfd14c69d2338ce9cf556c819a32d286}{%
+           family={Ghodsi},
+           familyi={G\bibinitperiod},
+           given={Ali},
+           giveni={A\bibinitperiod}}}%
+        {{hash=3c0037b793491a197b86017775b7e15f}{%
+           family={Or},
+           familyi={O\bibinitperiod},
+           given={Andrew},
+           giveni={A\bibinitperiod}}}%
+        {{hash=365d3ec4a85f5051e18fc7c1e63b210b}{%
+           family={Rosen},
+           familyi={R\bibinitperiod},
+           given={Josh},
+           giveni={J\bibinitperiod}}}%
+        {{hash=51d9ef26181e2e8a9dc546b401e0bb26}{%
+           family={Stoica},
+           familyi={S\bibinitperiod},
+           given={Ion},
+           giveni={I\bibinitperiod}}}%
+        {{hash=54749885e1243b01239492a603b6a69e}{%
+           family={Wendell},
+           familyi={W\bibinitperiod},
+           given={Patrick},
+           giveni={P\bibinitperiod}}}%
+        {{hash=125f074bf46e8a83339101fd94d088e2}{%
+           family={Xin},
+           familyi={X\bibinitperiod},
+           given={Reynold},
+           giveni={R\bibinitperiod}}}%
+        {{hash=00dc518b94dfa6349c86e70661a1a5ef}{%
+           family={Zaharia},
+           familyi={Z\bibinitperiod},
+           given={Matei},
+           giveni={M\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {Databricks Inc.; MIT CSAIL}%
+      }
+      \strng{namehash}{1bae7c2a3fe6ea29ffc01edd0ac606b5}
+      \strng{fullhash}{bd81718f31b7a571d3d9d67517c18cb8}
+      \strng{authornamehash}{1bae7c2a3fe6ea29ffc01edd0ac606b5}
+      \strng{authorfullhash}{bd81718f31b7a571d3d9d67517c18cb8}
+      \field{labelalpha}{Arm+15}
+      \field{sortinit}{2}
+      \field{sortinithash}{0aa614ace9f3a40ef5a67e7f7a184048}
+      \field{extraalpha}{1}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Scaling Spark in the Real World: Performance and Usability}
+      \field{type}{Forschungsspapier}
+      \field{year}{2015}
+    \endentry
+    \entry{AXL+15}{report}{}
+      \name{author}{11}{}{%
+        {{hash=8d8bcafc5c34d557133c302cbcb32405}{%
+           family={Armbrusty},
+           familyi={A\bibinitperiod},
+           given={Michael},
+           giveni={M\bibinitperiod}}}%
+        {{hash=7a5d7ec3c332c1c231d1d400fca324f2}{%
+           family={Xiny},
+           familyi={X\bibinitperiod},
+           given={Reynold\bibnamedelima S.},
+           giveni={R\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+        {{hash=8e5cdb748ef7a94462b89393fa03196c}{%
+           family={Liany},
+           familyi={L\bibinitperiod},
+           given={Cheng},
+           giveni={C\bibinitperiod}}}%
+        {{hash=14d2f837f8dcd3545207cf62f6d7b7cf}{%
+           family={Huaiy},
+           familyi={H\bibinitperiod},
+           given={Yin},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=9ac87cb6adbf6e1c1ff6afa8ca274471}{%
+           family={Liuy},
+           familyi={L\bibinitperiod},
+           given={Davies},
+           giveni={D\bibinitperiod}}}%
+        {{hash=01086ba3a1d14baed3fbe8cb038a6ed2}{%
+           family={Bradleyy},
+           familyi={B\bibinitperiod},
+           given={Joseph\bibnamedelima K.},
+           giveni={J\bibinitperiod\bibinitdelim K\bibinitperiod}}}%
+        {{hash=6e3f8f749f53df88d0992c81633753fa}{%
+           family={Mengy},
+           familyi={M\bibinitperiod},
+           given={Xiangrui},
+           giveni={X\bibinitperiod}}}%
+        {{hash=d642e6926dfd9ddc4f0d7aaaaed9fb0a}{%
+           family={Kaftanz},
+           familyi={K\bibinitperiod},
+           given={Tomer},
+           giveni={T\bibinitperiod}}}%
+        {{hash=4681e8f1810b05b48e78e476587dfb29}{%
+           family={Franklinyz},
+           familyi={F\bibinitperiod},
+           given={Michael\bibnamedelima J.},
+           giveni={M\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=336d8ef51a9c3a94db8fcbbfdcfb8226}{%
+           family={Ghodsiy},
+           familyi={G\bibinitperiod},
+           given={Ali},
+           giveni={A\bibinitperiod}}}%
+        {{hash=fc635b736f975002c053dbffd59b5c96}{%
+           family={Zahariay},
+           familyi={Z\bibinitperiod},
+           given={Matei},
+           giveni={M\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {Databricks Inc.; MIT CSAIL; AMPLab, UC Berkeley}%
+      }
+      \strng{namehash}{95ad900dffb5cdc6dd742562ad562fc8}
+      \strng{fullhash}{13e9a4218d301b1990ea77e047136ac4}
+      \strng{authornamehash}{95ad900dffb5cdc6dd742562ad562fc8}
+      \strng{authorfullhash}{13e9a4218d301b1990ea77e047136ac4}
+      \field{labelalpha}{Arm+15}
+      \field{sortinit}{2}
+      \field{sortinithash}{0aa614ace9f3a40ef5a67e7f7a184048}
+      \field{extraalpha}{2}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{6}
+      \field{title}{Spark SQL: Relational Data Processing in Spark}
+      \field{type}{Forschungsspapier}
+      \field{year}{2015}
+    \endentry
     \entry{AAWS15}{book}{}
       \name{author}{4}{}{%
         {{hash=9ae16c59bf0e23a300d7e96ae2b24851}{%
@@ -173,6 +319,30 @@
       \field{labeltitlesource}{title}
       \field{title}{Big Data SMACK}
       \field{year}{2016}
+    \endentry
+    \entry{DATABRICK_SPARK_2_0}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=13afa7bc4ce7098ebd2b5b580fa1f436}{%
+           family={Databricks},
+           familyi={D\bibinitperiod},
+           given={Inc.},
+           giveni={I\bibinitperiod}}}%
+      }
+      \strng{namehash}{13afa7bc4ce7098ebd2b5b580fa1f436}
+      \strng{fullhash}{13afa7bc4ce7098ebd2b5b580fa1f436}
+      \strng{authornamehash}{13afa7bc4ce7098ebd2b5b580fa1f436}
+      \strng{authorfullhash}{13afa7bc4ce7098ebd2b5b580fa1f436}
+      \field{labelalpha}{Dat17}
+      \field{sortinit}{2}
+      \field{sortinithash}{0aa614ace9f3a40ef5a67e7f7a184048}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{4}
+      \field{title}{Technical Preview of Apache Spark 2.0 Now on Databricks}
+      \field{year}{2017}
+      \verb{url}
+      \verb https://databricks.com/blog/2016/05/11/apache-spark-2-0-technical-preview-easier-faster-and-smarter.html
+      \endverb
     \endentry
     \entry{SPCOM}{misc}{}
       \name{author}{1}{}{%
@@ -274,28 +444,28 @@
       \verb https://spark.apache.org/docs/1.1.0/cluster-overview.html
       \endverb
     \endentry
-    \entry{DATABRICK_SPARK_2_0}{misc}{}
+    \entry{GITHUB}{misc}{}
       \name{author}{1}{}{%
-        {{hash=d51822577d294804a15a2ae278bfb6be}{%
-           family={Inc.},
-           familyi={I\bibinitperiod},
-           given={Databricks},
-           giveni={D\bibinitperiod}}}%
+        {{hash=b0e1a1a9c592311324b68e24fa99a88a}{%
+           family={GitHub},
+           familyi={G\bibinitperiod},
+           given={Inc.},
+           giveni={I\bibinitperiod}}}%
       }
-      \strng{namehash}{d51822577d294804a15a2ae278bfb6be}
-      \strng{fullhash}{d51822577d294804a15a2ae278bfb6be}
-      \strng{authornamehash}{d51822577d294804a15a2ae278bfb6be}
-      \strng{authorfullhash}{d51822577d294804a15a2ae278bfb6be}
-      \field{labelalpha}{Inc17}
+      \strng{namehash}{b0e1a1a9c592311324b68e24fa99a88a}
+      \strng{fullhash}{b0e1a1a9c592311324b68e24fa99a88a}
+      \strng{authornamehash}{b0e1a1a9c592311324b68e24fa99a88a}
+      \strng{authorfullhash}{b0e1a1a9c592311324b68e24fa99a88a}
+      \field{labelalpha}{Git17}
       \field{sortinit}{2}
       \field{sortinithash}{0aa614ace9f3a40ef5a67e7f7a184048}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{month}{4}
-      \field{title}{Technical Preview of Apache Spark 2.0 Now on Databricks}
+      \field{title}{apache/spark: Mirror of Apache Spark}
       \field{year}{2017}
       \verb{url}
-      \verb https://databricks.com/blog/2016/05/11/apache-spark-2-0-technical-preview-easier-faster-and-smarter.html
+      \verb https://github.com/apache/spark
       \endverb
     \endentry
   \endsortlist

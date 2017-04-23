@@ -26,14 +26,14 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {2.3.1}Besonderheiten bei der Speichernutzung}{13}{subsection.2.3.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.3.2}Netzwerk und I/O-Traffic}{13}{subsection.2.3.2}
+\contentsline {subsection}{\numberline {2.3.2}Netzwerk und I/O-Traffic}{14}{subsection.2.3.2}
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {2.4}Nutzung \& Verbreitung}{14}{section.2.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {3}Fazit}{15}{chapter.3}
+\contentsline {chapter}{\numberline {3}Fazit}{16}{chapter.3}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {4}Ausblick \& Weiterentwicklung}{16}{chapter.4}
+\contentsline {chapter}{\numberline {4}Ausblick \& Weiterentwicklung}{17}{chapter.4}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {5}Anhang}{17}{chapter.5}
+\contentsline {chapter}{\numberline {5}Anhang}{18}{chapter.5}
 \defcounter {refsection}{0}\relax 
-\contentsline {chapter}{\numberline {6}Literaturverzeichnis}{18}{chapter.6}
+\contentsline {chapter}{\numberline {6}Literaturverzeichnis}{19}{chapter.6}

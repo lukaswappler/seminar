@@ -45,9 +45,9 @@ Das grundlegende Programmiermodell wie das Arbeiten mit den RDD's und die API's 
 In der \autoref{fig:spark_core} sind die einzelnen Bausteine innerhalb der Spark Core Komponenten / API zu sehen. 
  
 
-%%Korrekturgelesen.
+
 \noindent
-Die parallele Verarbeitung wird über den Spark Context realisiert. Der Spark Context wird im eigentlich Programm erzeugt und ist in der Regel dann mit einem Cluster Manager verbunden. Dieser wiederum kennst alle Workernode, die dann die eigentlichen Aufgaben ausführen. Die \autoref{fig:spark_cluster} zeigt wie Spark Context, Cluster Manager und die Worker Node's zusammen agieren. Damit verteilt über viele Nodes Aufgaben wird eine Datenstrukturen benötigt, die dafür ausgelegt sind. \footnote{Vgl. \cite[101]{BDS16}}
+Die parallele Verarbeitung wird über den Spark Context realisiert. Der Spark Context wird im eigentlich Programm erzeugt und ist in der Regel dann mit einem Cluster Manager verbunden. Dieser wiederum kennst alle Worker Nodes, die dann die eigentlichen Aufgaben ausführen. Die \autoref{fig:spark_cluster} zeigt wie Spark Context, Cluster Manager und die Worker Nodes zusammen agieren. Damit die Aufgaben über viele Nodes verteilt werden können wird eine Datenstruktur benötigt, die dafür ausgelegt sind. \footnote{Vgl. \cite[101]{BDS16}}
 
 \begin{figure}[h]
   \centering
@@ -58,9 +58,9 @@ Die parallele Verarbeitung wird über den Spark Context realisiert. Der Spark Co
 
 
 \noindent
-Resilent Distirbuted Datasets (RDD's) zu deutsch elastische, verteilte Datensätze ist die primäre Datenabstraktion in Apache Spark. 
+Die Resilent Distirbuted Datasets (RDD's) zu deutsch elastische, verteilte Datensätze erledigen diese Aufgabe. Es ist die primäre Datenabstraktion in Apache Spark. 
 Ein RDD entspricht einer partitionierten Sammlung an Daten. Somit können die Partitionen auf verschiedene Systeme (bzw. Worker) verteilt werden.  \\
-Nach der Erstellung sind RDD's nur lesbar. Es ist also nur möglich ein einmal definiertes RDD durch Anwendungen von globalen Operationen in ein neues RDD zu überführen. Die Operationen werden dann auf allen Partitionen des RDD's angewendet. \\
+Nach der Erstellung sind RDD's nur lesbar. Es ist also nur möglich ein einmal definiertes RDD durch anwendung globaler Operationen in ein neues RDD zu überführen. Die Operationen werden dann auf allen Partitionen des RDD's angewendet. \\
 \noindent
 Man unterscheidet bei den Operationen zwischen Transformationen (z.B.: filter oder join) und Aktionen (z.B.: reduce, count, collect oder foreach). Transformationen bilden ein RDD auf ein anderes RDD ab. Aktionen bilden ein RDD auf eine andere Domäne ab.\\ %Todo hier nochmal forschen was das bedeutet
 \noindent
@@ -71,44 +71,46 @@ Eine Folge von Operationen wird Lineage \footnote{RDD Lineage: Logischer Ablaufp
 \newpage
 \subsection{SQL-Abfragen mit (Spark-SQL \& Data Frames)}
 
-Spark-SQL wurde 2014 veröffentlicht. Die Komponente gehört zu den Komponenten aus der Spark-Familie, die am meisten weiterentwickelt werden. 
-
-
-Dabei kombiniert es zwei wesentliche Dinge. Zum einen ermöglicht es relationale Querys zu schreiben und zum anderen prozedurele Algorithmen einzusetzen. Bisher wurden beide Aktionen nacheinander von verschiedenen Systemen realisiert. 
-
-SparkSQL entstammt dem Apache-Shark. Man wollte die Probleme die es in Apache Shark gab lösen.
+Spark-SQL wurde 2014 veröffentlicht. Die Komponente gehört zu den Komponenten aus der Spark-Familie, die am meisten weiterentwickelt werden.
+Spark-SQL entstammt dem Apache-Shark. Man wollte die Probleme die es in Apache Shark gab lösen.
 \begin{enumerate}
-	\item Mit Apache Shark ist es nur möglich auf Daten im Hive Katalog zuzugreifen. 
+	\item Mit Apache Shark ist es nur möglich auf Daten im Hive\footnote{Apache Hive: Ist eine Erweiterung für Hadoop und ermöglicht Abfragen über SQL zu nutzen.} Katalog zuzugreifen. 
 	\item Shark lässt sich nur über selbst geschriebene SQL's aufrufen. 
 	\item Hive ist nur für MapReduce optimiert
 \end{enumerate}
 
-Mit ApacheSQL hat man erreicht auf relationale Daten zuzugreifen. Es wurde eine hohe Performance aufgrund etablierter DBMS-Techniken erreicht.
+\noindent
+Es werden zwei wesentliche Anwendungsfälle kombiniert. Zum einen ermöglicht es relationale Querys zu schreiben und zum anderen prozedurale Algorithmen einzusetzen. 
+Dafür werden neben den RDD's die DataFrames als weitere Datenstruktur eingeführt.\\
+
+\noindent
+Die Abfragen werden zuerst in den DataFrame-Objekten gespeichert. Erst nach der Initialisierung werden diese SQL's dann ausgewertet. Für die Auswertung und Optimierung kommt Catalyst\footnote{Catalyst: Ist eine Optimierungsengine für relationale Ausdrücke.} zum Einsatz. Nach der Auswertung werden die Abfragen gegebenenfalls opptimiert und danach in Spark-Optionen auf RDD's übersetzt. In \autoref{fig:spark_sql} sind die Phasen vom SQL-Query bis hin zu den RDD's dargestellt. In den Boxen mit abgerundenten Ecken befinden sich Catalyst-Trees.
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=\textwidth]{./bilder/spark_sql.png}
+  \caption{Phasen der Query Planung in Spark SQL \cite{AXL+15}}\label{fig:spark_sql}
+\end{figure}
+
+\noindent
+Mit Spark-SQL hat man erreicht auf relationale Daten zuzugreifen. Es wurde eine hohe Performance aufgrund etablierter DBMS-Techniken erreicht.
 Neue Datenquellen lassen sich leicht anschließen und integrieren.
-Zusätzliche Erweiterungen wie Maschine Learning und Graph Processing sind nutzbar.
-
-Todo, auf Dataframe API eingehen.
-Todo, auf Catalyst eingehen.
-
-
-%eventuell in die Performance section
-Gerade bei SQL ist es enorm wichtig sich für die richtigen Anweisungen zu entscheiden um keine langsamen Operationen zu haben. 
-Hier gibt es sehr große Geschwindigkeitsunterschiede.
+Zusätzliche Erweiterungen wie maschinelles Lernen und Berechnungen von Graphen sind zusätzlich nutzbar.\footnote{Vgl. \cite{AXL+15}} \\
 
 \newpage
 \subsection{Verarbeitung von Datenströmen (Spark-Streaming)}
 
 %Hier nochmal nachlesen, das sieht ganz gut aus. https://www.infoq.com/articles/apache-spark-streaming
 
-Die Spark-Streaming Bilbliothek ermöglicht das Verarbeiten von Datenströmen. Auch hier dienen die RDD's als Grundlage. Die RDD's werden DStreams erweitert. DStreams (discretized streams) sind Objekte, die Informationen enthalten, die in Verbindung mit Zeit stehen. DStreams sind intern eine Sequenz von RDD's und werden aus diesem Grund diskrete Streams genannt.
+Die Spark-Streaming Bibliothek ermöglicht das Verarbeiten von Datenströmen. Auch hier dienen die RDD's als Grundlage. Die RDD's werden zu DStreams erweitert. DStreams (discretized streams) sind Objekte, die Informationen enthalten, die in Verbindung mit Zeit stehen. DStreams sind intern eine Sequenz von RDD's und werden aus diesem Grund diskrete Streams genannt.
 Auch DStreams haben die bereits aus \ref{sec_sparkcore} bekannten zwei Operationen (Transformation und Aktion). \\
 
 \noindent
-Um Datenströme zu empfangen wird ein Empfänger (Receiver) auf einem Worker-Knoten gestartet. Die eingehenden Daten werden in keinen Datenblöcken gespeichert. Dafür werden die Daten innerhalb eines vorgegebenen Zeitfenster gepuffert. Pro Zeitfenster werden die Daten in dem Puffer in eine Partition eines RDD abgelegt.\footnote{Vgl. \cite{BDS16}} \\
+Um Datenströme zu empfangen wird ein Empfänger (Receiver) auf einem Worker-Knoten gestartet. Die eingehenden Daten werden in kleinen Datenblöcken gespeichert. Dafür werden die Daten innerhalb eines vorgegebenen Zeitfenster gepuffert. Pro Zeitfenster werden die Daten in dem Puffer in eine Partition eines RDD abgelegt.\footnote{Vgl. \cite{BDS16}} \\
 
 \noindent
 In der Spark-Streaming Bilbliothek sind bereits einige Empfänger wie Kafka\footnote{Apache Kafka dient zur Verarbeitung von Datenströmen dient.}, Twitter\footnote{Twitter: ist ein Mikrobloggingdinst. Nutzer können über das Portal Kurznachrichten verbreiten. } oder TCP-Sockets\footnote{TCP-Sockets: Sind Kommunkationsendpunkte, die zur Netzwerkkommunikation genutzt werden. } enthalten. \\
-In der \autoref{fig:spark_streaming} ist der Ablauf vom Eingang der Daten über die Verarbeitung bis hin zur Ausgabe bzw. Speicherung dargestellt.
+\autoref{fig:spark_streaming} zeigt den Ablauf vom Eingang der Daten über die Verarbeitung bis hin zur Ausgabe auf zum Beispiel Dashboard oder der Speicherung in Datenbankbanken.
 
 \begin{figure}[h]
   \centering
@@ -135,29 +137,37 @@ In der \autoref{fig:spark_streaming} ist der Ablauf vom Eingang der Daten über 
 \newpage
 \section{Performance}
 %PAPER: Scaling Spark in the Real World
-Analysen von Performance Probleme erweisen sich mitunter als sehr schwierig. Apache Spark bringt zwar die seiteneffektfreie API mit, jedoch kann trotzdem eine Menge schief gehen. Es ist schwer immer im Hinterkopf zu behalten, dass Operationen auf vielen verteilten Rechnern ablaufen. \\ \\
-\"Uber eine Webbasierte Übersicht ist es Möglich Informationen zu dann aktuell laufenden Auswertungen und Dauer von Ergebnissen etc. zu bekommen. \footnote{Vgl. \cite[12]{AAWS15}}
+Analysen von Performance Probleme erweisen sich mitunter als sehr schwierig. Apache Spark bringt zwar die seiteneffektfreie API mit, jedoch kann trotzdem eine Menge schief gehen. Für Entwickler ist es immer schwer im Hinterkopf zu behalten, dass Operationen auf vielen verteilten Rechnern ablaufen. \\ \\
+Über eine Webbasierte Übersicht, die in \autoref{fig:spark_ui_worker} zu sehen ist,ist es Möglich Informationen zu dann aktuell laufenden Auswertungen und Dauer von Ergebnissen etc. zu bekommen. \footnote{Vgl. \cite[12]{AAWS15}}
 
-Todo Beispiel Bild erstellen und erklären.
-Es gibt ein Live-Dashboard.
-Es gibt einen Stack-Trace Button
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=\textwidth]{./bilder/spark_ui_worker.PNG}
+  \caption{Spark Web UI: Zusammenfassung der Worker}\label{fig:spark_ui_worker}
+\end{figure}
 
+%eventuell in die Performance section
+\noindent
+Speziell beim Thema SQL-Abfragen ist es enorm wichtig sich für die richtigen Anweisungen zu entscheiden um keine langsamen Operationen zu haben. 
+Hier gibt es sehr große Geschwindigkeitsunterschiede.
 
 
 
 \subsection{Besonderheiten bei der Speichernutzung}
-Zusätzlich wird oft unterschätzt, dass die Wahl einer geeigneten bzw. speichereffizienten Datenstruktur sehr viel bewirken kann.
-Spark geht davon aus, eine Datei in Blöck einer bestimmten Größe geladen wird. In der Regel 128MB. Zu beachten ist jedoch, dass beim dekomprimieren größer Blöcke entstehen können. So können aus 128Mb schnell 3-4GB große Blöcke werden. \\ \\
+Die Wahl einer geeigneten bzw. speichereffizienten Datenstruktur wir oftmals unterschätzt. 
+Spark geht davon aus, eine Datei in Blöck einer bestimmten Größe geladen wird. In der Regel 128MB. Zu beachten ist jedoch, dass beim dekomprimieren größere Blöcke entstehen können. So können aus 128MB schnell 3-4GB große Blöcke in dekompriemierten Zustand werden. \\ 
+
+\noindent
 Um das Speichermanagement zu verbessern wurde ein per-node allocator implementiert. Dieser verwaltet den Speicher auf einer Node. 
-Der Speicher wir in drei Breiche geteilt. 
+Der Speicher wir in drei Bereiche geteilt. 
 Speicher zum verarbeiten der Daten.  
 Speicher für die hash-tables bei Joins oder Aggretaions
-Speicher für \"unrolling\" Blöcke, um zu prüfen ob die einzulesenden Blöcke nach dem entpacken immer noch klein genug sind damit diese gecached werden können.\\ \\
-Damit läuft das System robust über eine großen Bereich. 
+Speicher für \"unrolling\" Blöcke, um zu prüfen ob die einzulesenden Blöcke nach dem entpacken immer noch klein genug sind damit diese gecached werden können.
+Damit läuft das System robust über für Anwendungsbereiche mit sehr vielen Nodes sowie mit ganz wenigen.\footnote{Vgl. \cite{ADD+15}}
 
 \subsection{Netzwerk und I/O-Traffic}
 
-Mit Spark wurde schon Operationen bei denen über 8000 Nodes involviert waren und über 1PB an Daten verarbeitet wurden durchgeführt.
+Mit Apache Spark wurden schon Operationen bei denen über 8000 Nodes involviert waren und über 1PB an Daten verarbeitet wurden durchgeführt.
 Das beansprucht natürlich die I/O Schicht enorm. 
 
 
@@ -166,23 +176,26 @@ Um I/O Probleme zu vermeiden, bzw. diese besser in den Griff zu bekommen wurde a
 	\item Zero-copy I/O:\\
 	Daten werden direkt von der Festplatte zu dem Socket kopiert. Das vermeidet Last an der CPU bei Kontextwechseln und entlastet zusätzlich den JVM\footnote{JVM: Todo} garbage collector\footnote{garbage collector: Todo}
 	\item Off-heap network buffer management:\\
-	Todo
+	Netty verwaltet einige Speichertabellen außerhalb des Java Heap Speichers um Probleme mit den JVS garbage collector zu vermeiden.
 	\item Mehrfache Verbindungen:\\
-	Jeder Sparker worker kann mehrere Verbdingungen parallel bearbeiten.
+	Jeder Spark worker kann mehrere Verbindungen parallel bearbeiten.
 \end{itemize}
 
 
-\newpage
+%\newpage
 \section{Nutzung \& Verbreitung}
 
-Durch die Unterstützung der drei Programmiersprachen skala, pathon und java ist arbeit mit Apache Spark einfacher, als wenn es nur einen einzige exotische Programmiersprache zur Nutzung gäbe. \\
-Apache Spark unterstützt zudem noch verschiedene Datenquellen und Dateiformate.  Zu den Datenquellen zählen die das Dateisystem S3\footnote{S3: Todo} von Amazon und das HDFS\footnote{HDFS (Hadoop Distributed File System): Todo}.
-Die Dateiformate können strukturiert (z.B.: CSV, Object Files), semi-strukturiert (z.B.: JSON) und unstrukturiert (z.B.: Textdatei) sein.
+Durch die Unterstützung der drei Programmiersprachen skala, pathon und java ist die Arbeit mit Apache Spark einfacher, als wenn es nur einen einzige exotische Programmiersprache zur Nutzung gäbe. \\
 
+\noindent
+Apache Spark unterstützt zudem noch verschiedene Datenquellen und Dateiformate.  Zu den Datenquellen zählen die das Dateisystem S3\footnote{S3 (Simple Storage Service): ist ein Filehosting-Dienst von Amazon der beliebig große Datenmengen speichern kann} von Amazon und das HDFS\footnote{HDFS (Hadoop Distributed File System): Ist ein hochverfügbares Dateisystem zu Speicherung sehr großer Datenmengen}.
+Die Dateiformate können strukturiert (z.B.: CSV, Object Files), semi-strukturiert (z.B.: JSON) und unstrukturiert (z.B.: Textdatei) sein.\\
 
-Unter den Mitwirkenden(Contributors) zählen über 400 Entwickler aus über 100 Unternehmen, Stand 2014 \\
-Es gibt über 500 produktive Installationen. %PAPER: Scaling Spark in the Real World
+\noindent
+Unter den Mitwirkenden(Contributors) zählen über 400 Entwickler aus über 100 Unternehmen, Stand 2014.\\
+Es gibt über 500 produktive Installationen. \cite{ADD+15} \\ %PAPER: Scaling Spark in the Real World\\
 
+\noindent
 %http://spark.apache.org/community.html
 Seit einigen Jahren finden weltweit jährlich unter dem Namen Spark Summit Konferenzen statt. \cite{SPCOM}\\
 
