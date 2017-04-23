@@ -201,10 +201,14 @@ R hat den Nachteil, dass es zur Laufzeit nur auf einem einzelnen Thread arbeitet
 
 
 
+
+
 \newpage
 \section{Performance}
 %PAPER: Scaling Spark in the Real World
-Analysen von Performance Probleme erweisen sich mitunter als sehr schwierig. Apache Spark bringt zwar die seiteneffektfreie API mit, jedoch kann trotzdem eine Menge schief gehen. Für Entwickler ist es immer schwer im Hinterkopf zu behalten, dass Operationen auf vielen verteilten Rechnern ablaufen. \\ \\
+Analysen von Performance Probleme erweisen sich mitunter als sehr schwierig. Apache Spark bringt zwar die seiteneffektfreie API mit, jedoch kann trotzdem eine Menge schief gehen. Für Entwickler ist es immer schwer im Hinterkopf zu behalten, dass Operationen auf vielen verteilten Rechnern ablaufen. \\ 
+
+\noindent
 Über eine Webbasierte Übersicht, die in \autoref{fig:spark_ui_worker} zu sehen ist,ist es Möglich Informationen zu dann aktuell laufenden Auswertungen und Dauer von Ergebnissen etc. zu bekommen. \footnote{Vgl. \cite[12]{AAWS15}}
 
 \begin{figure}[h]
