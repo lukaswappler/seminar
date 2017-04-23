@@ -289,6 +289,97 @@
       \verb https://www.heise.de/developer/meldung/Big-Data-Umfrage-zur-Verbreitung-zu-Apache-Spark-2529126.html
       \endverb
     \endentry
+    \entry{ZXW+16}{report}{}
+      \name{author}{14}{}{%
+        {{hash=448b02ff39b24be33fabaac34808c36a}{%
+           family={ZAHARIA},
+           familyi={Z\bibinitperiod},
+           given={MATEI},
+           giveni={M\bibinitperiod}}}%
+        {{hash=ec6010c440e81015b187b34ae2d8fbcb}{%
+           family={XIN},
+           familyi={X\bibinitperiod},
+           given={REYNOLD\bibnamedelima S.},
+           giveni={R\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+        {{hash=bfa7b46f8ae9b55415c54fef836e4122}{%
+           family={WENDELL},
+           familyi={W\bibinitperiod},
+           given={PATRICK},
+           giveni={P\bibinitperiod}}}%
+        {{hash=4aa4844480578473f42bd67483d29f5a}{%
+           family={DAS},
+           familyi={D\bibinitperiod},
+           given={TATHAGATA},
+           giveni={T\bibinitperiod}}}%
+        {{hash=8b8f8b88234b0dcf926611b5f21a5f79}{%
+           family={ARMBRUST},
+           familyi={A\bibinitperiod},
+           given={MICHAEL},
+           giveni={M\bibinitperiod}}}%
+        {{hash=5f5707287d329d13e01293a7846ed777}{%
+           family={DAVE},
+           familyi={D\bibinitperiod},
+           given={ANKUR},
+           giveni={A\bibinitperiod}}}%
+        {{hash=0449a19b7bc6c8a7e274c59ed19ff3e5}{%
+           family={MENG},
+           familyi={M\bibinitperiod},
+           given={XIANGRUI},
+           giveni={X\bibinitperiod}}}%
+        {{hash=1a4ff538b72f85b29cd257ad3184dff1}{%
+           family={ROSEN},
+           familyi={R\bibinitperiod},
+           given={JOSH},
+           giveni={J\bibinitperiod}}}%
+        {{hash=3bf2689e2e5241132e58c82a0996f246}{%
+           family={VENKATARAMAN},
+           familyi={V\bibinitperiod},
+           given={SHIVARAM},
+           giveni={S\bibinitperiod}}}%
+        {{hash=56e5e84e2b1668306ee833e54a5ac83a}{%
+           family={FRANKLIN},
+           familyi={F\bibinitperiod},
+           given={MICHAEL\bibnamedelima J.},
+           giveni={M\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=2a5e970f3d5d85049cf6029eda1d7832}{%
+           family={GHODSI},
+           familyi={G\bibinitperiod},
+           given={ALI},
+           giveni={A\bibinitperiod}}}%
+        {{hash=1c781c2a86d5d82e3b1859fe761a6333}{%
+           family={GONZALEZ},
+           familyi={G\bibinitperiod},
+           given={JOSEPH},
+           giveni={J\bibinitperiod}}}%
+        {{hash=8c13468ee9173a95b5d0bee953cba1d5}{%
+           family={SHENKER},
+           familyi={S\bibinitperiod},
+           given={SCOTT},
+           giveni={S\bibinitperiod}}}%
+        {{hash=9359e7c6f6ecbc7f9d0c06128daf659c}{%
+           family={STOICA},
+           familyi={S\bibinitperiod},
+           given={ION},
+           giveni={I\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {COMMUNICATIONS OF THE ACM}%
+      }
+      \strng{namehash}{70b0e49d395dfecf74e5d3fd7552409d}
+      \strng{fullhash}{cbec2645bfb608dd6d69fbdabf20e7a4}
+      \strng{authornamehash}{70b0e49d395dfecf74e5d3fd7552409d}
+      \strng{authorfullhash}{cbec2645bfb608dd6d69fbdabf20e7a4}
+      \field{labelalpha}{ZAH+15}
+      \field{sortinit}{2}
+      \field{sortinithash}{0aa614ace9f3a40ef5a67e7f7a184048}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{11}
+      \field{number}{11}
+      \field{title}{Apache Spark: A Unified Engine for Big Data Processing}
+      \field{type}{Forschungsspapier}
+      \field{year}{2015}
+    \endentry
     \entry{BDS16}{book}{}
       \name{author}{2}{}{%
         {{hash=4b1e815e72c7dd947bd09fdba4b69ece}{%
@@ -442,6 +533,31 @@
       \field{year}{2017}
       \verb{url}
       \verb https://spark.apache.org/docs/1.1.0/cluster-overview.html
+      \endverb
+    \endentry
+    \entry{SPGRAPHX}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=8514f80a2c717fcca8ef0674f335b126}{%
+           family={Foundation},
+           familyi={F\bibinitperiod},
+           given={Apache\bibnamedelima Software},
+           giveni={A\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+      }
+      \strng{namehash}{8514f80a2c717fcca8ef0674f335b126}
+      \strng{fullhash}{8514f80a2c717fcca8ef0674f335b126}
+      \strng{authornamehash}{8514f80a2c717fcca8ef0674f335b126}
+      \strng{authorfullhash}{8514f80a2c717fcca8ef0674f335b126}
+      \field{labelalpha}{Fou17}
+      \field{sortinit}{2}
+      \field{sortinithash}{0aa614ace9f3a40ef5a67e7f7a184048}
+      \field{extraalpha}{5}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{4}
+      \field{title}{GraphX - Spark 2.1.0 Documentation}
+      \field{year}{2017}
+      \verb{url}
+      \verb http://spark.apache.org/docs/latest/graphx-programming-guide.html
       \endverb
     \endentry
     \entry{GITHUB}{misc}{}

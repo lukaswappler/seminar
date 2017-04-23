@@ -11,7 +11,16 @@ Das Framework ist im Rahmen eine Forschungsprojekts entstanden. Das Forschungspr
 
 \section{Kern-Bibliotheken / Komponenten}
 
-Apache Spark besteht im wesentlichen aus fünf Modulen: Spark Core, Spark SQL, Spark Streaming, MLlib Machine Learning Library und GraphX. \\
+Apache Spark besteht im wesentlichen aus fünf Modulen: Spark Core, Spark SQL, Spark Streaming, MLlib Machine Learning Library und GraphX. Zur Nutzung der Komponenten gibt es eine Umfrage aus dem Jahr 2015 in \autoref{fig:spark_core} zu sehen. \\
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=100mm]{./bilder/spark_komponenten_nutzung.png}
+  \caption{Nutzung der Komponenten \cite{ZXW+16}}\label{fig:spark_komp_nutzung}
+\end{figure}
+
+
+
 \noindent
 Während Spark Core die Kern-Komponente bildet und alle notwendigen Bausteine für das Framework mitbringt sind die anderen Module auf dem Spark Core Module aufbauen und befassen sich mit spezielleren Bereichen wie SQL, Streaming, maschinelles Lernen oder Graphenberechnungen. In \autoref{fig:spark_core} ist noch einmal eine Übersicht der Komponenten. \\
 \noindent
@@ -125,11 +134,32 @@ In der Spark-Streaming Bilbliothek sind bereits einige Empfänger wie Kafka\foot
 \newpage
 \subsection{Berechnungen auf Graphen (GraphX)}
 
+Das GraphX Framework ermöglicht die Berechnungen auf Graphen. Die Grundlage sind auch hier die RDD's. Also Graphenstrukturen werden Property-Graphen genutzt. 
+Property-Graphen sind gerichtete Multigraphen. Das heißt der Grpah besteht aus Ecken(Konten) und Kanten. An den Kanten können Eigenschaften hinterlegt sein.\\
+
+\noindent
+In dem GraphX Framework werden diese Graphen aus Tupeln aus RDDs gebildet. In dem ersten RDD sind die Ecken und in dem zweiten die Kanten enthalten. Um die Graphen auf mehrere Maschinen zu verteilen werden diese entlang der Kante geteilt. Man spricht hier vom sogenannten Edge Cut Verfahren. Eine einzelne Ecke kann somit auf mehreren Maschinen existieren. Um Änderungen an einer Ecke über alle Kopien auf den Maschinen zu propagieren wird zusätzlich eine Routing-Tabelle gepflegt. Über diese sind alle Kopien von Ecken bekannt und bei Änderungen einer Ecke werden alle Maschinen entsprechend informiert. 
+In der folgenden \autoref{fig:spark_graphx} ist ein verteilter Property-Graph abgebildet. Zusätzlich sind die verschiedenen RDD's für Knoten(Vertex), Kanten(Edge) und die Routing-Tabelle abgebildet.
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=100mm]{./bilder/vertex_routing_edge_tables.png}
+  \caption{Property-Graph mit den dezugehörigen RDD's \cite{SPGRAPHX}}\label{fig:spark_graphx}
+\end{figure}
+
+
+
+
+
 \newpage
 \subsection{Maschinelles Lernen (MLlib)}\label{sec_sparkmlib}
 
+
+
 \newpage
 \subsection{Skalierung von R Programmen (SparkR)}\label{sec_sparkr}
+
+
 
 \newpage
 \section{Mehrere Komponenten im Verbund}
