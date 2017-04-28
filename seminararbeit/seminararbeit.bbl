@@ -722,6 +722,7 @@
       \field{labelalpha}{Git17}
       \field{sortinit}{2}
       \field{sortinithash}{0aa614ace9f3a40ef5a67e7f7a184048}
+      \field{extraalpha}{1}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{month}{4}
@@ -729,6 +730,31 @@
       \field{year}{2017}
       \verb{url}
       \verb https://github.com/apache/spark
+      \endverb
+    \endentry
+    \entry{GITHUB_EXAMPLE}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=b0e1a1a9c592311324b68e24fa99a88a}{%
+           family={GitHub},
+           familyi={G\bibinitperiod},
+           given={Inc.},
+           giveni={I\bibinitperiod}}}%
+      }
+      \strng{namehash}{b0e1a1a9c592311324b68e24fa99a88a}
+      \strng{fullhash}{b0e1a1a9c592311324b68e24fa99a88a}
+      \strng{authornamehash}{b0e1a1a9c592311324b68e24fa99a88a}
+      \strng{authorfullhash}{b0e1a1a9c592311324b68e24fa99a88a}
+      \field{labelalpha}{Git17}
+      \field{sortinit}{2}
+      \field{sortinithash}{0aa614ace9f3a40ef5a67e7f7a184048}
+      \field{extraalpha}{2}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{4}
+      \field{title}{spark/JavaPipelineExample.java at master · apache/spark}
+      \field{year}{2017}
+      \verb{url}
+      \verb https://github.com/apache/spark/blob/master/examples/src/main/java/org/apache/spark/examples/ml/JavaPipelineExample.java
       \endverb
     \endentry
     \entry{TWITTER_12}{misc}{}

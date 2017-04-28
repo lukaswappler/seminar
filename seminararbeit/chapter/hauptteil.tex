@@ -201,7 +201,35 @@ R hat den Nachteil, dass es zur Laufzeit nur auf einem einzelnen Thread arbeitet
 \newpage
 \section{Mehrere Komponenten im Verbund}
 
+Die Komponenten wurden jetzt einzeln vorgestellt. Jetzt soll das Zusammenspiel gezeigt werden. Hier bietet sich ein praktische Beispiel an. \\
 
+\noindent
+Es soll folgende Aufgabenstellung mit Apache Spark realisiert werden: Es gibt einen Datensatz aus 100000 Mitarbeitern. Zu jedem Mitarbeiter sind Informationen wie Vorname, Nachname, Gehalt, Eintritt in die Firma, Adresse sowie Interessen/Hobby bekannt. Diese Daten sind im strukturierten JSON-Format hinterlegt. 
+Aus diesen Datensatz sollen alle Mitarbeiter gefunden werden, die also Hobby Astrology angegeben haben. Zusätzlich sollen diese auf keinen Fall sollen Interesse an Autorennen und Bowling haben. Zusätzlich sollen die gefundenen Mitarbeiter nach alter gruppiert werden. \\
+Diese Aufgabenstellen (wenn auch ein wenig konstruiert) macht es möglich folgende Komponenten zu nutzen:
+\begin{itemize}
+	\item die Kernklassen zum Sortieren und Reduzieren der Maps.
+	\item SparkSQL für das Einlesen der Json-Datei und SQL-Abfragen
+	\item SparkMLib für das Trainieren der gesuchten Begriffe und finden der in Frage kommenden Mitarbeiter\footnote{Das Beispiel aus \cite{GITHUB_EXAMPLE} diente als Vorlage}	
+\end{itemize}  
+
+\noindent
+Zuerst wird die SparkSession erzeugt und danach werden die Daten eingelesen. Neben JSON wären hier auch noch viele weitere Methoden möglich gewesen (z.B.: csv, jdbc, text) diverse andere Methoden zur Verfügung gewesen. Das lässt sich alles über die SparkCore realisieren. Der entsprechende Code-Block ist im Anhang in \autoref{code:verbund_1} zu sehen.\\
+
+\noindent
+Als nächstes wird eine Pipeline aufgebaut in der ein PipelinModel so trainiert werden soll, dass es später aus dem Datensatz alle passenden Mitarbeiter korrekt als Treffer entscheidet. Die Pipeline besteht aus 3 Stages: Dem Tokenizer, dem HashingTF und der LogisticRegression. Nach dem Trainieren werden die Daten in ein neues Dataset transformiert. In diesem Dataset sind die Vorhersagen enthalten. Die beschriebenen Schritte sind als Code im Anhang in \autoref{code:verbund_2} zu sehen. \\
+
+\noindent
+Zum Schluss werden die Mitarbeiter, die vorhergesagt wurden per SparkSQL mit einer SQL Abfrage herausgefiltert und über MapReduce und Sortierung aus der SparCore Bibliothek in die endgültige Form gebracht. Das ist unter \autoref{code:verbund_3} dargestellt. \\
+
+\noindent
+Es wurden 285 Mitarbeiter gefunden, die in Frage kommen. Darunter liegt der Großteil zwischen 25 und 35 Jahren. Das vollständige Ergebnis ist unter \autoref{code:verbund_3} zu finden.\\
+
+\noindent
+Die Komponenten greifen sehr gut ineinander. Die Schnittstellen und Funktionen wirken sehr einheitlich und man hat das Gefühl, dass das hinzunehmen einer weiteren Spark Komponente kein Fremdkörper sondern eine hilfreiche Ergänzung darstellt.
+
+ 
+%In der Theorie sind die einzelnen Anwendunggebiet schön getrennt. Jedoch Die Anwendung der einzelnen Komponenten erscheint theoretisch 
 
 
 
