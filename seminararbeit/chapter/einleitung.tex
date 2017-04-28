@@ -1,2 +1,22 @@
 \newpage
 \chapter{Einleitung} 
+
+Das Thema Datenanalyse ist fester Bestandteil in vielen Bereichen des täglichen Lebens. 
+In den letzten Jahren hat man allerdings immer mehr damit zu kämpfen die Unmengen an Daten zu beherrschen und verarbeiten. Als Beispiel wäre da Google, Twitter, Apple und viele weitere aufzuführen. Schon 2010 wuchs der Datenbestand bei Twitter\footnote{\textbf{Twitter} ist ein Mikrobloggingdinst. Nutzer können über das Portal Kurznachrichten verbreiten. } oder TCP-Sockets\footnote{\textbf{TCP-Sockets} sind Kommunkationsendpunkte, die zur Netzwerkkommunikation genutzt werden. } täglich um 12 Terabyte\footnote{Vgl. \cite{TWITTER_12}}. \\
+Abhilfe schaffen da Systeme wie Apache Spark, die in der Lage sind mit vielen normalen Rechnern große Datenanalyse Aufgaben zu bewältigen. \\
+
+\noindent
+Die Fülle an wissenschaftlichen Veröffentlichungen\footnote{Vgl. \cite{SPRESEARCH}} auf der Apache Spark-Website sowie die zahlreichen Fachbücher zum Thema Datenanalyse\footnote{Vgl. \cite{DA15}} oder direkt zu Apache Spark\footnote{Vgl. \cite{AAWS15}, \cite{BDS16}} unterstreichen die Wichtigkeit und Aktualität des Themas.\\
+
+\noindent
+Ziel dieser Arbeit ist es, dass Apache Spark Framework in seinen Einzelheiten zu beleuchten. Das heißt die einzelnen Komponenten vorstellen. Auf die Besonderheiten bei zum Beispiel der Performance oder Fehlertoleranz eingehen und an geeigneten Stellen kleine Beispielimplementierungen vorzustellen. \\
+
+\noindent
+Zunächst wir der Kern des Systems und der prinzipielle Aufbau des Frameworks dargelegt. Danach werden die verschiedenen Komponenten, die das Framework enthält im Detail betrachtet. Dazu zählen Datenbankabfragen von Form von SQL-Abfragen, die Verarbeitung von Datenströmen, Berechnungen von Graphen, maschinelles Lernen.\\
+Um das Zusammenspiel mehrere dieser Komponenten wird an einem größeren praktischen Beispiel verdeutlicht. \\
+
+\noindent
+Das Framework wird dann einer kritischen Betrachtung der der Performance unterzogen, wobei Kriterien wie Speichernutzung, Netzwerkauslastung oder Datentransfer eine große Rolle spielen werden. Das Ende bildet ein Fazit und einem Ausblick in die Zukunft. 
+
+
+%einem einzigen Rechner oder einen Großrechner kommt man jedoch nicht mehr aus. Das ist der Grund warum man versucht die Last auf viele kleine bzw. normale Rechner zu verteilen. %jedoch wird die analyse durch das verteilen nicht einfacher. Eine große sind fehlen da 

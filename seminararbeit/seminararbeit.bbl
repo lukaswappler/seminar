@@ -224,6 +224,32 @@
       \field{type}{Forschungsspapier}
       \field{year}{2015}
     \endentry
+    \entry{DA15}{book}{}
+      \name{author}{1}{}{%
+        {{hash=d03f1e2c368ab7dcdaed9b979bbaf9e0}{%
+           family={Parsian},
+           familyi={P\bibinitperiod},
+           given={Mahmoud},
+           giveni={M\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {1005 Gravenstein Highway North}%
+      }
+      \list{publisher}{1}{%
+        {O'Reilly Media, Inc.}%
+      }
+      \strng{namehash}{d03f1e2c368ab7dcdaed9b979bbaf9e0}
+      \strng{fullhash}{d03f1e2c368ab7dcdaed9b979bbaf9e0}
+      \strng{authornamehash}{d03f1e2c368ab7dcdaed9b979bbaf9e0}
+      \strng{authorfullhash}{d03f1e2c368ab7dcdaed9b979bbaf9e0}
+      \field{labelalpha}{Par15}
+      \field{sortinit}{2}
+      \field{sortinithash}{0aa614ace9f3a40ef5a67e7f7a184048}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Data Algorithms}
+      \field{year}{2015}
+    \endentry
     \entry{AAWS15}{book}{}
       \name{author}{4}{}{%
         {{hash=9ae16c59bf0e23a300d7e96ae2b24851}{%
@@ -656,6 +682,31 @@
       \verb http://spark.apache.org/docs/latest/ml-pipeline.html
       \endverb
     \endentry
+    \entry{SPRESEARCH}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=8514f80a2c717fcca8ef0674f335b126}{%
+           family={Foundation},
+           familyi={F\bibinitperiod},
+           given={Apache\bibnamedelima Software},
+           giveni={A\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
+      }
+      \strng{namehash}{8514f80a2c717fcca8ef0674f335b126}
+      \strng{fullhash}{8514f80a2c717fcca8ef0674f335b126}
+      \strng{authornamehash}{8514f80a2c717fcca8ef0674f335b126}
+      \strng{authorfullhash}{8514f80a2c717fcca8ef0674f335b126}
+      \field{labelalpha}{Fou17}
+      \field{sortinit}{2}
+      \field{sortinithash}{0aa614ace9f3a40ef5a67e7f7a184048}
+      \field{extraalpha}{7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{4}
+      \field{title}{Research | Apache Spark}
+      \field{year}{2017}
+      \verb{url}
+      \verb https://spark.apache.org/research.html
+      \endverb
+    \endentry
     \entry{GITHUB}{misc}{}
       \name{author}{1}{}{%
         {{hash=b0e1a1a9c592311324b68e24fa99a88a}{%
@@ -678,6 +729,28 @@
       \field{year}{2017}
       \verb{url}
       \verb https://github.com/apache/spark
+      \endverb
+    \endentry
+    \entry{TWITTER_12}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=a04a28bbc05501dfc184e66016a57622}{%
+           family={WinFuture.de},
+           familyi={W\bibinitperiod}}}%
+      }
+      \strng{namehash}{a04a28bbc05501dfc184e66016a57622}
+      \strng{fullhash}{a04a28bbc05501dfc184e66016a57622}
+      \strng{authornamehash}{a04a28bbc05501dfc184e66016a57622}
+      \strng{authorfullhash}{a04a28bbc05501dfc184e66016a57622}
+      \field{labelalpha}{Win17}
+      \field{sortinit}{2}
+      \field{sortinithash}{0aa614ace9f3a40ef5a67e7f7a184048}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{4}
+      \field{title}{Twitter-Nutzer generieren täglich 12 Terabyte - WinFuture.de}
+      \field{year}{2017}
+      \verb{url}
+      \verb http://winfuture.de/news,58451.html
       \endverb
     \endentry
   \endsortlist

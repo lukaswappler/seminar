@@ -17,8 +17,8 @@ Class=LaTeXView
 Document=chapter\hauptteil.tex
 
 [Frame0_View0,0]
-TopLine=309
-Cursor=15079
+TopLine=319
+Cursor=19893
 
 [Frame1]
 Flags=0
@@ -36,7 +36,7 @@ Document=chapter\fazit.tex
 
 [Frame1_View0,0]
 TopLine=0
-Cursor=42
+Cursor=46
 
 [Frame2]
 Flags=0
@@ -53,8 +53,8 @@ Class=BibTeXView
 Document=literatur.bib
 
 [Frame2_View0,0]
-TopLine=49
-Cursor=2218
+TopLine=44
+Cursor=1839
 
 [Frame3]
 Flags=0
@@ -71,8 +71,8 @@ Class=LaTeXView
 Document=seminararbeit.tex
 
 [Frame3_View0,0]
-TopLine=61
-Cursor=1676
+TopLine=60
+Cursor=1581
 
 [Frame4]
 Flags=0
@@ -107,8 +107,8 @@ Class=LaTeXView
 Document=chapter\ausblick.tex
 
 [Frame5_View0,0]
-TopLine=0
-Cursor=1852
+TopLine=6
+Cursor=1817
 
 [Frame6]
 Flags=0
@@ -146,7 +146,25 @@ Document=..\..\..\..\..\..\Programmierung\apache_spark\workspace\spark\src\main\
 TopLine=0
 Cursor=377
 
+[Frame8]
+Flags=0
+ShowCmd=1
+MinPos.x=-1
+MinPos.y=-1
+MaxPos.x=-1
+MaxPos.y=-1
+NormalPos.left=4
+NormalPos.top=26
+NormalPos.right=1703
+NormalPos.bottom=452
+Class=LaTeXView
+Document=titelseite.tex
+
+[Frame8_View0,0]
+TopLine=1
+Cursor=277
+
 [SessionInfo]
-FrameCount=8
-ActiveFrame=7
+FrameCount=9
+ActiveFrame=3
 

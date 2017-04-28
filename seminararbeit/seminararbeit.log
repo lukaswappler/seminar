@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210 64-bit) (preloaded format=pdflatex 2017.4.2)  26 APR 2017 19:38
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210 64-bit) (preloaded format=pdflatex 2017.4.2)  28 APR 2017 19:11
 entering extended mode
 **"D:/Eigene Dateien/09 Studium/01912_Seminar/git/seminar/seminararbeit/seminar
 arbeit.tex"
@@ -1103,6 +1103,30 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 2.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 2.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 5.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 5.
+
+Underfull \hbox (badness 10000) in paragraph at lines 4--7
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 8--10
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 11--13
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 14--17
+
+ []
+
 )
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 72.
@@ -1125,10 +1149,6 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 2.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 2.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 4.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 4.
 
 Underfull \hbox (badness 10000) in paragraph at lines 4--5
 
@@ -1148,7 +1168,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 14--15
 
  []
 
-<./bilder/spark_komponenten_nutzung.png, id=120, 462.97969pt x 172.39406pt>
+<./bilder/spark_komponenten_nutzung.png, id=146, 462.97969pt x 172.39406pt>
 File: ./bilder/spark_komponenten_nutzung.png Graphic file (type png)
 
 <use ./bilder/spark_komponenten_nutzung.png>
@@ -1160,7 +1180,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 24--26
 
  []
 
-<./bilder/spark_core.png, id=125, 568.37344pt x 286.06876pt>
+<./bilder/spark_core.png, id=151, 568.37344pt x 286.06876pt>
 File: ./bilder/spark_core.png Graphic file (type png)
 
 <use ./bilder/spark_core.png>
@@ -1198,7 +1218,7 @@ Package babel Info: Redefining ngerman shorthand "|
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 52.
 
-<./bilder/cluster-overview.png, id=162, 536.0025pt x 250.9375pt>
+<./bilder/cluster-overview.png, id=183, 536.0025pt x 250.9375pt>
 File: ./bilder/cluster-overview.png Graphic file (type png)
 
 <use ./bilder/cluster-overview.png>
@@ -1222,7 +1242,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 94--97
 
  []
 
-<./bilder/spark_sql.png, id=186, 568.37344pt x 133.24782pt>
+<./bilder/spark_sql.png, id=206, 568.37344pt x 133.24782pt>
 File: ./bilder/spark_sql.png Graphic file (type png)
 
 <use ./bilder/spark_sql.png>
@@ -1256,7 +1276,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 120--122
 
  []
 
-<./bilder/spark_streaming.jpg, id=212, 956.82469pt x 383.18156pt>
+<./bilder/spark_streaming.jpg, id=230, 956.82469pt x 383.18156pt>
 File: ./bilder/spark_streaming.jpg Graphic file (type jpg)
 
 <use ./bilder/spark_streaming.jpg>
@@ -1280,7 +1300,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 140--142
 
  []
 
-<./bilder/vertex_routing_edge_tables.png, id=226, 710.55864pt x 466.57512pt>
+<./bilder/vertex_routing_edge_tables.png, id=242, 710.55864pt x 466.57512pt>
 File: ./bilder/vertex_routing_edge_tables.png Graphic file (type png)
 
 <use ./bilder/vertex_routing_edge_tables.png>
@@ -1310,7 +1330,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 162--168
 
  []
 
-<./bilder/ml-pipeline.png, id=237, 664.4022pt x 169.5936pt>
+<./bilder/ml-pipeline.png, id=253, 664.4022pt x 169.5936pt>
 File: ./bilder/ml-pipeline.png Graphic file (type png)
 
 <use ./bilder/ml-pipeline.png>
@@ -1334,7 +1354,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 186--188
 
  []
 
-<./bilder/spark_r_architecture.PNG, id=247, 362.85562pt x 222.8325pt>
+<./bilder/spark_r_architecture.PNG, id=263, 362.85562pt x 222.8325pt>
 File: ./bilder/spark_r_architecture.PNG Graphic file (type png)
 
 <use ./bilder/spark_r_architecture.PNG>
@@ -1372,7 +1392,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 212--213
 
  []
 
-<./bilder/spark_ui_worker.PNG, id=266, 711.4078pt x 495.35063pt>
+<./bilder/spark_ui_worker.PNG, id=282, 711.4078pt x 495.35063pt>
 File: ./bilder/spark_ui_worker.PNG Graphic file (type png)
 
 <use ./bilder/spark_ui_worker.PNG>
@@ -1388,13 +1408,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 231--233
  []
 
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 234.
+(babel)             in language  on input line 237.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 234.
+(babel)             in language  on input line 237.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 234.
+(babel)             in language  on input line 237.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 234.
+(babel)             in language  on input line 237.
 [13 <./bilder/spark_ui_worker.PNG>]
 LaTeX Font Info:    Try loading font information for OMS+cmr on input line 238.
 
@@ -1422,25 +1442,25 @@ Underfull \hbox (badness 10000) in paragraph at lines 265--268
 
  []
 
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 269.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 269.
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 269.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 269.
-[14]
+
 Underfull \hbox (badness 10000) in paragraph at lines 269--272
 
  []
 
-
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 272.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 272.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 272.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 272.
+[14]
 Underfull \hbox (badness 10000) in paragraph at lines 273--276
 
  []
 
-<./excel/Nutzung.png, id=298, 518.6878pt x 280.04625pt>
+<./excel/Nutzung.png, id=314, 518.6878pt x 280.04625pt>
 File: ./excel/Nutzung.png Graphic file (type png)
 
 <use ./excel/Nutzung.png>
@@ -1464,6 +1484,21 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 2.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 2.
+
+Underfull \hbox (badness 10000) in paragraph at lines 4--5
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 6--8
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 9--11
+
+ []
+
 )
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 74.
@@ -1515,7 +1550,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 2.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 2.
-<./bilder/listing_top20.PNG, id=329, 553.31718pt x 380.92313pt>
+<./bilder/listing_top20.PNG, id=345, 553.31718pt x 380.92313pt>
 File: ./bilder/listing_top20.PNG Graphic file (type png)
 
 <use ./bilder/listing_top20.PNG>
@@ -1546,6 +1581,12 @@ Package babel Info: Redefining ngerman shorthand "|
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 4.
 
+Overfull \hbox (2.57475pt too wide) in paragraph at lines 6--6
+[]\OT1/cmr/m/n/12 Mahmoud Par-si-an. \OT1/cmr/m/it/12 Da-ta Al-go-rithms\OT1/cm
+r/m/n/12 . 1005 Gra-ven-stein Highway North: O'Reilly
+ []
+
+
 Overfull \hbox (0.19849pt too wide) in paragraph at lines 8--8
 []\OT1/cmr/m/n/12 Apache Soft-wa-re Foun-da-ti-on. \OT1/cmr/m/it/12 Apa-che Spa
 rk Com-mu-ni-ty\OT1/cmr/m/n/12 . Apr. 2017. \OT1/cmr/m/sc/12 url\OT1/cmr/m/n/12
@@ -1565,7 +1606,14 @@ Package babel Info: Redefining ngerman shorthand "~
 
 
 
-])
+]
+Overfull \hbox (6.38461pt too wide) in paragraph at lines 8--8
+[]\OT1/cmr/m/n/12 Apache Soft-wa-re Foun-da-ti-on. \OT1/cmr/m/it/12 Re-se-arch 
+| Apa-che Spark\OT1/cmr/m/n/12 . Apr. 2017. \OT1/cmr/m/sc/12 url\OT1/cmr/m/n/12
+ : []$\OT1/cmtt/m/n/12 https :
+ []
+
+)
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 77.
 Package babel Info: Redefining ngerman shorthand "~
@@ -1589,13 +1637,13 @@ Package logreq Info: Writing requests to 'seminararbeit.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 15454 strings out of 493333
- 263852 string characters out of 3139169
- 848242 words of memory out of 3000000
- 18629 multiletter control sequences out of 15000+200000
+ 15467 strings out of 493333
+ 264146 string characters out of 3139169
+ 848348 words of memory out of 3000000
+ 18635 multiletter control sequences out of 15000+200000
  12376 words of font info for 43 fonts, out of 3000000 for 9000
  1145 hyphenation exceptions out of 8191
- 54i,11n,66p,8922b,1704s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 54i,10n,66p,8922b,1704s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Pr
 ogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:/Program F
 iles/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKT
@@ -1607,9 +1655,9 @@ cmsl12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmssbx10
 .pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:
 /Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Program
  Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on seminararbeit.pdf (20 pages, 825109 bytes).
+Output written on seminararbeit.pdf (20 pages, 831846 bytes).
 PDF statistics:
- 430 PDF objects out of 1000 (max. 8388607)
- 104 named destinations out of 1000 (max. 500000)
+ 451 PDF objects out of 1000 (max. 8388607)
+ 111 named destinations out of 1000 (max. 500000)
  205 words of extra memory for PDF output out of 10000 (max. 10000000)
 

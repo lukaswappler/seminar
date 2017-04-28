@@ -121,7 +121,7 @@ Auch DStreams haben die bereits aus \ref{sec_sparkcore} bekannten zwei Operation
 Um Datenströme zu empfangen wird ein Empfänger (Receiver) auf einem Worker-Knoten gestartet. Die eingehenden Daten werden in kleinen Datenblöcken gespeichert. Dafür werden die Daten innerhalb eines vorgegebenen Zeitfenster gepuffert. Pro Zeitfenster werden die Daten in dem Puffer in eine Partition eines RDD abgelegt.\footnote{Vgl. \cite{BDS16}} \\
 
 \noindent
-In der Spark-Streaming Bilbliothek sind bereits einige Empfänger wie Kafka\footnote{\textbf{Apache Kafka} dient zur Verarbeitung von Datenströmen.}, Twitter\footnote{\textbf{Twitter} ist ein Mikrobloggingdinst. Nutzer können über das Portal Kurznachrichten verbreiten. } oder TCP-Sockets\footnote{\textbf{TCP-Sockets} sind Kommunkationsendpunkte, die zur Netzwerkkommunikation genutzt werden. } enthalten. \\
+In der Spark-Streaming Bilbliothek sind bereits einige Empfänger wie Kafka\footnote{\textbf{Apache Kafka} dient zur Verarbeitung von Datenströmen.}, Twitter enthalten. \\
 \autoref{fig:spark_streaming} zeigt den Ablauf vom Eingang der Daten über die Verarbeitung bis hin zur Ausgabe. Diese Daten können dann zum Beispiel auf einen Dashboard ausgegeben oder in einer Datenbank gespeichert werden.
 
 \begin{figure}[h]
@@ -212,7 +212,7 @@ R hat den Nachteil, dass es zur Laufzeit nur auf einem einzelnen Thread arbeitet
 Analysen von Performance Probleme erweisen sich mitunter als sehr schwierig. Apache Spark bringt zwar die seiteneffektfreie API mit, jedoch können trotzdem jede Menge Probleme auftreten. Für Entwickler ist es immer schwer im Hinterkopf zu behalten, dass Operationen auf vielen verteilten Rechnern ablaufen. \\ 
 
 \noindent
-Über eine webbasierte Übersicht, die in \autoref{fig:spark_ui_worker} zu sehen ist,i können Informationen zu dann aktuell laufenden Auswertungen und Dauer von Ergebnissen etc. überwacht werden. \footnote{Vgl. \cite[12]{AAWS15}}
+Über eine webbasierte Übersicht, die in \autoref{fig:spark_ui_worker} zu sehen ist, können Informationen zu dann aktuell laufenden Auswertungen und Dauer von Ergebnissen etc. überwacht werden.\footnote{Vgl. \cite[12]{AAWS15}}
 
 \begin{figure}[h]
   \centering
