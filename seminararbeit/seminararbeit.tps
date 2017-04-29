@@ -14,11 +14,11 @@ NormalPos.top=26
 NormalPos.right=1703
 NormalPos.bottom=452
 Class=LaTeXView
-Document=chapter\hauptteil.tex
+Document=chapter\einleitung.tex
 
 [Frame0_View0,0]
-TopLine=319
-Cursor=19893
+TopLine=0
+Cursor=831
 
 [Frame1]
 Flags=0
@@ -32,13 +32,31 @@ NormalPos.top=26
 NormalPos.right=1703
 NormalPos.bottom=452
 Class=LaTeXView
-Document=chapter\fazit.tex
+Document=chapter\hauptteil.tex
 
 [Frame1_View0,0]
-TopLine=0
-Cursor=46
+TopLine=253
+Cursor=16887
 
 [Frame2]
+Flags=0
+ShowCmd=1
+MinPos.x=-1
+MinPos.y=-1
+MaxPos.x=-1
+MaxPos.y=-1
+NormalPos.left=4
+NormalPos.top=26
+NormalPos.right=1703
+NormalPos.bottom=452
+Class=LaTeXView
+Document=chapter\fazit.tex
+
+[Frame2_View0,0]
+TopLine=0
+Cursor=275
+
+[Frame3]
 Flags=0
 ShowCmd=1
 MinPos.x=-1
@@ -52,27 +70,9 @@ NormalPos.bottom=452
 Class=BibTeXView
 Document=literatur.bib
 
-[Frame2_View0,0]
-TopLine=44
-Cursor=1839
-
-[Frame3]
-Flags=0
-ShowCmd=1
-MinPos.x=-1
-MinPos.y=-1
-MaxPos.x=-1
-MaxPos.y=-1
-NormalPos.left=4
-NormalPos.top=26
-NormalPos.right=1703
-NormalPos.bottom=452
-Class=LaTeXView
-Document=seminararbeit.tex
-
 [Frame3_View0,0]
-TopLine=60
-Cursor=1581
+TopLine=159
+Cursor=5145
 
 [Frame4]
 Flags=0
@@ -86,11 +86,11 @@ NormalPos.top=26
 NormalPos.right=1703
 NormalPos.bottom=452
 Class=LaTeXView
-Document=chapter\literaturverzeichnis.tex
+Document=seminararbeit.tex
 
 [Frame4_View0,0]
-TopLine=0
-Cursor=320
+TopLine=60
+Cursor=1581
 
 [Frame5]
 Flags=0
@@ -104,11 +104,11 @@ NormalPos.top=26
 NormalPos.right=1703
 NormalPos.bottom=452
 Class=LaTeXView
-Document=chapter\ausblick.tex
+Document=chapter\literaturverzeichnis.tex
 
 [Frame5_View0,0]
-TopLine=6
-Cursor=1817
+TopLine=0
+Cursor=320
 
 [Frame6]
 Flags=0
@@ -122,11 +122,11 @@ NormalPos.top=26
 NormalPos.right=1703
 NormalPos.bottom=452
 Class=LaTeXView
-Document=chapter\anhang.tex
+Document=chapter\ausblick.tex
 
 [Frame6_View0,0]
-TopLine=0
-Cursor=242
+TopLine=6
+Cursor=1817
 
 [Frame7]
 Flags=0
@@ -140,11 +140,11 @@ NormalPos.top=26
 NormalPos.right=1703
 NormalPos.bottom=452
 Class=LaTeXView
-Document=..\..\..\..\..\..\Programmierung\apache_spark\workspace\spark\src\main\java\spark\SeminararbeitTop20Woerter.java
+Document=chapter\anhang.tex
 
 [Frame7_View0,0]
-TopLine=0
-Cursor=377
+TopLine=14
+Cursor=832
 
 [Frame8]
 Flags=0
@@ -166,5 +166,5 @@ Cursor=277
 
 [SessionInfo]
 FrameCount=9
-ActiveFrame=3
+ActiveFrame=1
 

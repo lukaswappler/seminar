@@ -1,15 +1,15 @@
 [0] Config.pm:354> INFO - This is Biber 2.7
 [0] Config.pm:357> INFO - Logfile is 'seminararbeit.blg'
-[40] biber-MSWIN64:303> INFO - === 
-[68] Biber.pm:359> INFO - Reading 'seminararbeit.bcf'
-[181] Biber.pm:835> INFO - Found 20 citekeys in bib section 0
-[200] Biber.pm:3670> INFO - Processing section 0
-[229] Biber.pm:3840> INFO - Looking for bibtex format file 'literatur.bib' for section 0
-[233] bibtex.pm:1435> INFO - Decoding LaTeX character macros into UTF-8
-[241] bibtex.pm:1292> INFO - Found BibTeX data source 'literatur.bib'
-[338] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'variable = shifted' with 'variable = non-ignorable'
-[338] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[338] Biber.pm:3499> INFO - Sorting list 'ynt/global/' of type 'entry' with scheme 'ynt' and locale 'de-DE'
-[338] Biber.pm:3505> INFO - No sort tailoring available for locale 'de-DE'
-[359] bbl.pm:608> INFO - Writing 'seminararbeit.bbl' with encoding 'UTF-8'
-[363] bbl.pm:712> INFO - Output to seminararbeit.bbl
+[39] biber-MSWIN64:303> INFO - === 
+[67] Biber.pm:359> INFO - Reading 'seminararbeit.bcf'
+[179] Biber.pm:835> INFO - Found 20 citekeys in bib section 0
+[196] Biber.pm:3670> INFO - Processing section 0
+[222] Biber.pm:3840> INFO - Looking for bibtex format file 'literatur.bib' for section 0
+[225] bibtex.pm:1435> INFO - Decoding LaTeX character macros into UTF-8
+[232] bibtex.pm:1292> INFO - Found BibTeX data source 'literatur.bib'
+[319] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[320] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'variable = shifted' with 'variable = non-ignorable'
+[320] Biber.pm:3499> INFO - Sorting list 'ynt/global/' of type 'entry' with scheme 'ynt' and locale 'de-DE'
+[320] Biber.pm:3505> INFO - No sort tailoring available for locale 'de-DE'
+[342] bbl.pm:608> INFO - Writing 'seminararbeit.bbl' with encoding 'UTF-8'
+[346] bbl.pm:712> INFO - Output to seminararbeit.bbl

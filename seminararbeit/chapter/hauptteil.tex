@@ -27,7 +27,7 @@ Während Spark Core die Kern-Komponente bildet und alle notwendigen Bausteine f�
 \begin{figure}[h]
   \centering
   \includegraphics[width=\textwidth]{./bilder/spark_core.png}
-  \caption{Spark Core}\label{fig:spark_core}
+  \caption{Apache Spark Framework}\label{fig:spark_core}
 \end{figure}
 
 
@@ -183,8 +183,9 @@ Das Zusammenspiel zwischen Trasformers und Estimators ist in der \autoref{fig:sp
 \newpage
 \subsection{Skalierung von R Programmen (SparkR)}\label{sec_sparkr}
 
-SparkR ist ein R Paket das es ermöglicht eine einfache Oberfläche bereitzustellen um Apache Spark von R aus zu nutzen. SparkR nutzt das bereits bekannte DataFrame welches die Operationen wie \textsl{selection}, \textsl{filtering} oder \textsl{aggregation} bereitstellt. Also genau die Operationen die aus R dem Anwender bereits bekannt sind. 
-Für große Datensätze kann SparkR zusätzlich auf maschinelles Lernen über MLlib zurückgreifen. \\
+\noindent
+R hat den Nachteil, dass es zur Laufzeit nur auf einem einzelnen Thread arbeitet. Diese Hürde kann mit der SparkR Erweiterung genommen werden. SparkR ist ein R Paket das es ermöglicht eine einfache Schnittstelle bereitzustellen um Apache Spark von R aus zu nutzen. SparkR nutzt das bereits bekannte DataFrame welches die Operationen wie \textsl{selection}, \textsl{filtering} oder \textsl{aggregation} bereitstellt. Also genau die Operationen die aus R dem Anwender bereits bekannt sind. \\
+%Für große Datensätze kann SparkR zusätzlich auf maschinelles Lernen über MLlib zurückgreifen. \\
 
 \noindent
 Um das zu ermöglichen ist eine Brücke von R hin zum Spark Context bzw. den Nodes / Workern notwendig. Das Architekturschaubild in \autoref{fig:spark_r_architexture} zeigt diesen Ansatz. 
@@ -193,9 +194,15 @@ Um das zu ermöglichen ist eine Brücke von R hin zum Spark Context bzw. den Nod
   \includegraphics[width=100mm]{./bilder/spark_r_architecture.PNG}
   \caption{SparkR Architektur \cite{VYL+16}}\label{fig:spark_r_architexture}
 \end{figure}
+Die R-JVM bridge ermöglicht es von R aus Funktionen der JVM aufzurufen. Das heißt vom R Spark Contex über die Bridge zum Java Spark Context zu kommunizieren. Für die Kommunikation werden Sockets, die auf Netty\footnote{\textbf{Netty} ist ein High-Performance Netzwerk Framework} basieren, genutzt. Im Vergleich zu anderen Kommunikationsmethoden ist der zusätzlich Aufwand bei Sockets vergleichsweise gering und somit zu vernachlässigen.\footnote{Vgl. \cite{VYL+16}} \\
+%Die Kommunikation üÜber die Sockets kann in beide Richtugnen kommuniziert werden und macht es m
+%Es wurde in SparkR eine API geschaffen mit der es möglich . Das neue SparkR JVM System nutzt einen auf Netty basierenden Socket Server. Der Socket ansatz macht es möglich 
 
 \noindent
-R hat den Nachteil, dass es zur Laufzeit nur auf einem einzelnen Thread arbeitet. Diese Hürde kann mit der SparkR Erweiterung genommen werden. Mithilfe der Verarbeitung auf vielen Kernen und zusätzlich des In-Memory Cachings von Spark kann ein sehr großer Laufzeitgewinn erzielt werden\footnote{Vgl. \cite{VYL+16}}.
+Durch den Einsatz von SparkR kann somit die Verarbeitung auf vielen Rechnern verteilt stattfinden. Auch alle weiteren Merkmale wie In-Memory Cachings oder maschinelles Lernen können somit von Spark genutzt werden und ein großer Laufzeitgewinn erzielt werden. Bei einem Versuch wurden 3 Abfragen mit acht bis 64 Kernen durchgeführt. Dabei konnte di Zeit von 115 Sekunden auf 20 Sekunden reduziert werden. Mit zusätzlichen Caching konnten die 20 Sekunden nochmal auf weniger als 3 Sekunden reduziert werden.\footnote{Vgl. \cite{VYL+16}}.
+
+%Zusätzlich können alle bereits vorgestellten Komponenten auch über  kann bieten die Möglichkeiten, die 
+
 %Solange Auswertungen in R nicht zeitkritisch sind ist der nutzen von SparkR nicht so hoch. Sobald aber Ausführungszeit ehr kurz sein muss oder einfach viel zu lang dauert 
 
 \newpage
@@ -256,8 +263,8 @@ Hier gibt es sehr große Geschwindigkeitsunterschiede.
 
 
 \subsection{Besonderheiten bei der Speichernutzung}
-Die Wahl einer geeigneten bzw. speichereffizienten Datenstruktur wir oftmals unterschätzt. 
-Spark geht davon aus, dass eine Datei in Blöcke einer bestimmten Größe geladen wird. In der Regel 128MB. Zu beachten ist jedoch, dass beim dekomprimieren größere Blöcke entstehen können. So können aus 128MB schnell 3-4GB große Blöcke in dekompriemierten Zustand werden. \\ 
+Die Wahl einer geeigneten bzw. speicherplatzeffizienten Datenstruktur wir oftmals unterschätzt. 
+Spark geht davon aus, dass eine Datei in Blöcke einer bestimmten Größe geladen wird. In der Regel 128MB. Zu beachten ist jedoch, dass beim dekomprimieren größere Blöcke entstehen können. So können aus 128MB schnell 3-4GB große Blöcke in dekomprimierten Zustand werden. \\ 
 
 \noindent
 Um das Speichermanagement zu verbessern wurde ein per-node allocator implementiert. Dieser verwaltet den Speicher auf einer Node. 
@@ -274,7 +281,7 @@ Damit läuft das System robust über für Anwendungsbereiche mit sehr vielen Nod
 
 Mit Apache Spark wurden schon Operationen bei denen über 8000 Nodes involviert waren und über 1PB an Daten verarbeitet wurden durchgeführt.
 Das beansprucht natürlich die I/O Schicht enorm.
-Um I/O Probleme zu vermeiden, bzw. diese besser in den Griff zu bekommen wurde als Basis das Netty-Framework\footnote{\textbf{Netty} ist ein High-Performance Netzwerk Framework} verwendet.
+Um I/O Probleme zu vermeiden, bzw. diese besser in den Griff zu bekommen wurde als Basis das Netty-Framework verwendet.
 \begin{itemize}
 	\item Zero-copy I/O:\\
 	Daten werden direkt von der Festplatte zu dem Socket kopiert. Das vermeidet Last an der CPU bei Kontextwechseln und entlastet zusätzlich den JVM\footnote{\textbf{JVM} (java virtual machine) ist ein Teil der Java-Laufzeitumgebung. Der kompilierte Java-Bytecode wird innerhalb innerhalb dieser virtuellen Maschinen ausgeführt.} garbage collector\footnote{\textbf{garbage collector} kommt in Java zur automatischen Speicherbereinigung zum Einsatz}

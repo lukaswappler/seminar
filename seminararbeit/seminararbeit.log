@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210 64-bit) (preloaded format=pdflatex 2017.4.2)  28 APR 2017 21:24
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210 64-bit) (preloaded format=pdflatex 2017.4.2)  29 APR 2017 11:19
 entering extended mode
 **"D:/Eigene Dateien/09 Studium/01912_Seminar/git/seminar/seminararbeit/seminar
 arbeit.tex"
@@ -938,20 +938,20 @@ Package biblatex Warning: 'babel/polyglossia' detected but 'csquotes' missing.
 (chapter/literaturverzeichnis.aux))
 \openout1 = `seminararbeit.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 56.
-LaTeX Font Info:    ... okay on input line 56.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 56.
-LaTeX Font Info:    ... okay on input line 56.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 56.
-LaTeX Font Info:    ... okay on input line 56.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 56.
-LaTeX Font Info:    ... okay on input line 56.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 56.
-LaTeX Font Info:    ... okay on input line 56.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 56.
-LaTeX Font Info:    ... okay on input line 56.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 56.
-LaTeX Font Info:    ... okay on input line 56.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 57.
+LaTeX Font Info:    ... okay on input line 57.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 57.
+LaTeX Font Info:    ... okay on input line 57.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 57.
+LaTeX Font Info:    ... okay on input line 57.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 57.
+LaTeX Font Info:    ... okay on input line 57.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 57.
+LaTeX Font Info:    ... okay on input line 57.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 57.
+LaTeX Font Info:    ... okay on input line 57.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 57.
+LaTeX Font Info:    ... okay on input line 57.
 
 ("C:\Users\Lukas Wappler\AppData\Roaming\MiKTeX\2.9\tex\context\base\supp-pdf.m
 kii"
@@ -1023,13 +1023,13 @@ Package biblatex Info: Automatic encoding selection.
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'seminararbeit.bbl' found.
 (seminararbeit.bbl)
-Package biblatex Info: Reference section=0 on input line 56.
-Package biblatex Info: Reference segment=0 on input line 56.
+Package biblatex Info: Reference section=0 on input line 57.
+Package biblatex Info: Reference segment=0 on input line 57.
 \AtBeginShipoutBox=\box29
-Package hyperref Info: Link coloring OFF on input line 56.
-LaTeX Info: Redefining \ref on input line 56.
-LaTeX Info: Redefining \pageref on input line 56.
-LaTeX Info: Redefining \nameref on input line 56.
+Package hyperref Info: Link coloring OFF on input line 57.
+LaTeX Info: Redefining \ref on input line 57.
+LaTeX Info: Redefining \pageref on input line 57.
+LaTeX Info: Redefining \nameref on input line 57.
  (seminararbeit.out) (seminararbeit.out)
 \@outlinefile=\write5
 \openout5 = `seminararbeit.out'.
@@ -1061,13 +1061,13 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <17.28> on input line 11.
 )
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 67.
+(babel)             in language  on input line 68.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 67.
+(babel)             in language  on input line 68.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 67.
+(babel)             in language  on input line 68.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 67.
+(babel)             in language  on input line 68.
  [1
 
 {C:/Users/Lukas Wappler/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map} <./l
@@ -1084,13 +1084,13 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 \openout6 = `seminararbeit.toc'.
 
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 72.
+(babel)             in language  on input line 73.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 72.
+(babel)             in language  on input line 73.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 72.
+(babel)             in language  on input line 73.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 72.
+(babel)             in language  on input line 73.
  [2
 
 
@@ -1129,13 +1129,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 14--17
 
 )
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 72.
+(babel)             in language  on input line 73.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 72.
+(babel)             in language  on input line 73.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 72.
+(babel)             in language  on input line 73.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 72.
+(babel)             in language  on input line 73.
  [3
 
 
@@ -1350,7 +1350,7 @@ Package babel Info: Redefining ngerman shorthand "|
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 184.
 
-Underfull \hbox (badness 10000) in paragraph at lines 186--188
+Underfull \hbox (badness 10000) in paragraph at lines 186--189
 
  []
 
@@ -1359,146 +1359,157 @@ File: ./bilder/spark_r_architecture.PNG Graphic file (type png)
 
 <use ./bilder/spark_r_architecture.PNG>
 Package pdftex.def Info: ./bilder/spark_r_architecture.PNG used on input line 1
-93.
+94.
 (pdftex.def)             Requested size: 284.52756pt x 174.73349pt.
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 201.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 201.
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 201.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 201.
- [11 <./bilder/spark_r_architecture.PNG>]
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 202.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 202.
 
-Underfull \hbox (badness 10000) in paragraph at lines 204--205
+Underfull \hbox (badness 10000) in paragraph at lines 190--200
 
  []
 
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 211.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 208.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 208.
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 208.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 208.
+[11 <./bilder/spark_r_architecture.PNG>]
+Package babel Info: Redefining ngerman shorthand "|
+(babel)             in language  on input line 209.
+Package babel Info: Redefining ngerman shorthand "~
+(babel)             in language  on input line 209.
+
+Underfull \hbox (badness 10000) in paragraph at lines 211--212
+
+ []
+
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 218.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\base\omscmr.fd"
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 211.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 218.
 
-Underfull \hbox (badness 10000) in paragraph at lines 216--218
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 219--221
+Underfull \hbox (badness 10000) in paragraph at lines 223--225
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 222--224
+Underfull \hbox (badness 10000) in paragraph at lines 226--228
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 225--227
+Underfull \hbox (badness 10000) in paragraph at lines 229--231
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 232--234
 
  []
 
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 237.
+(babel)             in language  on input line 244.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 237.
+(babel)             in language  on input line 244.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 237.
+(babel)             in language  on input line 244.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 237.
+(babel)             in language  on input line 244.
 [12]
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 238.
+(babel)             in language  on input line 245.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 238.
+(babel)             in language  on input line 245.
 
-Underfull \hbox (badness 10000) in paragraph at lines 240--241
+Underfull \hbox (badness 10000) in paragraph at lines 247--248
 
  []
 
-<./bilder/spark_ui_worker.PNG, id=327, 711.4078pt x 495.35063pt>
+<./bilder/spark_ui_worker.PNG, id=332, 711.4078pt x 495.35063pt>
 File: ./bilder/spark_ui_worker.PNG Graphic file (type png)
 
 <use ./bilder/spark_ui_worker.PNG>
-Package pdftex.def Info: ./bilder/spark_ui_worker.PNG used on input line 247.
+Package pdftex.def Info: ./bilder/spark_ui_worker.PNG used on input line 254.
 (pdftex.def)             Requested size: 469.4705pt x 326.90219pt.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 258.
+(babel)             in language  on input line 265.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 258.
+(babel)             in language  on input line 265.
 
-Underfull \hbox (badness 10000) in paragraph at lines 259--261
+Overfull \hbox (11.87451pt too wide) in paragraph at lines 266--268
+\OT1/cmr/m/n/12 Die Wahl ei-ner ge-eig-ne-ten bzw. spei-cher-platz-ef-fi-zi-en-
+ten Da-ten-struk-tur wir oft-mals un-tersch[]atzt.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 266--268
 
  []
 
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 265.
+(babel)             in language  on input line 272.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 265.
+(babel)             in language  on input line 272.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 265.
+(babel)             in language  on input line 272.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 265.
+(babel)             in language  on input line 272.
 [13 <./bilder/spark_ui_worker.PNG>]
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 273.
+(babel)             in language  on input line 280.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 273.
+(babel)             in language  on input line 280.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 289.
+(babel)             in language  on input line 296.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 289.
+(babel)             in language  on input line 296.
 
-Underfull \hbox (badness 10000) in paragraph at lines 291--292
+Underfull \hbox (badness 10000) in paragraph at lines 298--299
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 293--296
+Underfull \hbox (badness 10000) in paragraph at lines 300--303
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 297--300
+Underfull \hbox (badness 10000) in paragraph at lines 304--307
 
  []
 
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 300.
+(babel)             in language  on input line 307.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 300.
+(babel)             in language  on input line 307.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 300.
+(babel)             in language  on input line 307.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 300.
+(babel)             in language  on input line 307.
 [14]
-Underfull \hbox (badness 10000) in paragraph at lines 301--304
+Underfull \hbox (badness 10000) in paragraph at lines 308--311
 
  []
 
-<./excel/Nutzung.png, id=358, 518.6878pt x 280.04625pt>
+<./excel/Nutzung.png, id=361, 518.6878pt x 280.04625pt>
 File: ./excel/Nutzung.png Graphic file (type png)
 
 <use ./excel/Nutzung.png>
-Package pdftex.def Info: ./excel/Nutzung.png used on input line 313.
+Package pdftex.def Info: ./excel/Nutzung.png used on input line 320.
 (pdftex.def)             Requested size: 469.4705pt x 253.48787pt.
 )
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 73.
+(babel)             in language  on input line 74.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 73.
+(babel)             in language  on input line 74.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 73.
+(babel)             in language  on input line 74.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 73.
+(babel)             in language  on input line 74.
  [15 <./excel/Nutzung.png>]
 \openout2 = `./chapter/fazit.aux'.
 
@@ -1525,13 +1536,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 9--11
 
 )
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 74.
+(babel)             in language  on input line 75.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 74.
+(babel)             in language  on input line 75.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 74.
+(babel)             in language  on input line 75.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 74.
+(babel)             in language  on input line 75.
  [16
 
 
@@ -1553,13 +1564,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 4--13
 
 )
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 75.
+(babel)             in language  on input line 76.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 75.
+(babel)             in language  on input line 76.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 75.
+(babel)             in language  on input line 76.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 75.
+(babel)             in language  on input line 76.
  [17
 
 
@@ -1578,7 +1589,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 4.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 4.
-<./bilder/listing_top20.PNG, id=389, 553.31718pt x 380.92313pt>
+<./bilder/listing_top20.PNG, id=392, 553.31718pt x 380.92313pt>
 File: ./bilder/listing_top20.PNG Graphic file (type png)
 
 <use ./bilder/listing_top20.PNG>
@@ -1607,7 +1618,7 @@ Package babel Info: Redefining ngerman shorthand "|
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 12.
 
-<./bilder/code_verbund_1.PNG, id=395, 545.03625pt x 260.47313pt>
+<./bilder/code_verbund_1.PNG, id=398, 545.03625pt x 260.47313pt>
 File: ./bilder/code_verbund_1.PNG Graphic file (type png)
 
 <use ./bilder/code_verbund_1.PNG>
@@ -1618,7 +1629,7 @@ Package babel Info: Redefining ngerman shorthand "|
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 19.
 
-<./bilder/code_verbund_2.PNG, id=396, 567.62062pt x 424.58624pt>
+<./bilder/code_verbund_2.PNG, id=399, 567.62062pt x 424.58624pt>
 File: ./bilder/code_verbund_2.PNG Graphic file (type png)
 
 <use ./bilder/code_verbund_2.PNG>
@@ -1638,7 +1649,7 @@ Package babel Info: Redefining ngerman shorthand "|
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 26.
 
-<./bilder/code_verbund_3.PNG, id=404, 614.295pt x 330.48468pt>
+<./bilder/code_verbund_3.PNG, id=407, 614.295pt x 330.48468pt>
 File: ./bilder/code_verbund_3.PNG Graphic file (type png)
 
 <use ./bilder/code_verbund_3.PNG>
@@ -1649,7 +1660,7 @@ Package babel Info: Redefining ngerman shorthand "|
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 32.
 
-<./bilder/code_verbund_4.PNG, id=405, 353.06906pt x 233.37187pt>
+<./bilder/code_verbund_4.PNG, id=408, 353.06906pt x 233.37187pt>
 File: ./bilder/code_verbund_4.PNG Graphic file (type png)
 
 <use ./bilder/code_verbund_4.PNG>
@@ -1657,13 +1668,13 @@ Package pdftex.def Info: ./bilder/code_verbund_4.PNG used on input line 35.
 (pdftex.def)             Requested size: 284.52756pt x 188.06871pt.
 )
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 76.
+(babel)             in language  on input line 77.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 76.
+(babel)             in language  on input line 77.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 76.
+(babel)             in language  on input line 77.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 76.
+(babel)             in language  on input line 77.
  [20 <./bilder/code_verbund_3.PNG> <./bilder/code_verbund_4.PNG>]
 \openout2 = `./chapter/literaturverzeichnis.aux'.
 
@@ -1710,21 +1721,21 @@ LaTeX Font Info:    Font shape `OMS/cmr/m/it' in size <12> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 8.
 )
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 77.
+(babel)             in language  on input line 78.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 77.
+(babel)             in language  on input line 78.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 77.
+(babel)             in language  on input line 78.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 77.
+(babel)             in language  on input line 78.
  [22]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 81.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 81.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 82.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 82.
  (seminararbeit.aux (chapter/einleitung.aux) (chapter/hauptteil.aux)
 (chapter/fazit.aux) (chapter/ausblick.aux) (chapter/anhang.aux)
 (chapter/literaturverzeichnis.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 81.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 81.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 82.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 82.
 Package rerunfilecheck Info: File `seminararbeit.out' has not changed.
 (rerunfilecheck)             Checksum: 6BC3113CAFD5DA85EEBCF194B8926B48;1831.
 Package logreq Info: Writing requests to 'seminararbeit.run.xml'.
@@ -1732,9 +1743,9 @@ Package logreq Info: Writing requests to 'seminararbeit.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 15513 strings out of 493333
- 265163 string characters out of 3139169
- 848578 words of memory out of 3000000
+ 15514 strings out of 493333
+ 265175 string characters out of 3139169
+ 848599 words of memory out of 3000000
  18665 multiletter control sequences out of 15000+200000
  12376 words of font info for 43 fonts, out of 3000000 for 9000
  1145 hyphenation exceptions out of 8191
@@ -1750,9 +1761,9 @@ cmsl12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmssbx10
 .pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:
 /Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Program
  Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on seminararbeit.pdf (22 pages, 947984 bytes).
+Output written on seminararbeit.pdf (22 pages, 949039 bytes).
 PDF statistics:
- 515 PDF objects out of 1000 (max. 8388607)
- 123 named destinations out of 1000 (max. 500000)
+ 518 PDF objects out of 1000 (max. 8388607)
+ 124 named destinations out of 1000 (max. 500000)
  273 words of extra memory for PDF output out of 10000 (max. 10000000)
 
