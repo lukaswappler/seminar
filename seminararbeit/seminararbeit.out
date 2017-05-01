@@ -16,7 +16,7 @@
 \BOOKMARK [0][-]{chapter.4}{Ausblick \046 Weiterentwicklung}{}% 16
 \BOOKMARK [0][-]{chapter.5}{Anhang}{}% 17
 \BOOKMARK [1][-]{section.5.1}{W\366rter z\344hlen und Top 20 Ranking ausgeben}{chapter.5}% 18
-\BOOKMARK [1][-]{section.5.2}{Beispielimplementierung f\374r den Verbund meherer Spark Komponenten}{chapter.5}% 19
+\BOOKMARK [1][-]{section.5.2}{Beispielimplementierung f\374r den Verbund mehrerer Spark Komponenten}{chapter.5}% 19
 \BOOKMARK [2][-]{subsection.5.2.1}{Einlesen der Daten}{section.5.2}% 20
 \BOOKMARK [2][-]{subsection.5.2.2}{Maschinelles Lernen}{section.5.2}% 21
 \BOOKMARK [2][-]{subsection.5.2.3}{MapReduce und Ausgabe}{section.5.2}% 22

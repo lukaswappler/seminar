@@ -388,85 +388,85 @@
     \endentry
     \entry{ZXW+16}{report}{}
       \name{author}{14}{}{%
-        {{hash=448b02ff39b24be33fabaac34808c36a}{%
-           family={ZAHARIA},
+        {{hash=00dc518b94dfa6349c86e70661a1a5ef}{%
+           family={Zaharia},
            familyi={Z\bibinitperiod},
-           given={MATEI},
+           given={Matei},
            giveni={M\bibinitperiod}}}%
-        {{hash=ec6010c440e81015b187b34ae2d8fbcb}{%
-           family={XIN},
+        {{hash=fa12ff7c63d246671ad0d5036cccb4cd}{%
+           family={Xin},
            familyi={X\bibinitperiod},
-           given={REYNOLD\bibnamedelima S.},
+           given={Reynold\bibnamedelima S.},
            giveni={R\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
-        {{hash=bfa7b46f8ae9b55415c54fef836e4122}{%
-           family={WENDELL},
+        {{hash=54749885e1243b01239492a603b6a69e}{%
+           family={Wendell},
            familyi={W\bibinitperiod},
-           given={PATRICK},
+           given={Patrick},
            giveni={P\bibinitperiod}}}%
-        {{hash=4aa4844480578473f42bd67483d29f5a}{%
-           family={DAS},
+        {{hash=f8b27ed8b503bc3e7b32fc53bace3697}{%
+           family={Das},
            familyi={D\bibinitperiod},
-           given={TATHAGATA},
+           given={Tathagata},
            giveni={T\bibinitperiod}}}%
-        {{hash=8b8f8b88234b0dcf926611b5f21a5f79}{%
-           family={ARMBRUST},
+        {{hash=8eafad8289b06f72c2e8b7caf80a413a}{%
+           family={Armbrust},
            familyi={A\bibinitperiod},
-           given={MICHAEL},
+           given={Michael},
            giveni={M\bibinitperiod}}}%
-        {{hash=5f5707287d329d13e01293a7846ed777}{%
-           family={DAVE},
+        {{hash=aec50de877bd49b0c55f7067c573cd4f}{%
+           family={Dave},
            familyi={D\bibinitperiod},
-           given={ANKUR},
+           given={Ankur},
            giveni={A\bibinitperiod}}}%
-        {{hash=0449a19b7bc6c8a7e274c59ed19ff3e5}{%
-           family={MENG},
+        {{hash=2776c215c8df7c9787aea25db59709d0}{%
+           family={Meng},
            familyi={M\bibinitperiod},
-           given={XIANGRUI},
+           given={Xiangrui},
            giveni={X\bibinitperiod}}}%
-        {{hash=1a4ff538b72f85b29cd257ad3184dff1}{%
-           family={ROSEN},
+        {{hash=365d3ec4a85f5051e18fc7c1e63b210b}{%
+           family={Rosen},
            familyi={R\bibinitperiod},
-           given={JOSH},
+           given={Josh},
            giveni={J\bibinitperiod}}}%
-        {{hash=3bf2689e2e5241132e58c82a0996f246}{%
-           family={VENKATARAMAN},
+        {{hash=721534f33cd88b3753e3bb459468783f}{%
+           family={Venkataraman},
            familyi={V\bibinitperiod},
-           given={SHIVARAM},
+           given={Shivaram},
            giveni={S\bibinitperiod}}}%
-        {{hash=56e5e84e2b1668306ee833e54a5ac83a}{%
-           family={FRANKLIN},
+        {{hash=9fc5630d12e8b22a1d2351a530caa51b}{%
+           family={Franklin},
            familyi={F\bibinitperiod},
-           given={MICHAEL\bibnamedelima J.},
+           given={Michael\bibnamedelima J.},
            giveni={M\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
-        {{hash=2a5e970f3d5d85049cf6029eda1d7832}{%
-           family={GHODSI},
+        {{hash=dfd14c69d2338ce9cf556c819a32d286}{%
+           family={Ghodsi},
            familyi={G\bibinitperiod},
-           given={ALI},
+           given={Ali},
            giveni={A\bibinitperiod}}}%
-        {{hash=1c781c2a86d5d82e3b1859fe761a6333}{%
-           family={GONZALEZ},
+        {{hash=fa1b97983892cfef89de6a1b63f97bcc}{%
+           family={Gonzalez},
            familyi={G\bibinitperiod},
-           given={JOSEPH},
+           given={Joseph},
            giveni={J\bibinitperiod}}}%
-        {{hash=8c13468ee9173a95b5d0bee953cba1d5}{%
-           family={SHENKER},
+        {{hash=8d2fd528d2484047352789c731e250a5}{%
+           family={Shenker},
            familyi={S\bibinitperiod},
-           given={SCOTT},
+           given={Scott},
            giveni={S\bibinitperiod}}}%
-        {{hash=9359e7c6f6ecbc7f9d0c06128daf659c}{%
-           family={STOICA},
+        {{hash=51d9ef26181e2e8a9dc546b401e0bb26}{%
+           family={Stoica},
            familyi={S\bibinitperiod},
-           given={ION},
+           given={Ion},
            giveni={I\bibinitperiod}}}%
       }
       \list{institution}{1}{%
-        {COMMUNICATIONS OF THE ACM}%
+        {Communications Of The Acm}%
       }
-      \strng{namehash}{70b0e49d395dfecf74e5d3fd7552409d}
-      \strng{fullhash}{cbec2645bfb608dd6d69fbdabf20e7a4}
-      \strng{authornamehash}{70b0e49d395dfecf74e5d3fd7552409d}
-      \strng{authorfullhash}{cbec2645bfb608dd6d69fbdabf20e7a4}
-      \field{labelalpha}{ZAH+15}
+      \strng{namehash}{43b7683e391995e2f59755c9e939df3c}
+      \strng{fullhash}{630783873ba2197fae1e352cdafaee24}
+      \strng{authornamehash}{43b7683e391995e2f59755c9e939df3c}
+      \strng{authorfullhash}{630783873ba2197fae1e352cdafaee24}
+      \field{labelalpha}{Zah+15}
       \field{sortinit}{2}
       \field{sortinithash}{0aa614ace9f3a40ef5a67e7f7a184048}
       \field{labelnamesource}{author}
@@ -508,6 +508,31 @@
       \field{title}{Big Data SMACK}
       \field{year}{2016}
     \endentry
+    \entry{DATABRICK_SPARK_KEY_TERMS}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=13afa7bc4ce7098ebd2b5b580fa1f436}{%
+           family={Databricks},
+           familyi={D\bibinitperiod},
+           given={Inc.},
+           giveni={I\bibinitperiod}}}%
+      }
+      \strng{namehash}{13afa7bc4ce7098ebd2b5b580fa1f436}
+      \strng{fullhash}{13afa7bc4ce7098ebd2b5b580fa1f436}
+      \strng{authornamehash}{13afa7bc4ce7098ebd2b5b580fa1f436}
+      \strng{authorfullhash}{13afa7bc4ce7098ebd2b5b580fa1f436}
+      \field{labelalpha}{Dat17}
+      \field{sortinit}{2}
+      \field{sortinithash}{0aa614ace9f3a40ef5a67e7f7a184048}
+      \field{extraalpha}{1}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{5}
+      \field{title}{Apache Spark Key Terms, Explained - The Databricks Blog}
+      \field{year}{2017}
+      \verb{url}
+      \verb https://databricks.com/blog/2016/06/22/apache-spark-key-terms-explained.html
+      \endverb
+    \endentry
     \entry{DATABRICK_SPARK_2_0}{misc}{}
       \name{author}{1}{}{%
         {{hash=13afa7bc4ce7098ebd2b5b580fa1f436}{%
@@ -523,6 +548,7 @@
       \field{labelalpha}{Dat17}
       \field{sortinit}{2}
       \field{sortinithash}{0aa614ace9f3a40ef5a67e7f7a184048}
+      \field{extraalpha}{2}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{month}{4}

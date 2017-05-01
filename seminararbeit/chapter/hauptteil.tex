@@ -1,11 +1,12 @@
 \newpage
 \chapter{Apache Spark} 
 
-Apache Spark ist ein Open Source Framework, dass ermöglicht verteilt über ein Cluster Programme und Algorithmen auszuführen. Zusätzlich ist das Programmiermodell bzw. die API zum schreiben solcher Programme sehr einfach und elegant gehalten.\footnote{Vgl. \cite{AAWS15}} \\
+Apache Spark ist ein Open Source Framework, dass es ermöglicht verteilt über ein Cluster Programme und Algorithmen auszuführen. Zusätzlich ist das Programmiermodell bzw. die API zum Schreiben solcher Programme sehr einfach und elegant gehalten.\footnote{Vgl. \cite{AAWS15}} \\
 
 \noindent
-Das Framework ist im Rahmen eine Forschungsprojekts entstanden. Das Forschungsprojekt wurde 2009 in der Universtiy of California in Berkeley im sogenannten AMPLab\footnote{\textbf{AMPLab} ist ein Labor der Berkeley Universität in Californien, die sich auf Big-Data Analysen spezialisiert hat. } ins Leben gerufen. Seit 2010 steht es als Open Source Software unter der BSD-Lizenz\footnote{\textbf{BSD-Lizenz} (Berkeley Software Distribution-Lizenz): bezeichnet eine Gruppe von Lizenzen, die eine breitere Wiederverwertung erlaubt.} zur Verfügung. Das Projekt wird seit 2013 von der Apache Software Foundation\footnote{\textbf{Apache Software Foundation} ist eine ehrenamtlich arbeitende Organisation, die die Apache-Projekte fördert.} weitergeführt. Seit 2014 ist es dort als Top Level Projekt eingestuft. Zum aktuellen Zeitpunkt steht Apache Spark unter der Apache 2.0 Lizenz\footnote{Software, die einer \textbf{Apache 2.0 Lizenz} unterliegt darf bis auf wenige Regeln und Auflagen frei verwendet und verändert werden.} zur Verfügung. \\
+Das Framework ist im Rahmen eines Forschungsprojekts, welches 2009 in der Universtiy of California in Berkeley im sogenannten AMPLab\footnote{\textbf{AMPLab} ist ein Labor der Berkeley Universität in Californien, die sich auf Big-Data Analysen spezialisiert hat. } ins Leben gerufen wurde, entstanden. Es ist 2010 als Open Source Software unter der BSD-Lizenz\footnote{\textbf{BSD-Lizenz} (Berkeley Software Distribution-Lizenz): bezeichnet eine Gruppe von Lizenzen, die eine breitere Wiederverwertung erlaubt.} zur Verfügung gestellt worden. Das Projekt wird seit 2013 von der Apache Software Foundation\footnote{\textbf{Apache Software Foundation} ist eine ehrenamtlich arbeitende Organisation, die die Apache-Projekte fördert.} weitergeführt. 2014 wurde es als Top Level Projekt eingestuft. Zum aktuellen Zeitpunkt steht Apache Spark unter der Apache 2.0 Lizenz\footnote{Software, die einer \textbf{Apache 2.0 Lizenz} unterliegt, darf bis auf wenige Regeln und Auflagen frei verwendet und verändert werden.} zur Verfügung. \\
 
+%Seit 2010 steht es 
 
 % \ref{sec_sparkr} %\nameref{sec_sparkr} .
 
@@ -15,7 +16,7 @@ Apache Spark besteht im wesentlichen aus fünf Modulen: Spark Core, Spark SQL, S
 
 \begin{figure}[h]
   \centering
-  \includegraphics[width=100mm]{./bilder/spark_komponenten_nutzung.png}
+  \fbox{\includegraphics[width=100mm]{./bilder/spark_komponenten_nutzung.png}}	
   \caption{Nutzung der Komponenten \cite{ZXW+16}}\label{fig:spark_komp_nutzung}
 \end{figure}
 
@@ -26,16 +27,16 @@ Während Spark Core die Kern-Komponente bildet und alle notwendigen Bausteine f�
 
 \begin{figure}[h]
   \centering
-  \includegraphics[width=\textwidth]{./bilder/spark_core.png}
-  \caption{Apache Spark Framework}\label{fig:spark_core}
+  \fbox{\includegraphics[width=\textwidth]{./bilder/spark_core.png}}
+  \caption{Apache Spark Framework \cite{DATABRICK_SPARK_KEY_TERMS}}\label{fig:spark_core}
 \end{figure}
 
 
 \noindent
-Die Module werden in den folgenden Kapitel von \ref{sec_sparkcore} bis \ref{sec_sparkmlib} näher beleuchtet. \\
+Die Module werden in den folgenden Kapitel von \ref{sec_sparkcore} bis \ref{sec_sparkmlib} näher betrachtet. \\
 
 \noindent
-Darüber hinaus wird in Kapitel \ref{sec_sparkr} SparkR vorgestellt. Das Module gehört nicht direkt zum Kern, jedoch bietet es interessante Möglichkeiten Datenanylsen mit R\footnote{\textbf{R} ist eine Programmiersprache für statistische Berechnungen und dem erstellen statistischer Grafiken. } zu optimieren bzw. zu beschleunigen und wird aus diesem Grund hier mit aufgeführt.
+Darüber hinaus wird in Kapitel \ref{sec_sparkr} SparkR vorgestellt. Das Modul gehört nicht direkt zum Kern, jedoch bietet die Möglichkeit die Datenanylsen mit R\footnote{\textbf{R} ist eine Programmiersprache für statistische Berechnungen und dem erstellen statistischer Grafiken. } zu optimieren bzw. zu beschleunigen und wird aus diesem Grund mit aufgeführt.
 
 %Die Aufteilung in die verschiedenen Module macht es sehr gut möglich nur einen Teil der Module zu verwenden. 
 
@@ -51,19 +52,17 @@ Darüber hinaus wird in Kapitel \ref{sec_sparkr} SparkR vorgestellt. Das Module 
 \newpage
 \subsection{Grundlage des Systems (Spark-Core \& RDD’s)}\label{sec_sparkcore}
 %der grundlegende Auführungs-Engine 
-Spark Core ist Grundlage der Spark Plattform. Alle anderen Komponenten bauen auf diesen Kern auf. Alle grundlegenden infrastrukturellen Funktionen sind darin enthalten. Darunter zählen die Aufgabenverwaltung, das Scheduling, sowie I/O Funktionen.
+Spark Core ist die Grundlage der Spark Plattform. Alle anderen Komponenten bauen auf diesen Kern auf. In dem Kern sind die grundlegenden infrastrukturellen Funktionen enthalten. Darunter zählen die Aufgabenverwaltung, das Scheduling sowie I/O Funktionen.
 Der Kern liefert zum Beispiel die Möglichkeit Ergebnisse von Berechnungen direkt im Arbeitsspeicher zu halten und diese wiederzuverwenden. Das kann die Geschwindigkeit drastisch um das zehn bis 30 fache erhöhen\footnote{Vgl. \cite{VYL+16}}. 
-Das grundlegende Programmiermodell wie das Arbeiten mit den RDD's und die API's für die verschiedenen Sprachen (Java, Scala und Python).\footnote{Vgl. \cite{DATABRICK_ABOUT}} \\
-In der \autoref{fig:spark_core} sind die einzelnen Bausteine innerhalb der Spark Core Komponenten / API zu sehen. 
+Das grundlegende Programmiermodell besteht aus dem Arbeiten mit den RDD's. Die API's werden in verschiedenen Sprachen (Java, Scala und Python) bereitgestellt.\footnote{Vgl. \cite{DATABRICK_ABOUT}} In der \autoref{fig:spark_core} sind die einzelnen Bausteine innerhalb der Spark Core Komponenten / API noch einmal im Überblick zu sehen. \\
  
 
-
 \noindent
-Die parallele Verarbeitung wird über den Spark Context realisiert. Der Spark Context wird im Hauptprogramm(Treiberprogramm) erzeugt und ist in der Regel dann mit einem Cluster Manager verbunden. Dieser wiederum kennt alle Worker Nodes, die dann die eigentlichen Aufgaben ausführen. Die \autoref{fig:spark_cluster} zeigt wie Spark Context, Cluster Manager und die Worker Nodes zusammen agieren. Damit die Aufgaben über viele Nodes verteilt werden können wird eine Datenstruktur benötigt die dafür ausgelegt ist.\footnote{Vgl. \cite[101]{BDS16}}
+Die parallele Verarbeitung wird über den Spark Context realisiert. Der Spark Context wird im Hauptprogramm(Treiberprogramm) erzeugt und ist mit einem Cluster Manager verbunden. Dieser wiederum kennt alle Worker Nodes, diese führen die Aufgaben aus. Die \autoref{fig:spark_cluster} zeigt wie Spark Context, Cluster Manager und die Worker Nodes zusammen agieren. Damit die Aufgaben über viele Nodes verteilt werden können, wird eine Datenstruktur benötigt die dafür ausgelegt ist.\footnote{Vgl. \cite[101]{BDS16}}
 
 \begin{figure}[h]
   \centering
-  \includegraphics[width=\textwidth,height=50mm]{./bilder/cluster-overview.png}
+  \fbox{\includegraphics[width=80mm]{./bilder/cluster-overview.png}}
   \caption{Spark Cluster aus \cite{SPCLUSTER}}\label{fig:spark_cluster}
 \end{figure}
 
@@ -72,9 +71,9 @@ Die parallele Verarbeitung wird über den Spark Context realisiert. Der Spark Co
 \noindent
 Die Resilent Distirbuted Datasets (RDD's), zu deutsch belastbare, verteilte Datensätze, erledigen diese Aufgabe. Das Dataset ist die primäre Datenabstraktion in Apache Spark. 
 Ein RDD entspricht einer partitionierten Sammlung an Daten. Somit können die Partitionen auf verschiedene Systeme (bzw. Worker) verteilt werden.  \\
-Nach der Erstellung sind RDD's nur lesbar. Es ist also nur möglich ein einmal definiertes RDD durch Anwendung globaler Operationen in ein neues RDD zu überführen. Die Operationen werden dann auf allen Partitionen des RDD's auf allen Worker Nodes angewendet. \\
+Nach der Erstellung sind RDD's nur lesbar. Es ist nur möglich ein einmal definiertes RDD durch Anwendung globaler Operationen in ein neues RDD zu überführen. Die Operationen werden anschließend auf allen Partitionen des RDD's auf allen Worker Nodes angewendet. \\
 \noindent
-Man unterscheidet bei den Operationen zwischen Transformationen (z.B.: filter oder join) und Aktionen (z.B.: reduce, count, collect oder foreach). Transformationen bilden ein RDD auf ein anderes RDD ab. Aktionen bilden ein RDD auf eine andere Domäne ab.\\ %Todo hier nochmal forschen was das bedeutet
+Es wird bei den Operationen zwischen Transformationen (z.B.: filter oder join) und Aktionen (z.B.: reduce, count, collect oder foreach) unterschieden. Transformationen bilden ein RDD auf ein anderes RDD ab. Aktionen bilden ein RDD auf eine andere Domäne ab.\\ %Todo hier nochmal forschen was das bedeutet
 \noindent
 Eine Folge von Operationen wird Lineage\footnote{RDD Lineage: Logischer Ablaufplan der einzelnen Operationen. Hilft Daten wiederherzustellen falls Fehler aufgetreten sind.} eines RDD's genannt.\footnote{Vgl. \cite{ZC+12}}
 
@@ -83,8 +82,8 @@ Eine Folge von Operationen wird Lineage\footnote{RDD Lineage: Logischer Ablaufpl
 \newpage
 \subsection{SQL-Abfragen (Spark-SQL \& Data Frames)}\label{sec_sparksql}
 
-Spark-SQL wurde 2014 veröffentlicht. Aus der Spark-Familie ist das die Komponente, die am meisten weiterentwickelt wird.
-Spark-SQL entstammt dem Apache-Shark. Dadurch wollte man die folgenden Probleme, die es in Apache Shark gab, lösen.
+%Aus der Spark-Familie ist das die Komponente, die am meisten weiterentwickelt wird. 
+Spark-SQL wurde 2014 veröffentlicht. Innerhalb der Spark-Familie wird diese Komponente am stärksten weiterentwickelt. Spark-SQL entstammt dem Apache-Shark. Dadurch sollten folgenden Probleme, die es in Apache Shark gab, gelöst bzw. verbessert werden.
 \begin{enumerate}
 	\item Mit Apache Shark ist es nur möglich auf Daten im Hive\footnote{\textbf{Apache Hive} ist eine Erweiterung für Hadoop und ermöglicht Abfragen über SQL zu nutzen.} Katalog zuzugreifen. 
 	\item Shark lässt sich nur über selbst geschriebene SQL's aufrufen. 
@@ -100,33 +99,39 @@ Die Abfragen werden zuerst in den DataFrame-Objekten gespeichert. Erst nach der 
 
 \begin{figure}[h]
   \centering
-  \includegraphics[width=\textwidth]{./bilder/spark_sql.png}
+  \fbox{\includegraphics[width=\textwidth]{./bilder/spark_sql.png}}
   \caption{Phasen der Query Planung in Spark SQL \cite{AXL+15}}\label{fig:spark_sql}
 \end{figure}
 
 \noindent
-Mit Spark-SQL kann man auf relationale Daten zuzugreifen. Es wurde eine hohe Performance aufgrund etablierter DBMS-Techniken erreicht.
+Mit Spark-SQL kann ein Zugriff auf relationale Datenbanken erfolgen. Es wurde eine hohe Performance aufgrund etablierter DBMS-Techniken erreicht.
 Neue Datenquellen lassen sich leicht anschließen und integrieren.
-Zusätzliche Erweiterungen wie maschinelles Lernen und Berechnungen von Graphen sind zusätzlich nutzbar.\footnote{Vgl. \cite{AXL+15}} \\
+Zusätzliche Erweiterungen wie maschinelles Lernen und Berechnungen von Graphen sind nutzbar.\footnote{Vgl. \cite{AXL+15}} \\
+
+
+
+
+
+
 
 \newpage
 \subsection{Verarbeitung von Datenströmen (Spark-Streaming)}
 
 %Hier nochmal nachlesen, das sieht ganz gut aus. https://www.infoq.com/articles/apache-spark-streaming
 
-Die Spark-Streaming Bibliothek ermöglicht das Verarbeiten von Datenströmen. Auch hier dienen die RDD's als Grundlage. Die RDD's werden zu DStreams erweitert. DStreams (discretized streams) sind Objekte, die Informationen enthalten, die in Verbindung mit Zeit stehen. DStreams verwalten intern eine Sequenz von RDD's und werden aus diesem Grund diskrete Streams genannt.
+Die Spark-Streaming Bibliothek ermöglicht das Verarbeiten von Datenströmen. Dabei dienen RDD's als Grundlage. Die RDD's werden zu DStreams erweitert. DStreams (discretized streams) sind Objekte, die Informationen enthalten, die in Verbindung mit der Zeit stehen. DStreams verwalten intern eine Sequenz von RDD's und werden aus diesem Grund diskrete Streams genannt.
 Auch DStreams haben die bereits aus \ref{sec_sparkcore} bekannten zwei Operationen (Transformation und Aktion). \\
 
 \noindent
 Um Datenströme zu empfangen wird ein Empfänger (Receiver) auf einem Worker-Knoten gestartet. Die eingehenden Daten werden in kleinen Datenblöcken gespeichert. Dafür werden die Daten innerhalb eines vorgegebenen Zeitfenster gepuffert. Pro Zeitfenster werden die Daten in dem Puffer in eine Partition eines RDD abgelegt.\footnote{Vgl. \cite{BDS16}} \\
 
 \noindent
-In der Spark-Streaming Bilbliothek sind bereits einige Empfänger wie Kafka\footnote{\textbf{Apache Kafka} dient zur Verarbeitung von Datenströmen.}, Twitter enthalten. \\
-\autoref{fig:spark_streaming} zeigt den Ablauf vom Eingang der Daten über die Verarbeitung bis hin zur Ausgabe. Diese Daten können dann zum Beispiel auf einen Dashboard ausgegeben oder in einer Datenbank gespeichert werden.
+In der Spark-Streaming Bilbliothek sind bereits einige Empfänger wie Kafka\footnote{\textbf{Apache Kafka} dient zur Verarbeitung von Datenströmen.} und Twitter enthalten. \\
+\autoref{fig:spark_streaming} zeigt den Ablauf vom Eingang der Daten über die Verarbeitung bis hin zur Ausgabe. Diese Daten können zum Beispiel auf einen Dashboard ausgegeben oder in einer Datenbank gespeichert werden.
 
 \begin{figure}[h]
   \centering
-  \includegraphics[width=\textwidth]{./bilder/spark_streaming.jpg}
+  \fbox{\includegraphics[width=\textwidth]{./bilder/spark_streaming.jpg}}
   \caption{Spark Streaming Ablauf \cite{INFOQ_STREAMING}}\label{fig:spark_streaming}
 \end{figure}
 
@@ -137,44 +142,47 @@ In der Spark-Streaming Bilbliothek sind bereits einige Empfänger wie Kafka\foot
 \newpage
 \subsection{Berechnungen auf Graphen (GraphX)}
 
-Das GraphX Framework ermöglicht die Berechnungen auf Graphen. Die Grundlage sind auch hier die RDD's. Als Graphenstrukturen werden Property-Graphen genutzt,
-diese sind gerichtete Multigraphen. Das heißt der Graph besteht aus Ecken (Knoten, Vertex) und Kanten (Edge). An den Kanten können Eigenschaften hinterlegt sein.\\
+Das GraphX Framework ermöglicht die Berechnungen auf Graphen. Die Grundlage sind die RDD's. Als Graphenstrukturen werden Property-Graphen genutzt.
+Diese sind gerichtete Multigraphen. Das bedeutet, der Graph besteht aus Ecken (Knoten, Vertex) und Kanten (Edge). An den Kanten können Eigenschaften hinterlegt sein.\\
 
 \noindent
-In dem GraphX Framework werden diese Graphen aus RDD-Tupeln gebildet. In dem ersten RDD sind die Ecken und in dem zweiten die Kanten enthalten. Um die Graphen auf mehrere Maschinen zu verteilen werden diese entlang der Kante geteilt. Man spricht hier vom sogenannten Edge Cut Verfahren. Eine einzelne Ecke kann somit auf mehreren Maschinen existieren. Um Änderungen an einer Ecke über alle Kopien auf den Maschinen zu propagieren wird zusätzlich eine Routing-Tabelle gepflegt. Über diese sind alle Kopien von Ecken bekannt und bei Änderungen einer Ecke werden alle Maschinen entsprechend informiert. 
-In der folgenden \autoref{fig:spark_graphx} ist ein verteilter Property-Graph abgebildet. Zusätzlich sind die verschiedenen RDD's für Knoten(Vertex), Kanten(Edge) und die Routing-Tabelle abgebildet.
+In dem GraphX Framework werden diese Graphen aus RDD-Tupeln gebildet. In dem ersten RDD sind die Ecken und in dem zweiten die Kanten enthalten. Um die Graphen auf mehrere Maschinen zu verteilen, werden diese entlang der Kante geteilt. Es handelt sich um das sogenannte Edge Cut Verfahren. Eine einzelne Ecke kann somit auf mehreren Maschinen existieren. Um Änderungen an einer Ecke über alle Kopien auf den Maschinen zu propagieren, wird zusätzlich eine Routing-Tabelle gepflegt. Über diese sind alle Kopien von Ecken bekannt und bei Änderungen einer Ecke werden alle Maschinen entsprechend informiert. 
+In der folgenden \autoref{fig:spark_graphx} ist ein verteilter Property-Graph sowie die dazugehörigen Tabellen dargestellt. Zusätzlich sind die verschiedenen RDD's für Knoten(Vertex), Kanten(Edge) und die Routing-Tabelle abgebildet.\footnote{Vgl. \cite{AAWS15}} \\
 
 \begin{figure}[h]
   \centering
-  \includegraphics[width=100mm]{./bilder/vertex_routing_edge_tables.png}
-  \caption{Property-Graph mit den dezugehörigen RDD's \cite{SPGRAPHX}}\label{fig:spark_graphx}
+  \fbox{\includegraphics[width=100mm]{./bilder/vertex_routing_edge_tables.png}}
+  \caption{Property-Graph mit den dazugehörigen RDD's \cite{SPGRAPHX}}\label{fig:spark_graphx}
 \end{figure}
 
-
+\noindent
+Mit Hilfe dieser Technik ist es möglich große Graphen zu zerteilen und auf die Nodes zu verteilen um dort die gewünschten Operationen durchzuführen. Über die verschiedenen Tabellen können nach der Bearbeitung der Aufgaben die Teil-Graphen wieder zusammengeführt werden. Auch Ausfälle einzelner Nodes oder Datenverluste können somit korrigiert werden. \\
 
 
 
 \newpage
 \subsection{Maschinelles Lernen (MLlib)}\label{sec_sparkmlib}
 
-MLlib(Machine Learning library) ist Bibliothek für maschinelles Lernen. Diese biete die Möglichkeit typische maschinelle Lern-Algorithmen auf verteilten Spark-Systemen zu nutzen. Zur Datenabstraktion wird das bereits in \ref{sec_sparksql} erwähnte DataFrame genutzt.  \\
+MLlib(Machine Learning library) ist eine Bibliothek für maschinelles Lernen. Diese bietet die Möglichkeit typische maschinelle Lern-Algorithmen auf verteilten Spark-Systemen zu nutzen. Zur Datenabstraktion wird das bereits in \ref{sec_sparksql} erwähnte DataFrame genutzt.  \\
 
 \noindent
-In einem Maschinenlernprogramm läuft eine Sequenz von Algorithmen einer sogenannten Pipeline ab um die Daten zu verarbeiten und davon zu lernen. 
+In einem Maschinenlernprogramm läuft eine Sequenz von Algorithmen, einer sogenannten Pipeline, ab um die Daten zu verarbeiten und davon zu lernen. 
 Dafür gibt es in der MLlib Transformers und Estimator als Pipeline-Komponenten.
-Die Transformers verändern die DataFrames. Das Dataframe wird gelesen, die Daten werden anders strukturiert oder aufbereitet und in einem neuen DataFrame wieder ausgegeben. Diese nutzen die Methode \textsl{transform()}\\
-Die Estimators sind Abstraktionen eines Lernalgorithmus. Sie erzeugen Transformer aus dem übergebenen DataFrame. Diese nutzen die Methode \textsl{fit()}
-Eine Pipeline selbst ist wiederum ein Estimator. \\
+Die Transformers verändern die DataFrames. Das Dataframe wird gelesen, die Daten werden anders strukturiert oder aufbereitet und in einem neuen DataFrame wieder ausgegeben. Diese nutzen die Methode \textsl{transform()}.\\
+Die Estimators sind Abstraktionen eines Lernalgorithmus. Sie erzeugen Transformer aus dem übergebenen DataFrame. Diese nutzen die Methode \textsl{fit()}.
+Eine Pipeline selbst ist wiederum ein Estimator.\footnote{Vgl. \cite{AAWS15}} \\
 
 \noindent
-Das Zusammenspiel zwischen Trasformers und Estimators ist in der \autoref{fig:spark_ml_pipeline} beispielhaft dargestellt. Ein Text wird eingelesen. In den ersten zwei Schritten (Tokenizer und HashingTF) arbeiten Transformatoren. In dem dritten Schritt arbeitet ein Estimator (Logistic Regression)
+Das Zusammenspiel zwischen Trasformers und Estimators ist in der \autoref{fig:spark_ml_pipeline} beispielhaft dargestellt. \\
  
 \begin{figure}[h]
   \centering
-  \includegraphics[width=\textwidth]{./bilder/ml-pipeline.png}
+  \fbox{\includegraphics[width=\textwidth]{./bilder/ml-pipeline.png}}
   \caption{MLlib Pipeline \cite{SPMLLIB}}\label{fig:spark_ml_pipeline}
 \end{figure}
 
+\noindent
+Ein Text wird eingelesen. In den ersten zwei Schritten (Tokenizer und HashingTF) arbeiten Transformatoren. Im dritten Schritt arbeitet ein Estimator (Logistic Regression). Die einzelnen Schritte werden im \autoref{sec_verbund} noch etwas genauer beschrieben.
 
 
 
@@ -184,47 +192,50 @@ Das Zusammenspiel zwischen Trasformers und Estimators ist in der \autoref{fig:sp
 \subsection{Skalierung von R Programmen (SparkR)}\label{sec_sparkr}
 
 \noindent
-R hat den Nachteil, dass es zur Laufzeit nur auf einem einzelnen Thread arbeitet. Diese Hürde kann mit der SparkR Erweiterung genommen werden. SparkR ist ein R Paket das es ermöglicht eine einfache Schnittstelle bereitzustellen um Apache Spark von R aus zu nutzen. SparkR nutzt das bereits bekannte DataFrame welches die Operationen wie \textsl{selection}, \textsl{filtering} oder \textsl{aggregation} bereitstellt. Also genau die Operationen die aus R dem Anwender bereits bekannt sind. \\
+R hat den Nachteil, dass es zur Laufzeit nur auf einem einzelnen Thread arbeitet. Diese Hürde kann mit der SparkR Erweiterung genommen werden. SparkR ist ein R Paket, dass es ermöglicht eine einfache Schnittstelle bereitzustellen, um Apache Spark von R aus zu nutzen. SparkR nutzt das bereits bekannte DataFrame, welches die Operationen wie \textsl{selection}, \textsl{filtering} oder \textsl{aggregation} bereitstellt. Das sind genau jene Operationen, die dem Anwender aus R bereits bekannt sind. \\
 %Für große Datensätze kann SparkR zusätzlich auf maschinelles Lernen über MLlib zurückgreifen. \\
 
 \noindent
-Um das zu ermöglichen ist eine Brücke von R hin zum Spark Context bzw. den Nodes / Workern notwendig. Das Architekturschaubild in \autoref{fig:spark_r_architexture} zeigt diesen Ansatz. 
+Um das zu ermöglichen ist eine Brücke von R hin zum Spark Context bzw. den Nodes / Workern notwendig. Das Architekturschaubild in \autoref{fig:spark_r_architexture} zeigt diesen Ansatz. \\
 \begin{figure}[h]
   \centering
-  \includegraphics[width=100mm]{./bilder/spark_r_architecture.PNG}
+  \fbox{\includegraphics[width=100mm]{./bilder/spark_r_architecture.PNG}}
   \caption{SparkR Architektur \cite{VYL+16}}\label{fig:spark_r_architexture}
 \end{figure}
-Die R-JVM bridge ermöglicht es von R aus Funktionen der JVM aufzurufen. Das heißt vom R Spark Contex über die Bridge zum Java Spark Context zu kommunizieren. Für die Kommunikation werden Sockets, die auf Netty\footnote{\textbf{Netty} ist ein High-Performance Netzwerk Framework} basieren, genutzt. Im Vergleich zu anderen Kommunikationsmethoden ist der zusätzlich Aufwand bei Sockets vergleichsweise gering und somit zu vernachlässigen.\footnote{Vgl. \cite{VYL+16}} \\
+
+\noindent
+Die R-JVM bridge ermöglicht es von R aus Funktionen der JVM aufzurufen. Somit wird vom R Spark Contex über die Bridge zum Java Spark Context kommuniziert. Für die Kommunikation werden Sockets, die auf Netty\footnote{\textbf{Netty} ist ein High-Performance Netzwerk Framework} basieren, genutzt. Im Vergleich zu anderen Kommunikationsmethoden ist der zusätzliche Aufwand bei Sockets vergleichsweise gering und somit zu vernachlässigen.\footnote{Vgl. \cite{VYL+16}} \\
 %Die Kommunikation üÜber die Sockets kann in beide Richtugnen kommuniziert werden und macht es m
 %Es wurde in SparkR eine API geschaffen mit der es möglich . Das neue SparkR JVM System nutzt einen auf Netty basierenden Socket Server. Der Socket ansatz macht es möglich 
 
 \noindent
-Durch den Einsatz von SparkR kann somit die Verarbeitung auf vielen Rechnern verteilt stattfinden. Auch alle weiteren Merkmale wie In-Memory Cachings oder maschinelles Lernen können somit von Spark genutzt werden und ein großer Laufzeitgewinn erzielt werden. Bei einem Versuch wurden 3 Abfragen mit acht bis 64 Kernen durchgeführt. Dabei konnte di Zeit von 115 Sekunden auf 20 Sekunden reduziert werden. Mit zusätzlichen Caching konnten die 20 Sekunden nochmal auf weniger als 3 Sekunden reduziert werden.\footnote{Vgl. \cite{VYL+16}}.
+Durch den Einsatz von SparkR kann die Verarbeitung auf vielen Rechnern verteilt stattfinden. Auch alle weiteren Merkmale wie In-Memory Cachings oder maschinelles Lernen können von Spark genutzt und ein großer Laufzeitgewinn erzielt werden. Bei einem Versuch wurden drei Abfragen mit acht bis 64 Kernen durchgeführt. Dabei konnte die Zeit von 115 Sekunden auf 20 Sekunden reduziert werden. Mit zusätzlichen Caching konnten die 20 Sekunden nochmal auf weniger als drei Sekunden reduziert werden\footnote{Vgl. \cite{VYL+16}}.
 
 %Zusätzlich können alle bereits vorgestellten Komponenten auch über  kann bieten die Möglichkeiten, die 
 
 %Solange Auswertungen in R nicht zeitkritisch sind ist der nutzen von SparkR nicht so hoch. Sobald aber Ausführungszeit ehr kurz sein muss oder einfach viel zu lang dauert 
 
 \newpage
-\section{Mehrere Komponenten im Verbund}
+\section{Mehrere Komponenten im Verbund}\label{sec_verbund}
 
-Die Komponenten wurden jetzt einzeln vorgestellt. Jetzt soll das Zusammenspiel gezeigt werden. Hier bietet sich ein praktische Beispiel an. \\
+Nachdem die einzelnen Komponenten einzeln vorgestellt wurden, soll anhand eines praktischen Beispiels das Zusammenspiel verdeutlicht werden. \\
+%Die Komponenten wurden jetzt einzeln vorgestellt. Jetzt soll das Zusammenspiel gezeigt werden. Hier bietet sich ein praktische Beispiel an. \\
 
 \noindent
-Es soll folgende Aufgabenstellung mit Apache Spark realisiert werden: Es gibt einen Datensatz aus 100000 Mitarbeitern. Zu jedem Mitarbeiter sind Informationen wie Vorname, Nachname, Gehalt, Eintritt in die Firma, Adresse sowie Interessen/Hobby bekannt. Diese Daten sind im strukturierten JSON-Format hinterlegt. 
-Aus diesen Datensatz sollen alle Mitarbeiter gefunden werden, die also Hobby Astrology angegeben haben. Zusätzlich sollen diese auf keinen Fall sollen Interesse an Autorennen und Bowling haben. Zusätzlich sollen die gefundenen Mitarbeiter nach alter gruppiert werden. \\
-Diese Aufgabenstellen (wenn auch ein wenig konstruiert) macht es möglich folgende Komponenten zu nutzen:
+Es soll folgende Aufgabenstellung mit Apache Spark realisiert werden: Es gibt einen Datensatz aus 100.000 Mitarbeitern. Zu jedem Mitarbeiter sind Informationen wie Vorname, Nachname, Gehalt, Eintritt in die Firma, Adresse sowie Interessen/Hobby bekannt. Diese Daten sind im strukturierten JSON-Format hinterlegt. 
+Aus diesem Datensatz sollen alle Mitarbeiter gefunden werden, die als Hobby Astrology angegeben haben. Zusätzlich sollen diese auf keinen Fall Interesse an Autorennen und Bowling haben. Des Weiteren sollen die gefundenen Mitarbeiter nach Alter gruppiert werden. \\
+Diese Aufgabenstellung (wenn auch ein wenig konstruiert) macht es möglich die folgenden Komponenten zu nutzen:
 \begin{itemize}
-	\item die Kernklassen zum Sortieren und Reduzieren der Maps.
+	\item die Kernklassen zum Sortieren und Reduzieren der Maps
 	\item SparkSQL für das Einlesen der Json-Datei und SQL-Abfragen
 	\item SparkMLib für das Trainieren der gesuchten Begriffe und finden der in Frage kommenden Mitarbeiter\footnote{Das Beispiel aus \cite{GITHUB_EXAMPLE} diente als Vorlage}	
 \end{itemize}  
 
 \noindent
-Zuerst wird die SparkSession erzeugt und danach werden die Daten eingelesen. Neben JSON wären hier auch noch viele weitere Methoden möglich gewesen (z.B.: csv, jdbc, text) diverse andere Methoden zur Verfügung gewesen. Das lässt sich alles über die SparkCore realisieren. Der entsprechende Code-Block ist im Anhang in \autoref{code:verbund_1} zu sehen.\\
+Zuerst wird die SparkSession erzeugt und im Anschluss daran werden die Daten eingelesen. Neben JSON wären auch noch viele weitere Methoden möglich gewesen (z.B.: csv, jdbc, text). Das lässt sich alles über die SparkCore realisieren. Der entsprechende Code-Block ist im Anhang in \autoref{code:verbund_1} zu sehen.\\
 
 \noindent
-Als nächstes wird eine Pipeline aufgebaut in der ein PipelinModel so trainiert werden soll, dass es später aus dem Datensatz alle passenden Mitarbeiter korrekt als Treffer entscheidet. Die Pipeline besteht aus 3 Stages: Dem Tokenizer\footnote{Verarbeitet Text und teilt ihn in kleinere Stücke. In dem Fall in einzelne Worte, Auszug aus dem Datensatz: 'interests':'R/C Helicopters,Frisbee Golf – Frolf,Tetris'}, dem HashingTF\footnote{Erzeugt zu den Worten Hashes um dann besser Vergleichen zu können.} und der LogisticRegression\footnote{Erzeugt eine Voraussage zu dem Datensatz gegenüber den Trainingsdaten.}. Nach dem Trainieren werden die Daten in ein neues Dataset transformiert. In diesem Dataset sind die Vorhersagen enthalten. Die beschriebenen Schritte sind als Code im Anhang in \autoref{code:verbund_2} zu sehen. \\
+Als nächstes wird eine Pipeline aufgebaut in der ein PipelineModel so trainiert werden soll, dass es später aus dem Datensatz alle passenden Mitarbeiter mit möglichst hoher Trefferrate findet. Die Pipeline besteht aus drei Stages: Dem Tokenizer\footnote{Verarbeitet Text und teilt ihn in kleinere Stücke. In dem Fall in einzelne Worte, Auszug aus dem Datensatz: 'interests':'R/C Helicopters,Frisbee Golf – Frolf,Tetris'}, dem HashingTF\footnote{Erzeugt zu den Worten Hashes, um ein besseres Vergleichen zu e.} und der LogisticRegression\footnote{Erzeugt eine Voraussage zu dem Datensatz gegenüber den Trainingsdaten.}. Nach dem Trainieren werden die Daten in ein neues Dataset transformiert. In diesem Dataset sind die Vorhersagen enthalten. Die beschriebenen Schritte sind als Code im Anhang in \autoref{code:verbund_2} zu sehen. \\
 
 \noindent
 Zum Schluss werden die Mitarbeiter, die vorhergesagt wurden per SparkSQL mit einer SQL Abfrage herausgefiltert und über MapReduce und Sortierung aus der SparCore Bibliothek in die endgültige Form gebracht. Das ist unter \autoref{code:verbund_3} dargestellt. \\
@@ -233,7 +244,7 @@ Zum Schluss werden die Mitarbeiter, die vorhergesagt wurden per SparkSQL mit ein
 Es wurden 285 Mitarbeiter gefunden, die in Frage kommen. Darunter liegt der Großteil zwischen 25 und 35 Jahren. Das vollständige Ergebnis ist unter \autoref{code:verbund_3} zu finden.\\
 
 \noindent
-Die Komponenten greifen sehr gut ineinander. Die Schnittstellen und Funktionen wirken sehr einheitlich und man hat das Gefühl, dass das hinzunehmen einer weiteren Spark Komponente kein Fremdkörper sondern eine hilfreiche Ergänzung darstellt.
+Die Komponenten greifen sehr gut ineinander. Die Schnittstellen und Funktionen wirken sehr einheitlich und es entsteht der Eindruck, dass das Hinzunehmen einer weiteren Spark Komponente kein Fremdkörper, sondern eine hilfreiche Ergänzung darstellt.
 
  
 %In der Theorie sind die einzelnen Anwendunggebiet schön getrennt. Jedoch Die Anwendung der einzelnen Komponenten erscheint theoretisch 
@@ -241,85 +252,6 @@ Die Komponenten greifen sehr gut ineinander. Die Schnittstellen und Funktionen w
 
 
 
-\newpage
-\section{Performance}
-%PAPER: Scaling Spark in the Real World
-Analysen von Performance Probleme erweisen sich mitunter als sehr schwierig. Apache Spark bringt zwar die seiteneffektfreie API mit, jedoch können trotzdem jede Menge Probleme auftreten. Für Entwickler ist es immer schwer im Hinterkopf zu behalten, dass Operationen auf vielen verteilten Rechnern ablaufen. \\ 
-
-\noindent
-Über eine webbasierte Übersicht, die in \autoref{fig:spark_ui_worker} zu sehen ist, können Informationen zu dann aktuell laufenden Auswertungen und Dauer von Ergebnissen etc. überwacht werden.\footnote{Vgl. \cite[12]{AAWS15}}
-
-\begin{figure}[h]
-  \centering
-  \includegraphics[width=\textwidth]{./bilder/spark_ui_worker.PNG}
-  \caption{Spark Web UI: Zusammenfassung der Worker}\label{fig:spark_ui_worker}
-\end{figure}
-
-%eventuell in die Performance section
-\noindent
-Speziell beim Thema SQL-Abfragen ist es enorm wichtig sich für die richtigen Anweisungen zu entscheiden um keine langsamen Operationen zu haben. 
-Hier gibt es sehr große Geschwindigkeitsunterschiede.
-
-
-
-\subsection{Besonderheiten bei der Speichernutzung}
-Die Wahl einer geeigneten bzw. speicherplatzeffizienten Datenstruktur wir oftmals unterschätzt. 
-Spark geht davon aus, dass eine Datei in Blöcke einer bestimmten Größe geladen wird. In der Regel 128MB. Zu beachten ist jedoch, dass beim dekomprimieren größere Blöcke entstehen können. So können aus 128MB schnell 3-4GB große Blöcke in dekomprimierten Zustand werden. \\ 
-
-\noindent
-Um das Speichermanagement zu verbessern wurde ein per-node allocator implementiert. Dieser verwaltet den Speicher auf einer Node. 
-Der Speicher wir in drei Bereiche geteilt:
-\begin{itemize}
-	\item Speicher zum verarbeiten der Daten
-	\item Speicher für die hash-tables bei Joins oder Aggregations
-	\item Speicher für \glqq{}unrolling\grqq{} Blöcke, um zu prüfen ob die einzulesenden Blöcke nach dem entpacken immer noch klein genug sind damit diese gecached werden können.
-\end{itemize}
-\noindent
-Damit läuft das System robust über für Anwendungsbereiche mit sehr vielen Nodes sowie mit ganz wenigen.\footnote{Vgl. \cite{ADD+15}}
-
-\subsection{Netzwerk und I/O-Traffic}
-
-Mit Apache Spark wurden schon Operationen bei denen über 8000 Nodes involviert waren und über 1PB an Daten verarbeitet wurden durchgeführt.
-Das beansprucht natürlich die I/O Schicht enorm.
-Um I/O Probleme zu vermeiden, bzw. diese besser in den Griff zu bekommen wurde als Basis das Netty-Framework verwendet.
-\begin{itemize}
-	\item Zero-copy I/O:\\
-	Daten werden direkt von der Festplatte zu dem Socket kopiert. Das vermeidet Last an der CPU bei Kontextwechseln und entlastet zusätzlich den JVM\footnote{\textbf{JVM} (java virtual machine) ist ein Teil der Java-Laufzeitumgebung. Der kompilierte Java-Bytecode wird innerhalb innerhalb dieser virtuellen Maschinen ausgeführt.} garbage collector\footnote{\textbf{garbage collector} kommt in Java zur automatischen Speicherbereinigung zum Einsatz}
-	\item Off-heap network buffer management:\\
-	Netty verwaltet einige Speichertabellen außerhalb des Java Heap Speichers um Probleme mit den JVM garbage collector zu vermeiden.
-	\item Mehrfache Verbindungen:\\
-	Jeder Spark worker kann mehrere Verbindungen parallel bearbeiten.
-\end{itemize}
-
-
-%\newpage
-\section{Nutzung \& Verbreitung}
-
-Durch die Unterstützung der drei Programmiersprachen skala, pathon und java ist die Arbeit mit Apache Spark einfacher, als wenn es nur eine einzige exotische Programmiersprache zur Nutzung gäbe. \\
-
-\noindent
-Apache Spark unterstützt zudem noch verschiedene Datenquellen und Dateiformate.  Zu den Datenquellen zählen das Dateisystem S3\footnote{\textbf{S3} (Simple Storage Service) ist ein Filehosting-Dienst von Amazon der beliebig große Datenmengen speichern kann} von Amazon und das HDFS\footnote{\textbf{HDFS} (Hadoop Distributed File System) ist ein hochverfügbares Dateisystem zu Speicherung sehr großer Datenmengen}.
-Die Dateiformate können strukturiert (z.B.: CSV, Object Files), semi-strukturiert (z.B.: JSON) und unstrukturiert (z.B.: Textdatei) sein.\\
-
-\noindent
-Unter den Mitwirkenden(Contributors) zählen über 400 Entwickler aus über 100 Unternehmen (Stand 2014).\\
-Es gibt über 500 produktive Installationen. \cite{ADD+15} \\ %PAPER: Scaling Spark in the Real World\\
-
-\noindent
-%http://spark.apache.org/community.html
-Seit einigen Jahren finden weltweit jährlich unter dem Namen Spark Summit Konferenzen statt. \cite{SPCOM}\\
-
-
-
-%DONE: https://www.heise.de/developer/meldung/Big-Data-Umfrage-zur-Verbreitung-zu-Apache-Spark-2529126.html
-\noindent
-Heise.de beauftrage 2015 eine Umfrage in der 2136 Teilnehmer befragt wurden \cite{HEISEBIGDATA}. Diese gaben an, dass 31\% Prozent den Einsatz derzeit prüfen, 13\% Nutzen bereits Apache Spark und 20\% planten den Einsatz noch in dem damaligen Jahr. Die Nutzung innerhalb verschiedener Berufsgruppen war sehr ähnlich. Mit 16\%  lag bei den Telekommunikationsunternehmen der Einsatz am höchsten.\\
-Scala lag bei den Programmiersprachen mit großem Abstand vorn. Eine detaillierte Übersicht ist in \autoref{fig:nutzung} zu sehen.
-\begin{figure}[h]
-  \centering
-  \includegraphics[width=\textwidth]{./excel/Nutzung.png}
-  \caption{Einsatz \& Verbreitung}\label{fig:nutzung}
-\end{figure}
 
 
 

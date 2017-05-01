@@ -51,6 +51,10 @@
 
 \usepackage{hyperref}
 
+\usepackage{tocloft}
+\renewcommand{\cftchapdotsep}{\cftdotsep}
+\renewcommand{\cftchapleader}{\cftdotfill{\cftchapdotsep}}
+
 %\bibliographystyle{alphadin}
 %\usepackage[round]{natbib}
 
@@ -72,6 +76,7 @@
 
 \include{./chapter/einleitung} 
 \include{./chapter/hauptteil} 
+\include{./chapter/performance} 
 \include{./chapter/fazit} 
 \include{./chapter/ausblick} 
 \include{./chapter/anhang} 
