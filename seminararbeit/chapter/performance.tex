@@ -1,0 +1,81 @@
+\newpage
+\section{Performance}
+%PAPER: Scaling Spark in the Real World
+Die Analyse von Performance Problemen erweisen sich mitunter als sehr schwierig. Oft ist es nicht einfach die kritischen Stelle zu lokalisieren und zusätzlich sind es meist mehrere Stellen, die erst in Summe zu Problemen führen. Apache Spark bringt zwar die seiteneffektfreie API mit, jedoch können trotzdem jede Menge Probleme auftreten. Für Entwickler ist es immer schwer im Hinterkopf zu behalten, dass Operationen auf vielen verteilten Rechnern ablaufen. Es unterscheidet sich doch stark von einem klassischen liniear ablaufenden Single-Thread Programm.\\ 
+
+\noindent
+Über eine webbasierte Übersicht, die in \autoref{fig:spark_ui_worker} zu sehen ist, können Informationen zu aktuell laufenden Auswertungen und Dauer von Ergebnissen etc. überwacht werden.\footnote{Vgl. \cite[12]{AAWS15}}
+
+\begin{figure}[h]
+  \centering
+  \fbox{\includegraphics[width=\textwidth]{./bilder/spark_ui_worker.PNG}}
+  \caption{Spark Web UI: Zusammenfassung der Worker}\label{fig:spark_ui_worker}
+\end{figure}
+
+%eventuell in die Performance section
+\noindent
+Speziell beim Thema SQL-Abfragen ist es enorm wichtig sich für die richtigen Anweisungen zu entscheiden, um keine langsamen Operationen zu haben. 
+Wenige Änderungen an SQL-Abfragen können sehr große Geschwindigkeitsunterschiede bewirken.
+
+
+
+\subsection{Besonderheiten bei der Speichernutzung}
+Die Wahl einer geeigneten bzw. speicherplatzeffizienten Datenstruktur wir oftmals unterschätzt. Gerade bei großen Datenmengen und oftmals komprimierten Daten können schnell große Speichermengen benötigt werden. Das wird in folgenden Beispiel verdeutlicht.
+Spark geht davon aus, dass eine Datei in Blöcke einer bestimmten Größe geladen wird. In der Regel 128MB. Zu beachten ist jedoch, dass beim dekomprimieren größere Blöcke entstehen können. So können aus 128MB schnell 3-4GB große Blöcke in dekomprimierten Zustand werden. \\ 
+
+\noindent
+Um das Speichermanagement zu verbessern, wurde ein per-node allocator implementiert. Dieser verwaltet den Speicher auf einer Node. 
+Der Speicher wird in drei Bereiche geteilt:
+\begin{itemize}
+	\item Speicher zum Verarbeiten der Daten
+	\item Speicher für die hash-tables bei Joins oder Aggregations
+	\item Speicher für \glqq{}unrolling\grqq{} Blöcke, um zu prüfen ob die einzulesenden Blöcke nach dem entpacken immer noch klein genug sind, damit diese gecached werden können.
+\end{itemize}
+\noindent
+Damit läuft das System robust über für Anwendungsbereiche mit sehr vielen Nodes sowie mit ganz wenigen.\footnote{Vgl. \cite{ADD+15}}
+
+\subsection{Netzwerk und I/O-Traffic}
+
+%%schon Operationen bei denen über 8.000 Nodes involviert waren und über 1PB an Daten verarbeitet wurden durchgeführt.
+Mit Apache Spark wurden Operationen, bei denen über 8.000 Nodes involviert waren und über 1PB an Daten verarbeitet wurden, durchgeführt. Das beansprucht natürlich die I/O Schicht enorm.
+Um I/O Probleme zu vermeiden, bzw. diese besser in den Griff zu bekommen, wurde als Basis das Netty-Framework verwendet.
+\begin{itemize}
+	\item Zero-copy I/O:\\
+	Daten werden direkt von der Festplatte zu dem Socket kopiert. Das vermeidet Last an der CPU bei Kontextwechseln und entlastet zusätzlich den JVM\footnote{\textbf{JVM} (java virtual machine) ist ein Teil der Java-Laufzeitumgebung. Der kompilierte Java-Bytecode wird innerhalb dieser virtuellen Maschinen ausgeführt.} garbage collector\footnote{\textbf{garbage collector} kommt in Java zur automatischen Speicherbereinigung zum Einsatz}
+	\item Off-heap network buffer management:\\
+	Netty verwaltet einige Speichertabellen außerhalb des Java Heap Speichers, um Probleme mit den JVM garbage collector zu vermeiden.
+	\item Mehrfache Verbindungen:\\
+	Jeder Spark worker kann mehrere Verbindungen parallel bearbeiten.
+\end{itemize}
+
+
+\newpage
+\section{Nutzung \& Verbreitung}
+%%als wenn es nur eine einzige exotische Programmiersprache zur Nutzung gäbe. \\
+Durch die Unterstützung der drei Programmiersprachen skala, pathon und java ist die Arbeit mit Apache Spark einfacher, als wenn nur eine einzige exotische Programmiersprache verwendet werden könnte. \\
+
+
+
+\noindent
+Apache Spark unterstützt zudem noch verschiedene Datenquellen und Dateiformate.  Zu den Datenquellen zählen das Dateisystem S3\footnote{\textbf{S3} (Simple Storage Service) ist ein Filehosting-Dienst von Amazon der beliebig große Datenmengen speichern kann} von Amazon und das HDFS\footnote{\textbf{HDFS} (Hadoop Distributed File System) ist ein hochverfügbares Dateisystem zu Speicherung sehr großer Datenmengen}.
+Die Dateiformate können strukturiert (z.B.: CSV, Object Files), semi-strukturiert (z.B.: JSON) und unstrukturiert (z.B.: Textdatei) sein.\\
+
+\noindent
+Unter den Mitwirkenden(Contributors) zählen über 400 Entwickler aus über 100 Unternehmen (Stand 2014). Es gibt über 500 produktive Installationen. \cite{ADD+15} \\ %PAPER: Scaling Spark in the Real World\\
+
+\noindent
+%http://spark.apache.org/community.html jährlich unter dem Namen Spark Summit Konferenzen statt. 
+Seit einigen Jahren finden weltweit jährlich, unter dem Namen \glqq{}Spark Summit\grqq{} Konferenzen statt.\cite{SPCOM}\\
+
+
+%"In einer Umfrage von Heise.de aus dem Jahr 2015 wurden 2.136 Teilnehmer zur Nutzung von Apache Spark befragt. 31 % der Befragten ..." (Eine Umfrage beauftragen? Tausenderpunkt; %2x Prozent bei der 31?^^)
+
+%DONE: https://www.heise.de/developer/meldung/Big-Data-Umfrage-zur-Verbreitung-zu-Apache-Spark-2529126.html
+\noindent
+In einer Umfrage von Heise.de aus dem Jahr 2015 wurden 2.136 Teilnehmer zur Nutzung von Apache Spark befragt.\cite{HEISEBIGDATA}. 31\% der Befragten gaben an, den Einsatz derzeit zu prüfen, 13\% Nutzen bereits Apache Spark und 20\% planen den Einsatz noch in dem damaligen Jahr. Die Nutzung innerhalb verschiedener Berufsgruppen war sehr ähnlich. Mit 16\%  lag bei den Telekommunikationsunternehmen der Einsatz am höchsten.\\
+Bei denen, die es bereits im Einsatz haben lag Scala bei den Programmiersprachen mit großem Abstand vorn. Eine detaillierte Übersicht ist in \autoref{fig:nutzung} zu sehen.
+\begin{figure}[h]
+  \centering
+  \fbox{\includegraphics[width=140mm]{./excel/Nutzung.png}}
+  \caption{Verbreitung \& Einsatz}\label{fig:nutzung}
+\end{figure}
