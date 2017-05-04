@@ -36,16 +36,12 @@ Während Spark Core die Kern-Komponente bildet und alle notwendigen Bausteine f�
 Die Module werden in den folgenden Kapitel von \ref{sec_sparkcore} bis \ref{sec_sparkmlib} näher betrachtet. \\
 
 \noindent
-Darüber hinaus wird in Kapitel \ref{sec_sparkr} SparkR vorgestellt. Das Modul gehört nicht direkt zum Kern, jedoch bietet es die Möglichkeit die Datenanalysen mit R\footnote{\textbf{R} ist eine Programmiersprache für statistische Berechnungen und dem erstellen statistischer Grafiken. } zu optimieren bzw. zu beschleunigen und wird aus diesem Grund mit aufgeführt.
+Darüber hinaus wird in Kapitel \ref{sec_sparkr} SparkR vorgestellt. Das Modul gehört nicht direkt zum Kern, jedoch bietet es die Möglichkeit die Datenanalysen mit R\footnote{\textbf{R} ist eine Programmiersprache für statistische Berechnungen und dem erstellen statistischer Grafiken. } zu optimieren bzw. zu beschleunigen und wird aus diesem Grund mit aufgeführt. \\
+
+\noindent
+Den Einsatz der Kern-Komponenten ist im Anhang in \autoref{code:wordcount} zu sehen. In diesem Beispiel werden die 20 meistgenannten Wörtern in dieser Seminararbeit vorkommen ermittelt. Dafür wird die Arbeit als PDF eingelesen und in eine Text-Datei konvertiert. Die Zeilen der Datei werden zuerst in Worte aufgeteilt und dann per MapReduce verdichtet und abschließend noch absteigend sortiert.
 
 %Die Aufteilung in die verschiedenen Module macht es sehr gut möglich nur einen Teil der Module zu verwenden. 
-
-
-
-
-
-
-
 
 
 
@@ -169,7 +165,7 @@ MLlib(Machine Learning library) ist eine Bibliothek für maschinelles Lernen. Di
 In einem Maschinenlernprogramm läuft eine Sequenz von Algorithmen, einer sogenannten Pipeline, ab um die Daten zu verarbeiten und davon zu lernen. 
 Dafür gibt es in der MLlib Transformers und Estimator als Pipeline-Komponenten.
 Die Transformers verändern die DataFrames. Das Dataframe wird gelesen, die Daten werden anders strukturiert oder aufbereitet und in einem neuen DataFrame wieder ausgegeben. Diese nutzen die Methode \textsl{transform()}.\\
-Die Estimators sind Abstraktionen eines Lernalgorithmus. Sie erzeugen Transformer aus dem übergebenen DataFrame. Diese nutzen die Methode \textsl{fit()}.
+Die Estimators sind Abstraktionen eines Lernalgorithmus. Sie erzeugen Transformer aus dem übergebenen DataFrame. Diese Estimator nutzen die Methode \textsl{fit()}.
 Eine Pipeline selbst ist wiederum ein Estimator.\footnote{Vgl. \cite{AAWS15}} \\
 
 \noindent
@@ -192,7 +188,7 @@ Ein Text wird eingelesen. In den ersten zwei Schritten (Tokenizer und HashingTF)
 \subsection{Skalierung von R Programmen (SparkR)}\label{sec_sparkr}
 
 \noindent
-R hat den Nachteil, dass es zur Laufzeit nur auf einem einzelnen Thread arbeitet. Diese Hürde kann mit der SparkR Erweiterung genommen werden. SparkR ist ein R Paket, dass es ermöglicht, eine einfache Schnittstelle bereitzustellen, um Apache Spark von R auszunutzen. SparkR nutzt das bereits bekannte DataFrame, welches die Operationen wie \textsl{selection}, \textsl{filtering} oder \textsl{aggregation} bereitstellt. Das sind genau jene Operationen, die dem Anwender aus R bereits bekannt sind. \\
+R hat den Nachteil, dass es zur Laufzeit nur auf einem einzelnen Thread arbeitet. Diese Hürde kann mit der SparkR Erweiterung genommen werden. SparkR ist ein R Paket, welches es ermöglicht, eine einfache Schnittstelle bereitzustellen, um Apache Spark von R auszunutzen. SparkR nutzt das bereits bekannte DataFrame, welches die Operationen wie \textsl{selection}, \textsl{filtering} oder \textsl{aggregation} bereitstellt. Das sind genau jene Operationen, die dem Anwender aus R bereits bekannt sind. \\
 %Für große Datensätze kann SparkR zusätzlich auf maschinelles Lernen über MLlib zurückgreifen. \\
 
 \noindent
