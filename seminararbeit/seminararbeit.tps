@@ -14,11 +14,11 @@ NormalPos.top=26
 NormalPos.right=1703
 NormalPos.bottom=603
 Class=LaTeXView
-Document=chapter\einleitung.tex
+Document=chapter\performance.tex
 
 [Frame0_View0,0]
-TopLine=5
-Cursor=751
+TopLine=36
+Cursor=1983
 
 [Frame1]
 Flags=0
@@ -32,11 +32,11 @@ NormalPos.top=26
 NormalPos.right=1703
 NormalPos.bottom=603
 Class=LaTeXView
-Document=chapter\hauptteil.tex
+Document=chapter\einleitung.tex
 
 [Frame1_View0,0]
-TopLine=365
-Cursor=18766
+TopLine=5
+Cursor=1502
 
 [Frame2]
 Flags=0
@@ -50,13 +50,31 @@ NormalPos.top=26
 NormalPos.right=1703
 NormalPos.bottom=603
 Class=LaTeXView
-Document=chapter\fazit.tex
+Document=chapter\hauptteil.tex
 
 [Frame2_View0,0]
-TopLine=0
-Cursor=827
+TopLine=241
+Cursor=17700
 
 [Frame3]
+Flags=0
+ShowCmd=1
+MinPos.x=-1
+MinPos.y=-1
+MaxPos.x=-1
+MaxPos.y=-1
+NormalPos.left=4
+NormalPos.top=26
+NormalPos.right=1703
+NormalPos.bottom=603
+Class=LaTeXView
+Document=chapter\fazit.tex
+
+[Frame3_View0,0]
+TopLine=0
+Cursor=1241
+
+[Frame4]
 Flags=0
 ShowCmd=1
 MinPos.x=-1
@@ -70,27 +88,9 @@ NormalPos.bottom=603
 Class=BibTeXView
 Document=literatur.bib
 
-[Frame3_View0,0]
-TopLine=147
-Cursor=4948
-
-[Frame4]
-Flags=0
-ShowCmd=1
-MinPos.x=-1
-MinPos.y=-1
-MaxPos.x=-1
-MaxPos.y=-1
-NormalPos.left=4
-NormalPos.top=26
-NormalPos.right=1703
-NormalPos.bottom=603
-Class=LaTeXView
-Document=seminararbeit.tex
-
 [Frame4_View0,0]
-TopLine=48
-Cursor=1500
+TopLine=0
+Cursor=12
 
 [Frame5]
 Flags=0
@@ -104,11 +104,11 @@ NormalPos.top=26
 NormalPos.right=1703
 NormalPos.bottom=603
 Class=LaTeXView
-Document=chapter\literaturverzeichnis.tex
+Document=seminararbeit.tex
 
 [Frame5_View0,0]
-TopLine=0
-Cursor=320
+TopLine=58
+Cursor=1744
 
 [Frame6]
 Flags=0
@@ -122,11 +122,11 @@ NormalPos.top=26
 NormalPos.right=1703
 NormalPos.bottom=603
 Class=LaTeXView
-Document=chapter\ausblick.tex
+Document=chapter\literaturverzeichnis.tex
 
 [Frame6_View0,0]
-TopLine=6
-Cursor=1817
+TopLine=0
+Cursor=350
 
 [Frame7]
 Flags=0
@@ -140,11 +140,11 @@ NormalPos.top=26
 NormalPos.right=1703
 NormalPos.bottom=603
 Class=LaTeXView
-Document=chapter\anhang.tex
+Document=chapter\ausblick.tex
 
 [Frame7_View0,0]
-TopLine=2
-Cursor=360
+TopLine=0
+Cursor=1960
 
 [Frame8]
 Flags=0
@@ -158,15 +158,33 @@ NormalPos.top=26
 NormalPos.right=1703
 NormalPos.bottom=603
 Class=LaTeXView
-Document=titelseite.tex
+Document=chapter\anhang.tex
 
 [Frame8_View0,0]
+TopLine=6
+Cursor=574
+
+[Frame9]
+Flags=0
+ShowCmd=1
+MinPos.x=-1
+MinPos.y=-1
+MaxPos.x=-1
+MaxPos.y=-1
+NormalPos.left=4
+NormalPos.top=26
+NormalPos.right=1703
+NormalPos.bottom=603
+Class=LaTeXView
+Document=titelseite.tex
+
+[Frame9_View0,0]
 TopLine=0
 Cursor=277
 
 [SessionInfo]
-FrameCount=9
-ActiveFrame=1
+FrameCount=10
+ActiveFrame=3
 
 [Bookmarks]
 chapter\hauptteil.tex=6 

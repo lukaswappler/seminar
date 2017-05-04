@@ -14,14 +14,14 @@ Die Analyse von Performance Problemen erweisen sich mitunter als sehr schwierig.
 
 %eventuell in die Performance section
 \noindent
-Speziell beim Thema SQL-Abfragen ist es enorm wichtig sich für die richtigen Anweisungen zu entscheiden, um keine langsamen Operationen zu haben. 
+Speziell beim Thema SQL-Abfragen ist es enorm wichtig, dass man sich für die richtigen Anweisungen entscheidet, um langsame Operationen zu vermeiden. 
 Wenige Änderungen an SQL-Abfragen können sehr große Geschwindigkeitsunterschiede bewirken.
 
 
 
 \subsection{Besonderheiten bei der Speichernutzung}
-Die Wahl einer geeigneten bzw. speicherplatzeffizienten Datenstruktur wir oftmals unterschätzt. Gerade bei großen Datenmengen und oftmals komprimierten Daten können schnell große Speichermengen benötigt werden. Das wird in folgenden Beispiel verdeutlicht.
-Spark geht davon aus, dass eine Datei in Blöcke einer bestimmten Größe geladen wird. In der Regel 128MB. Zu beachten ist jedoch, dass beim dekomprimieren größere Blöcke entstehen können. So können aus 128MB schnell 3-4GB große Blöcke in dekomprimierten Zustand werden. \\ 
+Die Wahl einer geeigneten bzw. speicherplatzeffizienten Datenstruktur wird oftmals unterschätzt. Gerade bei großen Datenmengen und oftmals komprimierten Daten können schnell große Speichermengen benötigt werden. Das wird im folgenden Beispiel verdeutlicht.
+Spark geht davon aus, dass eine Datei in Blöcke einer bestimmten Größe geladen wird. In der Regel 128MB. Zu beachten ist jedoch, dass beim Dekomprimieren größere Blöcke entstehen können. So können aus 128MB schnell 3-4GB große Blöcke in dekomprimierten Zustand werden. \\ 
 
 \noindent
 Um das Speichermanagement zu verbessern, wurde ein per-node allocator implementiert. Dieser verwaltet den Speicher auf einer Node. 
@@ -32,18 +32,18 @@ Der Speicher wird in drei Bereiche geteilt:
 	\item Speicher für \glqq{}unrolling\grqq{} Blöcke, um zu prüfen ob die einzulesenden Blöcke nach dem entpacken immer noch klein genug sind, damit diese gecached werden können.
 \end{itemize}
 \noindent
-Damit läuft das System robust über für Anwendungsbereiche mit sehr vielen Nodes sowie mit ganz wenigen.\footnote{Vgl. \cite{ADD+15}}
+Damit läuft das System robust für Anwendungsbereiche mit sehr vielen Maschinen sowie mit ganz wenigen.\footnote{Vgl. \cite{ADD+15}}
 
 \subsection{Netzwerk und I/O-Traffic}
 
 %%schon Operationen bei denen über 8.000 Nodes involviert waren und über 1PB an Daten verarbeitet wurden durchgeführt.
-Mit Apache Spark wurden Operationen, bei denen über 8.000 Nodes involviert waren und über 1PB an Daten verarbeitet wurden, durchgeführt. Das beansprucht natürlich die I/O Schicht enorm.
-Um I/O Probleme zu vermeiden, bzw. diese besser in den Griff zu bekommen, wurde als Basis das Netty-Framework verwendet.
+Mit Apache Spark wurden Operationen, bei denen über 8.000 Nodes involviert waren und über 1PB an Daten verarbeitet wurden, durchgeführt. Das beansprucht die I/O Schicht enorm.
+Um I/O Probleme zu vermeiden, bzw. diese besser zu beherrschen, wurde als Basis das Netty-Framework verwendet.
 \begin{itemize}
 	\item Zero-copy I/O:\\
-	Daten werden direkt von der Festplatte zu dem Socket kopiert. Das vermeidet Last an der CPU bei Kontextwechseln und entlastet zusätzlich den JVM\footnote{\textbf{JVM} (java virtual machine) ist ein Teil der Java-Laufzeitumgebung. Der kompilierte Java-Bytecode wird innerhalb dieser virtuellen Maschinen ausgeführt.} garbage collector\footnote{\textbf{garbage collector} kommt in Java zur automatischen Speicherbereinigung zum Einsatz}
+	Daten werden direkt von der Festplatte zu dem Socket kopiert. Das vermeidet Last an der CPU bei Kontextwechseln und entlastet zusätzlich den JVM garbage collector\footnote{\textbf{garbage collector} kommt in Java zur automatischen Speicherbereinigung zum Einsatz}
 	\item Off-heap network buffer management:\\
-	Netty verwaltet einige Speichertabellen außerhalb des Java Heap Speichers, um Probleme mit den JVM garbage collector zu vermeiden.
+	Netty verwaltet einige Speichertabellen außerhalb des Java Heap Speichers, um Probleme mit dem JVM garbage collector zu vermeiden.
 	\item Mehrfache Verbindungen:\\
 	Jeder Spark worker kann mehrere Verbindungen parallel bearbeiten.
 \end{itemize}
@@ -52,7 +52,7 @@ Um I/O Probleme zu vermeiden, bzw. diese besser in den Griff zu bekommen, wurde 
 \newpage
 \section{Nutzung \& Verbreitung}
 %%als wenn es nur eine einzige exotische Programmiersprache zur Nutzung gäbe. \\
-Durch die Unterstützung der drei Programmiersprachen skala, pathon und java ist die Arbeit mit Apache Spark einfacher, als wenn nur eine einzige exotische Programmiersprache verwendet werden könnte. \\
+Durch die Unterstützung der drei Programmiersprachen Skala, Python und Java ist die Arbeit mit Apache Spark einfacher, als wenn nur eine einzige exotische Programmiersprache verwendet werden könnte. \\
 
 
 
@@ -72,7 +72,7 @@ Seit einigen Jahren finden weltweit jährlich, unter dem Namen \glqq{}Spark Summ
 
 %DONE: https://www.heise.de/developer/meldung/Big-Data-Umfrage-zur-Verbreitung-zu-Apache-Spark-2529126.html
 \noindent
-In einer Umfrage von Heise.de aus dem Jahr 2015 wurden 2.136 Teilnehmer zur Nutzung von Apache Spark befragt.\cite{HEISEBIGDATA}. 31\% der Befragten gaben an, den Einsatz derzeit zu prüfen, 13\% Nutzen bereits Apache Spark und 20\% planen den Einsatz noch in dem damaligen Jahr. Die Nutzung innerhalb verschiedener Berufsgruppen war sehr ähnlich. Mit 16\%  lag bei den Telekommunikationsunternehmen der Einsatz am höchsten.\\
+In einer Umfrage von Heise.de aus dem Jahr 2015 wurden 2.136 Teilnehmer zur Nutzung von Apache Spark befragt.\cite{HEISEBIGDATA}. 31\% der Befragten gaben an, den Einsatz derzeit zu prüfen, 13\% Nutzen bereits Apache Spark und 20\% planten den Einsatz noch in dem damaligen Jahr. Die Nutzung innerhalb verschiedener Berufsgruppen war sehr ähnlich. Mit 16\%  lag bei den Telekommunikationsunternehmen der Einsatz am höchsten.\\
 Bei denen, die es bereits im Einsatz haben lag Scala bei den Programmiersprachen mit großem Abstand vorn. Eine detaillierte Übersicht ist in \autoref{fig:nutzung} zu sehen.
 \begin{figure}[h]
   \centering
