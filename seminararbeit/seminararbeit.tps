@@ -17,8 +17,8 @@ Class=LaTeXView
 Document=chapter\performance.tex
 
 [Frame0_View0,0]
-TopLine=36
-Cursor=1983
+TopLine=66
+Cursor=4554
 
 [Frame1]
 Flags=0
@@ -35,8 +35,8 @@ Class=LaTeXView
 Document=chapter\einleitung.tex
 
 [Frame1_View0,0]
-TopLine=5
-Cursor=1502
+TopLine=0
+Cursor=1395
 
 [Frame2]
 Flags=0
@@ -53,8 +53,8 @@ Class=LaTeXView
 Document=chapter\hauptteil.tex
 
 [Frame2_View0,0]
-TopLine=241
-Cursor=17700
+TopLine=282
+Cursor=17194
 
 [Frame3]
 Flags=0
@@ -72,7 +72,7 @@ Document=chapter\fazit.tex
 
 [Frame3_View0,0]
 TopLine=0
-Cursor=1241
+Cursor=1259
 
 [Frame4]
 Flags=0
@@ -144,7 +144,7 @@ Document=chapter\ausblick.tex
 
 [Frame7_View0,0]
 TopLine=0
-Cursor=1960
+Cursor=2258
 
 [Frame8]
 Flags=0
@@ -161,8 +161,8 @@ Class=LaTeXView
 Document=chapter\anhang.tex
 
 [Frame8_View0,0]
-TopLine=6
-Cursor=574
+TopLine=0
+Cursor=105
 
 [Frame9]
 Flags=0
@@ -184,7 +184,7 @@ Cursor=277
 
 [SessionInfo]
 FrameCount=10
-ActiveFrame=3
+ActiveFrame=2
 
 [Bookmarks]
 chapter\hauptteil.tex=6 

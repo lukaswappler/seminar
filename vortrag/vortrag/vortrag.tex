@@ -1,0 +1,181 @@
+\documentclass[hyperref={pdfpagelabels=false}]{beamer}
+
+
+
+
+
+%\usepackage{lmodern}
+
+\title{Thema 2.3: Apache Spark}   
+\subtitle{Skalierbare verteilte Datenanalyse}
+\author{Lukas Wappler} 
+\date{\today} 
+
+\usepackage{beamerthemeshadow}
+%  \beamersetuncovermixins{\opaqueness<1>{25}}{\opaqueness<2->{15}}
+%  sorgt dafuer das die Elemente die erst noch (zukuenftig) kommen 
+%  nur schwach angedeutet erscheinen 
+\beamersetuncovermixins{\opaqueness<1>{25}}{\opaqueness<2->{15}}
+% klappt auch bei Tabellen, wenn teTeX verwendet wird\ldots
+
+
+
+%NO FOOTLINE
+%gets rid of bottom navigation bars
+%\setbeamertemplate{footline}[frame number]{}
+
+%gets rid of bottom navigation symbols
+\setbeamertemplate{navigation symbols}{}
+
+%gets rid of footer
+%will override 'frame number' instruction above
+%comment out to revert to previous/default definitions
+\setbeamertemplate{footline}{}
+
+
+%\setbeamertemplate{frametitle}{\nointerlineskip  
+ %   \begin{beamercolorbox}[wd=\paperwidth,ht=2.75ex,dp=1.375ex]{frametitle}
+  %      \hspace*{2ex}\insertframetitle \hfill {\insertframenumber} \hspace*{1ex}%
+   % \end{beamercolorbox}}
+
+%\addtobeamertemplate{headline}{}{\rule{\paperwidth}{3pt}}
+
+\addtobeamertemplate{headline} 
+{
+  \leavevmode%
+  \hbox{%
+  \begin{beamercolorbox}[wd=.333333\paperwidth,ht=2.25ex,dp=1ex,center]{author in head/foot}%
+    Lukas Wappler
+		%\usebeamerfont{author in head/foot}\insertsection
+  \end{beamercolorbox}%
+  \begin{beamercolorbox}[wd=.333333\paperwidth,ht=2.25ex,dp=1ex,center]{title in head/foot}%
+   
+		Thema 2.3: Apache Spark		
+  \end{beamercolorbox}%
+  \begin{beamercolorbox}[wd=.333333\paperwidth,ht=2.25ex,dp=1ex,right]{date in head/foot}%
+    \usebeamerfont{date in head/foot}\insertshortdate{}\hspace*{2em}
+    \insertframenumber{} / \inserttotalframenumber \hspace*{2ex} 
+  \end{beamercolorbox}}%
+  \vskip0pt%
+}
+
+
+\begin{document}
+
+
+
+
+\begin{frame}[plain,noframenumbering]
+\titlepage
+\end{frame} 
+
+
+\begin{frame}
+\frametitle{Inhaltsverzeichnis}
+\setcounter{tocdepth}{1}
+\tableofcontents
+\end{frame} 
+
+
+
+\section{Einleitung} 
+\begin{frame}
+\frametitle{Einleitung} 
+\end{frame}
+
+\section{Apache Spark} 
+\begin{frame}
+\frametitle{Einleitung} 
+\end{frame}
+
+\subsection{Kern-Bibliotheken / Komponenten}
+\begin{frame} 
+
+\end{frame}
+
+\subsubsection{Spark-Core}
+\begin{frame} 
+
+\end{frame}
+
+\subsubsection{RDD’s}
+\begin{frame} 
+
+\end{frame}
+
+
+\subsection{SQL-Abfragen}
+\subsubsection{Spark-SQL}
+\begin{frame} 
+
+\end{frame}
+
+
+\subsubsection{Data Frames}
+\begin{frame} 
+
+\end{frame}
+
+\subsection{  Verarbeitung von Datenströmen (Spark-Streaming)}
+\begin{frame} 
+
+\end{frame}
+
+
+\subsection{  Berechnungen auf Graphen (GraphX)}
+\begin{frame} 
+
+\end{frame}
+
+\subsection{  Maschinelles Lernen (MLlib)}
+\begin{frame} 
+
+\end{frame}
+
+\subsection{  Skalierung von R Programmen (SparkR)}
+\begin{frame} 
+
+\end{frame}
+
+
+
+\section{Mehrere Komponenten im Verbund}
+\begin{frame} 
+
+\end{frame}
+
+\section{  Performance}
+\begin{frame} 
+
+\end{frame}
+
+ \subsection{Besonderheiten bei der Speichernutzung}
+\begin{frame} 
+
+\end{frame}
+
+ \subsection{Netzwerk und I/O-Traffic}
+\begin{frame} 
+
+\end{frame}
+
+
+\section{Nutzung und Verbreitung}
+\begin{frame} 
+
+\end{frame}
+
+
+\section{ Fazit}
+\begin{frame} 
+
+\end{frame}
+
+\section{Ausblick und Weiterentwicklung}
+\begin{frame} 
+
+\end{frame}
+
+
+
+\end{document}
