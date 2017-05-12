@@ -50,7 +50,7 @@ Den Einsatz der Kern-Komponenten ist im Anhang in \autoref{code:wordcount} zu se
 %der grundlegende Auführungs-Engine 
 Spark Core ist die Grundlage der Spark Plattform. Alle anderen Komponenten bauen auf diesem Kern auf. In dem Kern sind die grundlegenden infrastrukturellen Funktionen enthalten. Darunter zählen die Aufgabenverwaltung, die zeitliche Planung (Scheduling) sowie I/O Funktionen.
 Der Kern liefert zum Beispiel die Möglichkeit, Ergebnisse von Berechnungen direkt im Arbeitsspeicher zu halten und diese wiederzuverwenden. Das kann die Geschwindigkeit um das zehn bis 30 fache erhöhen\footnote{Vgl. \cite{VYL+16}}. 
-Das grundlegende Programmiermodell besteht aus dem Arbeiten mit den Resilent Distirbuted Datasets (RDD's). Die API's werden in verschiedenen Sprachen (Java, Scala und Python) bereitgestellt.\footnote{Vgl. \cite{DATABRICK_ABOUT}} In der \autoref{fig:spark_core} sind die einzelnen Bausteine innerhalb der Spark Core Komponenten / API noch einmal im Überblick zu sehen. \\
+Das grundlegende Programmiermodell besteht aus dem Arbeiten mit den Resilent Distributed Datasets (RDD's). Die API's werden in verschiedenen Sprachen (Java, Scala und Python) bereitgestellt.\footnote{Vgl. \cite{DATABRICK_ABOUT}} In der \autoref{fig:spark_core} sind die einzelnen Bausteine innerhalb der Spark Core Komponenten / API noch einmal im Überblick zu sehen. \\
  
 
 \noindent
@@ -218,7 +218,7 @@ Nachdem die einzelnen Komponenten vorgestellt wurden, soll anhand eines praktisc
 %Die Komponenten wurden jetzt einzeln vorgestellt. Jetzt soll das Zusammenspiel gezeigt werden. Hier bietet sich ein praktische Beispiel an. \\
 
 \noindent
-Es soll folgende Aufgabenstellung mit Apache Spark realisiert werden: Es gibt eine Datenmenge bestehend aus 100.000 Mitarbeiter-Datensätzen. Zu jedem Mitarbeiter sind Informationen wie Vorname, Nachname, Gehalt, Eintritt in die Firma, Adresse sowie Interessen/Hobby bekannt. Diese Daten sind im strukturierten JSON\footnote{\textbf{JavaScript Object Notation (JSON)} ist ein kompaktes Datenformat für den Datenaustausch. }-Format hinterlegt. 
+Es soll folgende Aufgabenstellung mit Apache Spark realisiert werden: Es gibt eine Datenmenge bestehend aus 100.000 Mitarbeiter-Datensätzen. Zu jedem Mitarbeiter sind Informationen wie Vorname, Nachname, Gehalt, Eintritt in die Firma, Adresse sowie Interessen/Hobbys bekannt. Diese Daten sind im strukturierten JSON\footnote{\textbf{JavaScript Object Notation (JSON)} ist ein kompaktes Datenformat für den Datenaustausch. }-Format hinterlegt. 
 Aus diesem Datensatz sollen alle Mitarbeiter gefunden werden, die als Hobby Astrologie angegeben haben. Zusätzlich sollen diese auf keinen Fall Interesse an Autorennen und Bowling haben. Des Weiteren sollen die gefundenen Mitarbeiter nach ihrem Alter gruppiert werden. \\
 Diese Aufgabenstellung macht es möglich die folgenden Komponenten zu nutzen:
 \begin{itemize}

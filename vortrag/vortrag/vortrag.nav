@@ -2,77 +2,86 @@
 \headcommand {\beamer@framepages {1}{1}}
 \headcommand {\slideentry {0}{0}{2}{2/2}{}{0}}
 \headcommand {\beamer@framepages {2}{2}}
-\headcommand {\sectionentry {1}{Einleitung}{3}{Einleitung}{0}}
-\headcommand {\beamer@sectionpages {1}{2}}
-\headcommand {\beamer@subsectionpages {1}{2}}
 \headcommand {\slideentry {1}{0}{1}{3/3}{}{0}}
 \headcommand {\beamer@framepages {3}{3}}
-\headcommand {\sectionentry {2}{Apache Spark}{4}{Apache Spark}{0}}
+\headcommand {\sectionentry {2}{Einleitung}{4}{Einleitung}{0}}
 \headcommand {\beamer@sectionpages {3}{3}}
 \headcommand {\beamer@subsectionpages {3}{3}}
 \headcommand {\slideentry {2}{0}{1}{4/4}{}{0}}
 \headcommand {\beamer@framepages {4}{4}}
-\headcommand {\beamer@subsectionentry {0}{2}{1}{5}{Kern-Bibliotheken / Komponenten}}\headcommand {\beamer@subsectionpages {4}{4}}
-\headcommand {\slideentry {2}{1}{1}{5/5}{Kern-Bibliotheken / Komponenten}{0}}
+\headcommand {\sectionentry {3}{Apache Spark}{5}{Apache Spark}{0}}
+\headcommand {\beamer@sectionpages {4}{4}}
+\headcommand {\beamer@subsectionpages {4}{4}}
+\headcommand {\slideentry {3}{0}{1}{5/5}{}{0}}
 \headcommand {\beamer@framepages {5}{5}}
-\headcommand {\beamer@subsubsectionentry {0}{2}{1}{1}{6}{Spark-Core}}
-\headcommand {\slideentry {2}{1}{2}{6/6}{Kern-Bibliotheken / Komponenten}{0}}
+\headcommand {\beamer@subsectionentry {0}{3}{1}{6}{Kern-Bibliotheken / Komponenten}}\headcommand {\beamer@subsectionpages {5}{5}}
+\headcommand {\slideentry {3}{1}{1}{6/6}{Kern-Bibliotheken / Komponenten}{0}}
 \headcommand {\beamer@framepages {6}{6}}
-\headcommand {\beamer@subsubsectionentry {0}{2}{1}{2}{7}{RDD’s}}
-\headcommand {\slideentry {2}{1}{3}{7/7}{Kern-Bibliotheken / Komponenten}{0}}
+\headcommand {\beamer@subsubsectionentry {0}{3}{1}{1}{7}{Spark-Core}}
+\headcommand {\slideentry {3}{1}{2}{7/7}{Kern-Bibliotheken / Komponenten}{0}}
 \headcommand {\beamer@framepages {7}{7}}
-\headcommand {\beamer@subsectionentry {0}{2}{2}{8}{SQL-Abfragen}}\headcommand {\beamer@subsectionpages {5}{7}}
-\headcommand {\beamer@subsubsectionentry {0}{2}{2}{1}{8}{Spark-SQL}}
-\headcommand {\slideentry {2}{2}{1}{8/8}{SQL-Abfragen}{0}}
+\headcommand {\beamer@subsubsectionentry {0}{3}{1}{2}{8}{RDD\IeC {\textquoteright }s}}
+\headcommand {\slideentry {3}{1}{3}{8/8}{Kern-Bibliotheken / Komponenten}{0}}
 \headcommand {\beamer@framepages {8}{8}}
-\headcommand {\beamer@subsubsectionentry {0}{2}{2}{2}{9}{Data Frames}}
-\headcommand {\slideentry {2}{2}{2}{9/9}{SQL-Abfragen}{0}}
+\headcommand {\beamer@subsectionentry {0}{3}{2}{9}{SQL-Abfragen}}\headcommand {\beamer@subsectionpages {6}{8}}
+\headcommand {\beamer@subsubsectionentry {0}{3}{2}{1}{9}{Spark-SQL}}
+\headcommand {\slideentry {3}{2}{1}{9/9}{SQL-Abfragen}{0}}
 \headcommand {\beamer@framepages {9}{9}}
-\headcommand {\beamer@subsectionentry {0}{2}{3}{10}{ Verarbeitung von Datenströmen (Spark-Streaming)}}\headcommand {\beamer@subsectionpages {8}{9}}
-\headcommand {\slideentry {2}{3}{1}{10/10}{ Verarbeitung von Datenströmen (Spark-Streaming)}{0}}
+\headcommand {\beamer@subsectionentry {0}{3}{3}{10}{Verarbeitung von Datenstr\IeC {\"o}men (Spark-Streaming)}}\headcommand {\beamer@subsectionpages {9}{9}}
+\headcommand {\slideentry {3}{3}{1}{10/10}{Verarbeitung von Datenstr\IeC {\"o}men (Spark-Streaming)}{0}}
 \headcommand {\beamer@framepages {10}{10}}
-\headcommand {\beamer@subsectionentry {0}{2}{4}{11}{ Berechnungen auf Graphen (GraphX)}}\headcommand {\beamer@subsectionpages {10}{10}}
-\headcommand {\slideentry {2}{4}{1}{11/11}{ Berechnungen auf Graphen (GraphX)}{0}}
+\headcommand {\beamer@subsectionentry {0}{3}{4}{11}{Berechnungen auf Graphen (GraphX)}}\headcommand {\beamer@subsectionpages {10}{10}}
+\headcommand {\slideentry {3}{4}{1}{11/11}{Berechnungen auf Graphen (GraphX)}{0}}
 \headcommand {\beamer@framepages {11}{11}}
-\headcommand {\beamer@subsectionentry {0}{2}{5}{12}{ Maschinelles Lernen (MLlib)}}\headcommand {\beamer@subsectionpages {11}{11}}
-\headcommand {\slideentry {2}{5}{1}{12/12}{ Maschinelles Lernen (MLlib)}{0}}
+\headcommand {\beamer@subsectionentry {0}{3}{5}{12}{Maschinelles Lernen (MLlib)}}\headcommand {\beamer@subsectionpages {11}{11}}
+\headcommand {\slideentry {3}{5}{1}{12/12}{Maschinelles Lernen (MLlib)}{0}}
 \headcommand {\beamer@framepages {12}{12}}
-\headcommand {\beamer@subsectionentry {0}{2}{6}{13}{ Skalierung von R Programmen (SparkR)}}\headcommand {\beamer@subsectionpages {12}{12}}
-\headcommand {\slideentry {2}{6}{1}{13/13}{ Skalierung von R Programmen (SparkR)}{0}}
+\headcommand {\beamer@subsectionentry {0}{3}{6}{13}{Skalierung von R Programmen (SparkR)}}\headcommand {\beamer@subsectionpages {12}{12}}
+\headcommand {\slideentry {3}{6}{1}{13/13}{Skalierung von R Programmen (SparkR)}{0}}
 \headcommand {\beamer@framepages {13}{13}}
-\headcommand {\sectionentry {3}{Mehrere Komponenten im Verbund}{14}{Mehrere Komponenten im Verbund}{0}}
-\headcommand {\beamer@sectionpages {4}{13}}
+\headcommand {\sectionentry {4}{Mehrere Komponenten im Verbund}{14}{Mehrere Komponenten im Verbund}{0}}
+\headcommand {\beamer@sectionpages {5}{13}}
 \headcommand {\beamer@subsectionpages {13}{13}}
-\headcommand {\slideentry {3}{0}{1}{14/14}{}{0}}
+\headcommand {\slideentry {4}{0}{1}{14/14}{}{0}}
 \headcommand {\beamer@framepages {14}{14}}
-\headcommand {\sectionentry {4}{ Performance}{15}{ Performance}{0}}
+\headcommand {\sectionentry {5}{Mehrere Komponenten im Verbund}{15}{Mehrere Komponenten im Verbund}{0}}
 \headcommand {\beamer@sectionpages {14}{14}}
 \headcommand {\beamer@subsectionpages {14}{14}}
-\headcommand {\slideentry {4}{0}{1}{15/15}{}{0}}
+\headcommand {\slideentry {5}{0}{1}{15/15}{}{0}}
 \headcommand {\beamer@framepages {15}{15}}
-\headcommand {\beamer@subsectionentry {0}{4}{1}{16}{Besonderheiten bei der Speichernutzung}}\headcommand {\beamer@subsectionpages {15}{15}}
-\headcommand {\slideentry {4}{1}{1}{16/16}{Besonderheiten bei der Speichernutzung}{0}}
+\headcommand {\sectionentry {6}{Performance}{16}{Performance}{0}}
+\headcommand {\beamer@sectionpages {15}{15}}
+\headcommand {\beamer@subsectionpages {15}{15}}
+\headcommand {\slideentry {6}{0}{1}{16/16}{}{0}}
 \headcommand {\beamer@framepages {16}{16}}
-\headcommand {\beamer@subsectionentry {0}{4}{2}{17}{Netzwerk und I/O-Traffic}}\headcommand {\beamer@subsectionpages {16}{16}}
-\headcommand {\slideentry {4}{2}{1}{17/17}{Netzwerk und I/O-Traffic}{0}}
+\headcommand {\beamer@subsectionentry {0}{6}{1}{17}{Besonderheiten bei der Speichernutzung}}\headcommand {\beamer@subsectionpages {16}{16}}
+\headcommand {\slideentry {6}{1}{1}{17/17}{Besonderheiten bei der Speichernutzung}{0}}
 \headcommand {\beamer@framepages {17}{17}}
-\headcommand {\sectionentry {5}{Nutzung und Verbreitung}{18}{Nutzung und Verbreitung}{0}}
-\headcommand {\beamer@sectionpages {15}{17}}
-\headcommand {\beamer@subsectionpages {17}{17}}
-\headcommand {\slideentry {5}{0}{1}{18/18}{}{0}}
+\headcommand {\beamer@subsectionentry {0}{6}{2}{18}{Netzwerk und I/O-Traffic}}\headcommand {\beamer@subsectionpages {17}{17}}
+\headcommand {\slideentry {6}{2}{1}{18/18}{Netzwerk und I/O-Traffic}{0}}
 \headcommand {\beamer@framepages {18}{18}}
-\headcommand {\sectionentry {6}{ Fazit}{19}{ Fazit}{0}}
-\headcommand {\beamer@sectionpages {18}{18}}
+\headcommand {\sectionentry {7}{Nutzung und Verbreitung}{19}{Nutzung und Verbreitung}{0}}
+\headcommand {\beamer@sectionpages {16}{18}}
 \headcommand {\beamer@subsectionpages {18}{18}}
-\headcommand {\slideentry {6}{0}{1}{19/19}{}{0}}
+\headcommand {\slideentry {7}{0}{1}{19/19}{}{0}}
 \headcommand {\beamer@framepages {19}{19}}
-\headcommand {\sectionentry {7}{Ausblick und Weiterentwicklung}{20}{Ausblick und Weiterentwicklung}{0}}
+\headcommand {\sectionentry {8}{ Fazit}{20}{ Fazit}{0}}
 \headcommand {\beamer@sectionpages {19}{19}}
 \headcommand {\beamer@subsectionpages {19}{19}}
-\headcommand {\slideentry {7}{0}{1}{20/20}{}{0}}
+\headcommand {\slideentry {8}{0}{1}{20/20}{}{0}}
 \headcommand {\beamer@framepages {20}{20}}
-\headcommand {\beamer@partpages {1}{20}}
-\headcommand {\beamer@subsectionpages {20}{20}}
+\headcommand {\sectionentry {9}{Ausblick und Weiterentwicklung}{21}{Ausblick und Weiterentwicklung}{0}}
 \headcommand {\beamer@sectionpages {20}{20}}
-\headcommand {\beamer@documentpages {20}}
-\headcommand {\def \inserttotalframenumber {19}}
+\headcommand {\beamer@subsectionpages {20}{20}}
+\headcommand {\slideentry {9}{0}{1}{21/21}{}{0}}
+\headcommand {\beamer@framepages {21}{21}}
+\headcommand {\sectionentry {10}{Vielen Dank}{22}{Vielen Dank}{0}}
+\headcommand {\beamer@sectionpages {21}{21}}
+\headcommand {\beamer@subsectionpages {21}{21}}
+\headcommand {\slideentry {10}{0}{1}{22/22}{}{0}}
+\headcommand {\beamer@framepages {22}{22}}
+\headcommand {\beamer@partpages {1}{22}}
+\headcommand {\beamer@subsectionpages {22}{22}}
+\headcommand {\beamer@sectionpages {22}{22}}
+\headcommand {\beamer@documentpages {22}}
+\headcommand {\def \inserttotalframenumber {21}}
