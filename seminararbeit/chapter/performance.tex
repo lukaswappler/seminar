@@ -41,7 +41,7 @@ Mit Apache Spark wurden Operationen, bei denen über 8.000 Nodes involviert ware
 Um I/O Probleme zu vermeiden, bzw. diese besser zu beherrschen, wurde als Basis das Netty-Framework verwendet.
 \begin{itemize}
 	\item Zero-copy I/O:\\
-	Daten werden direkt von der Festplatte zu dem Socket kopiert. Das vermeidet Last an der CPU bei Kontextwechseln und entlastet zusätzlich den JVM garbage collector\footnote{\textbf{garbage collector} kommt in Java zur automatischen Speicherbereinigung zum Einsatz}
+	Daten werden direkt von der Festplatte zu dem Socket kopiert. Das vermeidet Last an der CPU bei Kontextwechseln und entlastet zusätzlich den JVM garbage collector\footnote{\textbf{garbage collector} kommt in Java zur automatischen Speicherbereinigung zum Einsatz}.
 	\item Off-heap network buffer management:\\
 	Netty verwaltet einige Speichertabellen außerhalb des Java Heap Speichers, um Probleme mit dem JVM garbage collector zu vermeiden.
 	\item Mehrfache Verbindungen:\\
@@ -57,23 +57,23 @@ Durch die Unterstützung der drei Programmiersprachen Skala, Python und Java ist
 
 
 \noindent
-Apache Spark unterstützt zudem noch verschiedene Datenquellen und Dateiformate.  Zu den Datenquellen zählen das Dateisystem S3\footnote{\textbf{S3} (Simple Storage Service) ist ein Filehosting-Dienst von Amazon der beliebig große Datenmengen speichern kann} von Amazon und das HDFS\footnote{\textbf{HDFS} (Hadoop Distributed File System) ist ein hochverfügbares Dateisystem zu Speicherung sehr großer Datenmengen}.
+Apache Spark unterstützt zudem noch verschiedene Datenquellen und Dateiformate.  Zu den Datenquellen zählen das Dateisystem S3\footnote{\textbf{S3} (Simple Storage Service) ist ein Filehosting-Dienst von Amazon der beliebig große Datenmengen speichern kann} von Amazon und das HDFS\footnote{\textbf{HDFS} (Hadoop Distributed File System) ist ein hochverfügbares Dateisystem zur Speicherung sehr großer Datenmengen}.
 Die Dateiformate können strukturiert (z.B.: CSV, Object Files), semi-strukturiert (z.B.: JSON) und unstrukturiert (z.B.: Textdatei) sein.\\
 
 \noindent
-Unter den Mitwirkenden(Contributors) zählen über 400 Entwickler aus über 100 Unternehmen (Stand 2014). Es gibt über 500 produktive Installationen. \cite{ADD+15} \\ %PAPER: Scaling Spark in the Real World\\
+Zu den Mitwirkenden(Contributors) zählen über 400 Entwickler aus über 100 Unternehmen (Stand 2014). Es gibt über 500 produktive Installationen. \footnote{Vgl. \cite{ADD+15}} \\ %PAPER: Scaling Spark in the Real World\\
 
 \noindent
 %http://spark.apache.org/community.html jährlich unter dem Namen Spark Summit Konferenzen statt. 
-Seit einigen Jahren finden weltweit jährlich, unter dem Namen \glqq{}Spark Summit\grqq{} Konferenzen statt.\cite{SPCOM}\\
+Seit einigen Jahren finden weltweit jährlich, unter dem Namen \glqq{}Spark Summit\grqq{} Konferenzen statt.\footnote{Vgl. \cite{SPCOM}}\\
 
 
 %"In einer Umfrage von Heise.de aus dem Jahr 2015 wurden 2.136 Teilnehmer zur Nutzung von Apache Spark befragt. 31 % der Befragten ..." (Eine Umfrage beauftragen? Tausenderpunkt; %2x Prozent bei der 31?^^)
 
 %DONE: https://www.heise.de/developer/meldung/Big-Data-Umfrage-zur-Verbreitung-zu-Apache-Spark-2529126.html
 \noindent
-In einer Umfrage von Heise.de aus dem Jahr 2015 wurden 2.136 Teilnehmer zur Nutzung von Apache Spark befragt.\cite{HEISEBIGDATA}. 31\% der Befragten gaben an, den Einsatz derzeit zu prüfen, 13\% Nutzen bereits Apache Spark und 20\% planten den Einsatz noch in dem damaligen Jahr. Die Nutzung innerhalb verschiedener Berufsgruppen war sehr ähnlich. Mit 16\%  lag bei den Telekommunikationsunternehmen der Einsatz am höchsten.\\
-Bei denen, die es bereits im Einsatz haben lag Scala bei den Programmiersprachen mit großem Abstand vorn. Eine detaillierte Übersicht ist in \autoref{fig:nutzung} zu sehen.
+In einer Umfrage von Heise.de aus dem Jahr 2015 wurden 2.136 Teilnehmer zur Nutzung von Apache Spark befragt.\footnote{Vgl. \cite{HEISEBIGDATA}}. 31\% der Befragten gaben an, den Einsatz derzeit zu prüfen, 13\% nutzen bereits Apache Spark und 20\% planten den Einsatz noch in dem damaligen Jahr. Die Nutzung innerhalb verschiedener Berufsgruppen war sehr ähnlich. Mit 16\%  lag bei den Telekommunikationsunternehmen der Einsatz am höchsten.\\
+Bei denen, die es bereits im Einsatz haben, lag Scala bei den Programmiersprachen mit großem Abstand vorn. Eine detaillierte Übersicht ist in \autoref{fig:nutzung} zu sehen.
 \begin{figure}[h]
   \centering
   \fbox{\includegraphics[width=140mm]{./excel/Nutzung.png}}

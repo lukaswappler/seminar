@@ -291,30 +291,6 @@
       \field{title}{Advanced Analytics with Spark}
       \field{year}{2015}
     \endentry
-    \entry{HEISEBIGDATA}{misc}{}
-      \name{author}{1}{}{%
-        {{hash=ee719756eed38df4e4208c5d5192e85a}{%
-           family={Schmidt},
-           familyi={S\bibinitperiod},
-           given={Julia},
-           giveni={J\bibinitperiod}}}%
-      }
-      \strng{namehash}{ee719756eed38df4e4208c5d5192e85a}
-      \strng{fullhash}{ee719756eed38df4e4208c5d5192e85a}
-      \strng{authornamehash}{ee719756eed38df4e4208c5d5192e85a}
-      \strng{authorfullhash}{ee719756eed38df4e4208c5d5192e85a}
-      \field{labelalpha}{Sch15}
-      \field{sortinit}{2}
-      \field{sortinithash}{0aa614ace9f3a40ef5a67e7f7a184048}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{month}{1}
-      \field{title}{Big Data: Umfrage zur Verbreitung zu Apache Spark}
-      \field{year}{2015}
-      \verb{url}
-      \verb https://www.heise.de/developer/meldung/Big-Data-Umfrage-zur-Verbreitung-zu-Apache-Spark-2529126.html
-      \endverb
-    \endentry
     \entry{VYL+16}{report}{}
       \name{author}{10}{}{%
         {{hash=721534f33cd88b3753e3bb459468783f}{%
@@ -781,6 +757,30 @@
       \field{year}{2017}
       \verb{url}
       \verb https://github.com/apache/spark/blob/master/examples/src/main/java/org/apache/spark/examples/ml/JavaPipelineExample.java
+      \endverb
+    \endentry
+    \entry{HEISEBIGDATA}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=ee719756eed38df4e4208c5d5192e85a}{%
+           family={Schmidt},
+           familyi={S\bibinitperiod},
+           given={Julia},
+           giveni={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{ee719756eed38df4e4208c5d5192e85a}
+      \strng{fullhash}{ee719756eed38df4e4208c5d5192e85a}
+      \strng{authornamehash}{ee719756eed38df4e4208c5d5192e85a}
+      \strng{authorfullhash}{ee719756eed38df4e4208c5d5192e85a}
+      \field{labelalpha}{Sch17}
+      \field{sortinit}{2}
+      \field{sortinithash}{0aa614ace9f3a40ef5a67e7f7a184048}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{month}{5}
+      \field{title}{Big Data: Umfrage zur Verbreitung zu Apache Spark}
+      \field{year}{2017}
+      \verb{url}
+      \verb https://www.heise.de/developer/meldung/Big-Data-Umfrage-zur-Verbreitung-zu-Apache-Spark-2529126.html
       \endverb
     \endentry
     \entry{TWITTER_12}{misc}{}

@@ -39,7 +39,7 @@ Die Module werden in den folgenden Kapitel von \ref{sec_sparkcore} bis \ref{sec_
 Darüber hinaus wird in Kapitel \ref{sec_sparkr} SparkR vorgestellt. Das Modul gehört nicht direkt zum Kern, jedoch bietet es die Möglichkeit die Datenanalysen mit R\footnote{\textbf{R} ist eine Programmiersprache für statistische Berechnungen und dem erstellen statistischer Grafiken. } zu optimieren bzw. zu beschleunigen und wird aus diesem Grund mit aufgeführt. \\
 
 \noindent
-Den Einsatz der Kern-Komponenten ist im Anhang in \autoref{code:wordcount} zu sehen. In diesem Beispiel werden die 20 meistgenannten Wörtern in dieser Seminararbeit vorkommen ermittelt. Dafür wird die Arbeit als PDF eingelesen und in eine Text-Datei konvertiert. Die Zeilen der Datei werden zuerst in Worte aufgeteilt und dann per MapReduce verdichtet und abschließend noch absteigend sortiert.
+Den Einsatz der Kern-Komponenten ist im Anhang in \autoref{code:wordcount} zu sehen. In diesem Beispiel werden die 20 meistgenannten Wörter, die in dieser Seminararbeit vorkommen, ermittelt. Dafür wird die Arbeit als PDF eingelesen und in eine Text-Datei konvertiert. Die Zeilen der Datei werden zuerst in Worte aufgeteilt und dann per MapReduce verdichtet und abschließend noch absteigend sortiert.
 
 %Die Aufteilung in die verschiedenen Module macht es sehr gut möglich nur einen Teil der Module zu verwenden. 
 
@@ -54,7 +54,7 @@ Das grundlegende Programmiermodell besteht aus dem Arbeiten mit den Resilent Dis
  
 
 \noindent
-Die parallele Verarbeitung wird über den Spark Context realisiert. Der Spark Context wird im Hauptprogramm(Treiberprogramm) erzeugt und ist mit einem Cluster Manager verbunden. Dieser wiederum kennt alle Worker Nodes, welche die Aufgaben ausführen. Die \autoref{fig:spark_cluster} zeigt wie Spark Context, Cluster Manager und die Worker Nodes zusammen agieren. Damit die Aufgaben über viele Nodes verteilt werden können, wird eine Datenstruktur benötigt die dafür ausgelegt ist.\footnote{Vgl. \cite[101]{BDS16}}
+Die parallele Verarbeitung wird über den Spark Context realisiert. Der Spark Context wird im Hauptprogramm (Treiberprogramm) erzeugt und ist mit einem Cluster Manager verbunden. Dieser wiederum kennt alle Worker Nodes, welche die Aufgaben ausführen. Die \autoref{fig:spark_cluster} zeigt wie Spark Context, Cluster Manager und die Worker Nodes zusammen agieren. Damit die Aufgaben über viele Nodes verteilt werden können, wird eine Datenstruktur benötigt die dafür ausgelegt ist.\footnote{Vgl. \cite[101]{BDS16}}
 
 \begin{figure}[h]
   \centering
@@ -71,7 +71,7 @@ Nach der Erstellung sind RDD's nur lesbar. Es ist nur möglich ein einmal defini
 \noindent
 Bei den Operationen wird zwischen Transformationen (z.B.: filter oder join) und Aktionen (z.B.: reduce, count, collect oder foreach) unterschieden. Transformationen bilden ein RDD auf ein anderes RDD ab. Aktionen bilden ein RDD auf eine andere Domäne ab.\\ %Todo hier nochmal forschen was das bedeutet
 \noindent
-Eine Folge von Operationen wird Lineage\footnote{RDD Lineage: Logischer Ablaufplan der einzelnen Operationen. Hilft Daten wiederherzustellen falls Fehler aufgetreten sind.} eines RDD's genannt.\footnote{Vgl. \cite{ZC+12}}
+Eine Folge von Operationen wird Lineage\footnote{\textbf{RDD Lineage} ist der logische Ablaufplan der einzelnen Operationen. Dadurch können Daten leicht wiederhergestellt werden, falls Fehler aufgetreten sind.} eines RDD's genannt.\footnote{Vgl. \cite{ZC+12}}
 
 
 
@@ -220,7 +220,7 @@ Nachdem die einzelnen Komponenten vorgestellt wurden, soll anhand eines praktisc
 \noindent
 Es soll folgende Aufgabenstellung mit Apache Spark realisiert werden: Es gibt eine Datenmenge bestehend aus 100.000 Mitarbeiter-Datensätzen. Zu jedem Mitarbeiter sind Informationen wie Vorname, Nachname, Gehalt, Eintritt in die Firma, Adresse sowie Interessen/Hobby bekannt. Diese Daten sind im strukturierten JSON\footnote{\textbf{JavaScript Object Notation (JSON)} ist ein kompaktes Datenformat für den Datenaustausch. }-Format hinterlegt. 
 Aus diesem Datensatz sollen alle Mitarbeiter gefunden werden, die als Hobby Astrologie angegeben haben. Zusätzlich sollen diese auf keinen Fall Interesse an Autorennen und Bowling haben. Des Weiteren sollen die gefundenen Mitarbeiter nach ihrem Alter gruppiert werden. \\
-Diese Aufgabenstellung (wenn auch ein wenig konstruiert) macht es möglich die folgenden Komponenten zu nutzen:
+Diese Aufgabenstellung macht es möglich die folgenden Komponenten zu nutzen:
 \begin{itemize}
 	\item die Kernklassen zum Sortieren und Reduzieren der Maps
 	\item SparkSQL für das Einlesen der JSON-Datei und SQL-Abfragen
@@ -234,7 +234,7 @@ Zuerst wird die SparkSession erzeugt und im Anschluss daran werden die Daten ein
 Als nächstes wird eine Pipeline aufgebaut, in der ein PipelineModel so trainiert werden soll, dass es später aus dem Datensatz alle passenden Mitarbeiter mit möglichst hoher Trefferrate findet. Die Pipeline besteht aus drei Stages: Dem Tokenizer\footnote{Verarbeitet Text und teilt ihn in kleinere Stücke. In dem Fall in einzelne Worte, Auszug aus dem Datensatz: 'interests':'R/C Helicopters,Frisbee Golf – Frolf,Tetris'}, dem HashingTF\footnote{Erzeugt zu den Worten Hashes, um ein besseres Vergleichen zu ermöglichen.} und der LogisticRegression\footnote{Erzeugt eine Voraussage zu dem Datensatz gegenüber den Trainingsdaten.}. Nach dem Training werden die Daten in ein neues Dataset transformiert. In diesem Dataset sind die Vorhersagen enthalten. Die beschriebenen Schritte sind als Code im Anhang in \autoref{code:verbund_2} zu sehen. \\
 
 \noindent
-Zum Schluss werden die Mitarbeiter, die vorhergesagt wurden, per SparkSQL mit einer SQL Abfrage herausgefiltert und über MapReduce und Sortierung aus der SparCore Bibliothek in die endgültige Form gebracht. Das ist unter \autoref{code:verbund_3} dargestellt. \\
+Zum Schluss werden die Mitarbeiter, die vorhergesagt wurden, per SparkSQL mit einer SQL Abfrage herausgefiltert und über MapReduce und Sortierung aus der SparCore Bibliothek in die endgültige Form gebracht. Das Implementierung dafür ist im \autoref{code:verbund_3} dargestellt. \\
 
 \noindent
 Es wurden 285 Mitarbeiter gefunden, die in Frage kommen. Darunter liegt der Großteil zwischen 25 und 35 Jahren. Das vollständige Ergebnis ist unter \autoref{code:verbund_3} zu finden.\\

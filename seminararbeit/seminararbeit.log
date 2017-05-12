@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210 64-bit) (preloaded format=pdflatex 2017.4.2)  5 MAY 2017 21:08
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210 64-bit) (preloaded format=pdflatex 2017.4.2)  12 MAY 2017 17:40
 entering extended mode
 **"D:/Eigene Dateien/09 Studium/01912_Seminar/git/seminar/seminararbeit/seminar
 arbeit.tex"
@@ -1295,7 +1295,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 89--92
 
  []
 
-<./bilder/spark_sql.png, id=239, 568.37344pt x 133.24782pt>
+<./bilder/spark_sql.png, id=238, 568.37344pt x 133.24782pt>
 File: ./bilder/spark_sql.png Graphic file (type png)
 
 <use ./bilder/spark_sql.png>
@@ -1334,7 +1334,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 121--123
 
  []
 
-<./bilder/spark_streaming.jpg, id=263, 956.82469pt x 383.18156pt>
+<./bilder/spark_streaming.jpg, id=262, 956.82469pt x 383.18156pt>
 File: ./bilder/spark_streaming.jpg Graphic file (type jpg)
 
 <use ./bilder/spark_streaming.jpg>
@@ -1368,7 +1368,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 144--147
 
  []
 
-<./bilder/vertex_routing_edge_tables.png, id=277, 710.55864pt x 466.57512pt>
+<./bilder/vertex_routing_edge_tables.png, id=276, 710.55864pt x 466.57512pt>
 File: ./bilder/vertex_routing_edge_tables.png Graphic file (type png)
 
 <use ./bilder/vertex_routing_edge_tables.png>
@@ -1408,7 +1408,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 171--173
 
  []
 
-<./bilder/ml-pipeline.png, id=291, 664.4022pt x 169.5936pt>
+<./bilder/ml-pipeline.png, id=290, 664.4022pt x 169.5936pt>
 File: ./bilder/ml-pipeline.png Graphic file (type png)
 
 <use ./bilder/ml-pipeline.png>
@@ -1437,7 +1437,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 190--193
 
  []
 
-<./bilder/spark_r_architecture.PNG, id=303, 362.85562pt x 222.8325pt>
+<./bilder/spark_r_architecture.PNG, id=302, 362.85562pt x 222.8325pt>
 File: ./bilder/spark_r_architecture.PNG Graphic file (type png)
 
 <use ./bilder/spark_r_architecture.PNG>
@@ -1516,7 +1516,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 4--5
 
  []
 
-<./bilder/spark_ui_worker.PNG, id=346, 711.4078pt x 495.35063pt>
+<./bilder/spark_ui_worker.PNG, id=345, 711.4078pt x 495.35063pt>
 File: ./bilder/spark_ui_worker.PNG Graphic file (type png)
 
 <use ./bilder/spark_ui_worker.PNG>
@@ -1591,7 +1591,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 66--69
 
  []
 
-<./excel/Nutzung.png, id=371, 517.935pt x 167.87718pt>
+<./excel/Nutzung.png, id=373, 517.935pt x 167.87718pt>
 File: ./excel/Nutzung.png Graphic file (type png)
 
 <use ./excel/Nutzung.png>
@@ -1690,7 +1690,7 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language  on input line 4.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 4.
-<./bilder/listing_top20.PNG, id=408, 553.31718pt x 380.92313pt>
+<./bilder/listing_top20.PNG, id=413, 553.31718pt x 380.92313pt>
 File: ./bilder/listing_top20.PNG Graphic file (type png)
 
 <use ./bilder/listing_top20.PNG>
@@ -1719,7 +1719,7 @@ Package babel Info: Redefining ngerman shorthand "|
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 12.
 
-<./bilder/code_verbund_1.PNG, id=414, 545.03625pt x 260.47313pt>
+<./bilder/code_verbund_1.PNG, id=419, 545.03625pt x 260.47313pt>
 File: ./bilder/code_verbund_1.PNG Graphic file (type png)
 
 <use ./bilder/code_verbund_1.PNG>
@@ -1730,7 +1730,7 @@ Package babel Info: Redefining ngerman shorthand "|
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 19.
 
-<./bilder/code_verbund_2.PNG, id=415, 567.62062pt x 424.58624pt>
+<./bilder/code_verbund_2.PNG, id=420, 567.62062pt x 424.58624pt>
 File: ./bilder/code_verbund_2.PNG Graphic file (type png)
 
 <use ./bilder/code_verbund_2.PNG>
@@ -1750,7 +1750,7 @@ Package babel Info: Redefining ngerman shorthand "|
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 26.
 
-<./bilder/code_verbund_3.PNG, id=423, 614.295pt x 330.48468pt>
+<./bilder/code_verbund_3.PNG, id=428, 614.295pt x 330.48468pt>
 File: ./bilder/code_verbund_3.PNG Graphic file (type png)
 
 <use ./bilder/code_verbund_3.PNG>
@@ -1761,7 +1761,7 @@ Package babel Info: Redefining ngerman shorthand "|
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language  on input line 32.
 
-<./bilder/code_verbund_4.PNG, id=424, 353.06906pt x 233.37187pt>
+<./bilder/code_verbund_4.PNG, id=429, 353.06906pt x 233.37187pt>
 File: ./bilder/code_verbund_4.PNG Graphic file (type png)
 
 <use ./bilder/code_verbund_4.PNG>
@@ -1844,8 +1844,8 @@ Package logreq Info: Writing requests to 'seminararbeit.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 15784 strings out of 493333
- 269388 string characters out of 3139169
+ 15787 strings out of 493333
+ 269424 string characters out of 3139169
  856023 words of memory out of 3000000
  18919 multiletter control sequences out of 15000+200000
  12989 words of font info for 45 fonts, out of 3000000 for 9000
@@ -1863,9 +1863,9 @@ fb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmssbx10.pfb><C:
 /Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program
  Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Program Files/M
 iKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on seminararbeit.pdf (22 pages, 960415 bytes).
+Output written on seminararbeit.pdf (22 pages, 936322 bytes).
 PDF statistics:
- 540 PDF objects out of 1000 (max. 8388607)
- 127 named destinations out of 1000 (max. 500000)
+ 545 PDF objects out of 1000 (max. 8388607)
+ 130 named destinations out of 1000 (max. 500000)
  273 words of extra memory for PDF output out of 10000 (max. 10000000)
 
