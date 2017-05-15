@@ -12,7 +12,7 @@ Das Framework ist im Rahmen eines Forschungsprojekts, welches 2009 in der Univer
 
 \section{Kern-Bibliotheken / Komponenten}
 
-Apache Spark besteht im wesentlichen aus fünf Modulen: Spark Core, Spark SQL, Spark Streaming, Machine Learning Library (MLlib) und GraphX. Zur Nutzung der Komponenten gibt es eine Umfrage aus dem Jahr 2015. Diese ist in \autoref{fig:spark_komp_nutzung} zu sehen. \\
+Apache Spark besteht im wesentlichen aus fünf Modulen: Spark-Core, Spark-SQL, Spark-Streaming, Machine Learning Library (MLlib) und GraphX. Zur Nutzung der Komponenten gibt es eine Umfrage aus dem Jahr 2015. Diese ist in \autoref{fig:spark_komp_nutzung} zu sehen. \\
 
 \begin{figure}[h]
   \centering
@@ -23,7 +23,7 @@ Apache Spark besteht im wesentlichen aus fünf Modulen: Spark Core, Spark SQL, S
 
 %\newpage
 \noindent
-Während Spark Core die Kern-Komponente bildet und alle notwendigen Bausteine für das Framework mitbringt, sind die anderen Module auf dem Spark Core Modul aufgebaut und befassen sich mit spezielleren Bereichen wie SQL, Streaming, maschinelles Lernen oder Graphenberechnungen. \autoref{fig:spark_core} zeigt eine Übersicht der Komponenten. \\
+Während Spark-Core die Kern-Komponente bildet und alle notwendigen Bausteine für das Framework mitbringt, sind die anderen Module auf dem Spark-Core Modul aufgebaut und befassen sich mit spezielleren Bereichen wie SQL, Streaming, maschinelles Lernen oder Graphenberechnungen. \autoref{fig:spark_core} zeigt eine Übersicht der Komponenten. \\
 
 \begin{figure}[h]
   \centering
@@ -48,9 +48,9 @@ Den Einsatz der Kern-Komponenten ist im Anhang in \autoref{code:wordcount} zu se
 \newpage
 \subsection{Grundlage des Systems (Spark-Core \& RDD’s)}\label{sec_sparkcore}
 %der grundlegende Auführungs-Engine 
-Spark Core ist die Grundlage der Spark Plattform. Alle anderen Komponenten bauen auf diesem Kern auf. In dem Kern sind die grundlegenden infrastrukturellen Funktionen enthalten. Darunter zählen die Aufgabenverwaltung, die zeitliche Planung (Scheduling) sowie I/O Funktionen.
+Spark-Core ist die Grundlage der Spark Plattform. Alle anderen Komponenten bauen auf diesem Kern auf. In dem Kern sind die grundlegenden infrastrukturellen Funktionen enthalten. Darunter zählen die Aufgabenverwaltung, die zeitliche Planung (Scheduling) sowie I/O Funktionen.
 Der Kern liefert zum Beispiel die Möglichkeit, Ergebnisse von Berechnungen direkt im Arbeitsspeicher zu halten und diese wiederzuverwenden. Das kann die Geschwindigkeit um das zehn bis 30 fache erhöhen\footnote{Vgl. \cite{VYL+16}}. 
-Das grundlegende Programmiermodell besteht aus dem Arbeiten mit den Resilent Distributed Datasets (RDD's). Die API's werden in verschiedenen Sprachen (Java, Scala und Python) bereitgestellt.\footnote{Vgl. \cite{DATABRICK_ABOUT}} In der \autoref{fig:spark_core} sind die einzelnen Bausteine innerhalb der Spark Core Komponenten / API noch einmal im Überblick zu sehen. \\
+Das grundlegende Programmiermodell besteht aus dem Arbeiten mit den Resilent Distributed Datasets (RDD's). Die API's werden in verschiedenen Sprachen (Java, Scala und Python) bereitgestellt.\footnote{Vgl. \cite{DATABRICK_ABOUT}} In der \autoref{fig:spark_core} sind die einzelnen Bausteine innerhalb der Spark-Core Komponenten / API noch einmal im Überblick zu sehen. \\
  
 
 \noindent
@@ -71,7 +71,7 @@ Nach der Erstellung sind RDD's nur lesbar. Es ist nur möglich ein einmal defini
 \noindent
 Bei den Operationen wird zwischen Transformationen (z.B.: filter oder join) und Aktionen (z.B.: reduce, count, collect oder foreach) unterschieden. Transformationen bilden ein RDD auf ein anderes RDD ab. Aktionen bilden ein RDD auf eine andere Domäne ab.\\ %Todo hier nochmal forschen was das bedeutet
 \noindent
-Eine Folge von Operationen wird Lineage\footnote{\textbf{RDD Lineage} ist der logische Ablaufplan der einzelnen Operationen. Dadurch können Daten leicht wiederhergestellt werden, falls Fehler aufgetreten sind.} eines RDD's genannt.\footnote{Vgl. \cite{ZC+12}}
+Eine Folge von Operationen wird Lineage\footnote{\textbf{RDD Lineage} ist der logische Ablaufplan der einzelnen Operationen. Dadurch können Daten leicht wiederhergestellt werden, falls Fehler aufgetreten sind.} eines RDD's genannt.\footnote{Vgl. \cite{ZC+12}, \cite[11]{AAWS15}}
 
 
 
@@ -96,7 +96,7 @@ Die Abfragen werden zuerst in den DataFrame-Objekten gespeichert. Erst nach der 
 \begin{figure}[h]
   \centering
   \fbox{\includegraphics[width=\textwidth]{./bilder/spark_sql.png}}
-  \caption{Phasen der Query Planung in Spark SQL \cite{AXL+15}}\label{fig:spark_sql}
+  \caption{Phasen der Query Planung in Spark-SQL \cite{AXL+15}}\label{fig:spark_sql}
 \end{figure}
 
 \noindent
@@ -119,7 +119,7 @@ Die Spark-Streaming Bibliothek ermöglicht das Verarbeiten von Datenströmen. Da
 Auch DStreams haben die bereits aus \ref{sec_sparkcore} bekannten zwei Operationen (Transformation und Aktion). \\
 
 \noindent
-Um Datenströme zu empfangen wird ein Empfänger (Receiver) auf einem Worker-Knoten gestartet. Die eingehenden Daten werden in kleinen Datenblöcken gespeichert. Dafür werden die Daten innerhalb eines vorgegebenen Zeitfensters gepuffert. Pro Zeitfenster werden die Daten in dem Puffer in eine Partition eines RDD abgelegt.\footnote{Vgl. \cite{BDS16}} \\
+Um Datenströme zu empfangen wird ein Empfänger (Receiver) auf einem Worker-Knoten gestartet. Die eingehenden Daten werden in kleinen Datenblöcken gespeichert. Dafür werden die Daten innerhalb eines vorgegebenen Zeitfensters gepuffert. Pro Zeitfenster werden die Daten in dem Puffer in eine Partition eines RDD abgelegt.\footnote{Vgl. \cite[123-130]{BDS16}} \\
 
 \noindent
 In der Spark-Streaming Bilbliothek sind bereits einige Empfänger wie Kafka\footnote{\textbf{Apache Kafka} dient zur Verarbeitung von Datenströmen.} und Twitter enthalten. \\
@@ -128,7 +128,7 @@ In der Spark-Streaming Bilbliothek sind bereits einige Empfänger wie Kafka\foot
 \begin{figure}[h]
   \centering
   \fbox{\includegraphics[width=\textwidth]{./bilder/spark_streaming.jpg}}
-  \caption{Spark Streaming Ablauf \cite{INFOQ_STREAMING}}\label{fig:spark_streaming}
+  \caption{Spark-Streaming Ablauf \cite{INFOQ_STREAMING}}\label{fig:spark_streaming}
 \end{figure}
 
 
@@ -164,7 +164,7 @@ MLlib(Machine Learning library) ist eine Bibliothek für maschinelles Lernen. Di
 \noindent
 In einem Maschinenlernprogramm läuft eine Sequenz von Algorithmen, einer sogenannten Pipeline, ab um die Daten zu verarbeiten und davon zu lernen. 
 Dafür gibt es in der MLlib Transformers und Estimator als Pipeline-Komponenten.
-Die Transformers verändern die DataFrames. Das Dataframe wird gelesen, die Daten werden anders strukturiert oder aufbereitet und in einem neuen DataFrame wieder ausgegeben. Diese nutzen die Methode \textsl{transform()}.\\
+Die Transformers verändern die DataFrames. Das DataFrame wird gelesen, die Daten werden anders strukturiert oder aufbereitet und in einem neuen DataFrame wieder ausgegeben. Diese nutzen die Methode \textsl{transform()}.\\
 Die Estimators sind Abstraktionen eines Lernalgorithmus. Sie erzeugen Transformer aus dem übergebenen DataFrame. Diese Estimator nutzen die Methode \textsl{fit()}.
 Eine Pipeline selbst ist wiederum ein Estimator.\footnote{Vgl. \cite{AAWS15}} \\
 
@@ -228,7 +228,7 @@ Diese Aufgabenstellung macht es möglich die folgenden Komponenten zu nutzen:
 \end{itemize}  
 
 \noindent
-Zuerst wird die SparkSession erzeugt und im Anschluss daran werden die Daten eingelesen. Neben JSON wären auch noch viele weitere Datenformate möglich gewesen (z.B.: csv, jdbc, text). Das lässt sich alles über die SparkCore realisieren. Der entsprechende Code-Block ist im Anhang in \autoref{code:verbund_1} zu sehen.\\
+Zuerst wird die Spark-Session erzeugt und im Anschluss daran werden die Daten eingelesen. Neben JSON wären auch noch viele weitere Datenformate möglich gewesen (z.B.: csv, jdbc, text). Das lässt sich alles über die Spark-Core realisieren. Der entsprechende Code-Block ist im Anhang in \autoref{code:verbund_1} zu sehen.\\
 
 \noindent
 Als nächstes wird eine Pipeline aufgebaut, in der ein PipelineModel so trainiert werden soll, dass es später aus dem Datensatz alle passenden Mitarbeiter mit möglichst hoher Trefferrate findet. Die Pipeline besteht aus drei Stages: Dem Tokenizer\footnote{Verarbeitet Text und teilt ihn in kleinere Stücke. In dem Fall in einzelne Worte, Auszug aus dem Datensatz: 'interests':'R/C Helicopters,Frisbee Golf – Frolf,Tetris'}, dem HashingTF\footnote{Erzeugt zu den Worten Hashes, um ein besseres Vergleichen zu ermöglichen.} und der LogisticRegression\footnote{Erzeugt eine Voraussage zu dem Datensatz gegenüber den Trainingsdaten.}. Nach dem Training werden die Daten in ein neues Dataset transformiert. In diesem Dataset sind die Vorhersagen enthalten. Die beschriebenen Schritte sind als Code im Anhang in \autoref{code:verbund_2} zu sehen. \\

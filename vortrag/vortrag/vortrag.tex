@@ -46,19 +46,21 @@
 
 %\addtobeamertemplate{headline}{}{\rule{\paperwidth}{3pt}}
 
+\setbeamercolor{mycolor}{fg=blue,bg=blue}
+
 \addtobeamertemplate{headline} 
 {
   \leavevmode%
   \hbox{%
-  \begin{beamercolorbox}[wd=.333333\paperwidth,ht=2.25ex,dp=1ex,center]{author in head/foot}%
+  \begin{beamercolorbox}[wd=.333333\paperwidth,ht=2.25ex,dp=1ex,center]{mycolor author in head/foot}%
     Lukas Wappler
 		%\usebeamerfont{author in head/foot}\insertsection
   \end{beamercolorbox}%
-  \begin{beamercolorbox}[wd=.333333\paperwidth,ht=2.25ex,dp=1ex,center]{title in head/foot}%
+  \begin{beamercolorbox}[wd=.333333\paperwidth,ht=2.25ex,dp=1ex,center]{mycolor title in head/foot}%
    
 		Thema 2.3: Apache Spark		
   \end{beamercolorbox}%
-  \begin{beamercolorbox}[wd=.333333\paperwidth,ht=2.25ex,dp=1ex,right]{date in head/foot}%
+  \begin{beamercolorbox}[wd=.333333\paperwidth,ht=2.25ex,dp=1ex,right]{mycolor date in head/foot}%
     \usebeamerfont{date in head/foot}\insertshortdate{}\hspace*{2em}
     \insertframenumber{} / \inserttotalframenumber \hspace*{2ex} 
   \end{beamercolorbox}}%
@@ -100,7 +102,7 @@
 \end{frame}
 
 
-%\section{Einleitung} 
+\section*{Einleitung} 
 \begin{frame}[t]
 \frametitle{Einleitung} 
 
@@ -108,7 +110,8 @@ Heutige Probleme:
 \begin{itemize}
 \item  Immer mehr Daten 
 \item  Datenanalysen werden immer schneller benötigt
-\item  Keine teuren Großrechner anschaffen
+\item  Systeme sind nicht skalierbar
+\item  Großrechner sind teuer
 \end{itemize}  
 
 
@@ -122,10 +125,11 @@ Heutige Probleme:
 
 
 \begin{itemize}
+	\item Cluster-System
 	\item 2009 im AMPLab ins Leben gerufen
+	\item 2010 Open Source	
 	\item 2013 von der Apache Software Foundation übernommen
-	\item 2014 Top Level Projekt	
-	\item Open Source	
+	\item 2014 Top Level Projekt		
 \end{itemize}
 
 \end{frame}
@@ -138,7 +142,7 @@ Heutige Probleme:
 Nutzung der Komponenten
 \begin{figure}[h]
   \centering
-  \fbox{\includegraphics[width=100mm]{../../seminararbeit/bilder/spark_komponenten_nutzung.png}}	  
+  \fbox{\includegraphics[width=110mm]{../../seminararbeit/bilder/spark_komponenten_nutzung.png}}	  
 \end{figure}
 
 
@@ -179,8 +183,8 @@ Resilient Distributed Datasets:
 
 Operationen
 \begin{itemize}
-	\item Transformationen(filter, join, ...)
-	\item Aktionen(reduce, count, ...)
+	\item Transformationen (filter, join, ...)
+	\item Aktionen (reduce, count, ...)
 \end{itemize}
 
 \end{frame}
@@ -191,11 +195,23 @@ Operationen
 \begin{frame} [t]
 \frametitle{Spark-SQL \& Dataframes}
 \begin{itemize}
-	\item Eine Verbesserung von Shark
+	\item eine Verbesserung von Shark
 	\item kombiniert prozedurale Algorithmen \& relationale Datenbankabfragen
-	\item Neben RDD's werden auch DataFrames verwendet.
-	\item Anbindung unterschiedlichster Datenquellen
+	\item neben RDD's werden auch DataFrames verwendet.	
+	\item Anbindung unterschiedlichster Datenquellen:
+		
+		
+		\begin{itemize}
+			\item JSON
+			\item JDBC
+			\item Hive
+			\item ...
+		\end{itemize}
+		
 \end{itemize}
+
+
+
 \end{frame}
 
 
@@ -205,7 +221,8 @@ Operationen
 
 \begin{itemize}
 	\item RDD's werden zu DStreams erweitert
-	\item DStreams verwalten RDD's
+	\item Daten werden in einzelne Pakete unterteilt
+	\item Transformationen können ausgeführt werden
 \end{itemize}
 
 \visible<2-> {
@@ -223,7 +240,7 @@ Operationen
 
 \begin{itemize}
 	\item Property-Graphen
-	\item Abbildung in RDD-Tupeln
+	\item Abbildung der Graphen in RDD-Tupeln
 	\item 1. RDD enthält Ecken
 	\item 2. RDD enthält Kanten	
 \end{itemize}
@@ -243,7 +260,7 @@ Operationen
 
 \begin{itemize}
 	\item Nutzt DataFrames
-	\item Transformator (Verändert die Daten)
+	\item Transformator (verändert die Daten)
 	\item Estimator (Abstraktionen des Lernalgorithmus)
 	\item Pipeline
 \end{itemize}
@@ -261,8 +278,16 @@ Operationen
 \begin{frame} [t]
 \frametitle{Skalierung von R Programmen (SparkR)}
 
-\begin{itemize}
-	\item R läuft nur in einem Thread
+	Was ist R?
+	\begin{itemize}		
+		\item freie Programmiersprache
+		\item statistische Berechnungen \& Grafiken				
+		\item R läuft nur in einem Thread
+	\end{itemize}
+%\vspace{0.4cm}
+
+Wie wird das Problem gelöst:
+\begin{itemize}			
 	\item R-JVM Brücke von R zu Java
 	\item Kommunikation über Sockets 
 \end{itemize}
@@ -270,7 +295,7 @@ Operationen
 \visible<2-> {
 	\begin{figure}[h]
 		\centering
-		\fbox{\includegraphics[width=70mm]{../../seminararbeit/bilder/spark_r_architecture.PNG}}
+		\fbox{\includegraphics[width=60mm]{../../seminararbeit/bilder/spark_r_architecture.PNG}}
 	\end{figure}
 }
 
@@ -313,7 +338,7 @@ SparkCore, SparkSQL und MLlib im Verbund:
 	\item webbasierte Übersicht über Cluster
 	\item schwer zu messen
 	\item Fehler sind schwer zu lokalisieren
-	\item Seiteneffekte bei verteilen Operationen	
+	\item Seiteneffekte bei verteilten Operationen	
 \end{itemize}
 
 \end{frame}
@@ -359,7 +384,7 @@ Optimierungen:
 	\item Skala, Python, Java, (R)
 	\item viele Datenquellen
 	\item viele Dateiformate	
-	\item über 400 contributors
+	\item über 400 Mitwirkende (git contributors)
 	\item aus über 100 Unternehmen
 	\item Konferenzen (Spark Summit)
 	\item 12,779 Sterne (Github)
@@ -426,7 +451,8 @@ Optimierungen:
 \end{frame}
 
 
-\section{Vielen Dank}
+\section*{Vielen Dank}
+
 \begin{frame} 
 \frametitle{Vielen Dank}
 
@@ -435,6 +461,8 @@ Optimierungen:
 \end{center}
 
 \end{frame}
+
+
 
 
 \end{document}
