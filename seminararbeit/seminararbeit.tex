@@ -12,6 +12,35 @@
 
 \usepackage{colortbl}
 
+
+
+\usepackage{listings}
+\definecolor{javared}{rgb}{0.6,0,0} % for strings
+\definecolor{javagreen}{rgb}{0.25,0.5,0.35} % comments
+\definecolor{javapurple}{rgb}{0.5,0,0.35} % keywords
+\definecolor{javadocblue}{rgb}{0.25,0.35,0.75} % javadoc
+ 
+\lstset{language=Java,
+%basicstyle=\ttfamily,
+%basicstyle=\tiny
+basicstyle=\fontsize{9}{11}\selectfont\ttfamily,
+keywordstyle=\color{javapurple}\bfseries,
+stringstyle=\color{javared},
+commentstyle=\color{javagreen},
+morecomment=[s][\color{javadocblue}]{/**}{*/},
+numbers=left,
+numberstyle=\tiny\color{black}\ttfamily,
+stepnumber=1,
+breaklines=true,
+numbersep=5pt,
+tabsize=2,
+xleftmargin=10pt,
+showspaces=false,
+showstringspaces=false}
+
+%\lstloadlanguages{Java}
+
+
 \usepackage{chngcntr}
 \counterwithout{footnote}{chapter}
 
