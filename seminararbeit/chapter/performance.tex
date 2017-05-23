@@ -1,10 +1,10 @@
 \newpage
 \section{Performance}
 %PAPER: Scaling Spark in the Real World
-Die Analyse von Performance Problemen erweisen sich mitunter als sehr schwierig. Oft ist es nicht einfach die kritischen Stelle zu lokalisieren und zusätzlich sind es meist mehrere Stellen, die erst in Summe zu Problemen führen. Apache Spark bringt zwar die seiteneffektfreie API mit, jedoch können trotzdem jede Menge Probleme auftreten. Für Entwickler ist es immer schwer im Hinterkopf zu behalten, dass Operationen auf vielen verteilten Rechnern ablaufen. Es unterscheidet sich doch stark von einem klassischen liniear ablaufenden Single-Thread Programm.\\ 
+Die Analyse von Performance Problemen erweist sich mitunter als sehr schwierig. Oft ist es nicht einfach die kritische Stelle zu lokalisieren und zusätzlich sind es meist mehrere Stellen, die erst in Summe zu Problemen führen. Apache Spark bringt zwar die seiteneffektfreie API mit, jedoch können trotzdem jede Menge Probleme auftreten. Für Entwickler ist es immer schwer im Hinterkopf zu behalten, dass Operationen auf vielen verteilten Rechnern ablaufen. Es unterscheidet sich doch stark von einem klassischen liniear ablaufenden Single-Thread Programm.\\ 
 
 \noindent
-Über eine webbasierte Übersicht, die in \autoref{fig:spark_ui_worker} zu sehen ist, können Informationen zu aktuell laufenden Auswertungen und Dauer von Ergebnissen etc. überwacht werden.\footnote{Vgl. \cite[12]{AAWS15}}
+Über eine webbasierte Übersicht, die in \autoref{fig:spark_ui_worker} zu sehen ist, können Informationen zu aktuell laufenden Auswertungen und Dauer von Ergebnissen etc. überwacht werden \cite[12]{AAWS15}.
 
 \begin{figure}[h]
   \centering
@@ -21,7 +21,7 @@ Wenige Änderungen an SQL-Abfragen können sehr große Geschwindigkeitsunterschi
 
 \subsection{Besonderheiten bei der Speichernutzung}
 Die Wahl einer geeigneten bzw. speicherplatzeffizienten Datenstruktur wird oftmals unterschätzt. Gerade bei großen Datenmengen und oftmals komprimierten Daten können schnell große Speichermengen benötigt werden. Das wird im folgenden Beispiel verdeutlicht.\\
-Spark geht davon aus, dass eine Datei in Blöcke einer bestimmten Größe geladen wird. In der Regel 128MB. Zu beachten ist jedoch, dass beim Dekomprimieren größere Blöcke entstehen können. So können aus 128MB schnell 3-4GB große Blöcke in dekomprimiertem Zustand werden. \\ 
+Spark geht davon aus, dass eine Datei in Blöcke einer bestimmten Größe geladen wird. In der Regel beträgt die Blockgröße 128MB. Zu beachten ist jedoch, dass beim Dekomprimieren größere Blöcke entstehen können. So können aus 128MB schnell 3-4GB große Blöcke in dekomprimiertem Zustand werden. \\ 
 
 \noindent
 Um das Speichermanagement zu verbessern, wurde ein per-node allocator implementiert. Dieser verwaltet den Speicher auf einer Node. 
@@ -29,10 +29,10 @@ Der Speicher wird in drei Bereiche geteilt:
 \begin{itemize}
 	\item Speicher zum Verarbeiten der Daten
 	\item Speicher für die hash-tables bei Joins oder Aggregations
-	\item Speicher für \glqq{}unrolling\grqq{} Blöcke, um zu prüfen ob die einzulesenden Blöcke nach dem entpacken immer noch klein genug sind, damit diese gecached werden können.
+	\item Speicher für \glqq{}unrolling\grqq{} Blöcke, um zu prüfen ob die einzulesenden Blöcke nach dem Entpacken immer noch klein genug sind, damit diese gecached werden können.
 \end{itemize}
 \noindent
-Damit läuft das System robust für Anwendungsbereiche mit sehr vielen Maschinen sowie mit ganz wenigen.\footnote{Vgl. \cite{ADD+15}}
+Damit läuft das System robust für Anwendungsbereiche mit sehr vielen Maschinen sowie mit ganz wenigen \cite{ADD+15}.
 
 \subsection{Netzwerk und I/O-Traffic}
 
@@ -52,7 +52,7 @@ Um I/O Probleme zu vermeiden, bzw. diese besser zu beherrschen, wurde als Basis 
 \newpage
 \section{Nutzung \& Verbreitung}
 %%als wenn es nur eine einzige exotische Programmiersprache zur Nutzung gäbe. \\
-Durch die Unterstützung der drei Programmiersprachen Skala, Python und Java ist die Arbeit mit Apache Spark einfacher, als wenn nur eine einzige exotische Programmiersprache verwendet werden könnte. \\
+Durch die Unterstützung der drei Programmiersprachen Scala, Python und Java ist die Arbeit mit Apache Spark einfacher, als wenn nur eine einzige exotische Programmiersprache verwendet werden könnte. \\
 
 
 
@@ -61,18 +61,20 @@ Apache Spark unterstützt zudem noch verschiedene Datenquellen und Dateiformate.
 Die Dateiformate können strukturiert (z.B.: CSV, Object Files), semi-strukturiert (z.B.: JSON) und unstrukturiert (z.B.: Textdatei) sein.\\
 
 \noindent
-Zu den Mitwirkenden(Contributors) zählen über 400 Entwickler aus über 100 Unternehmen (Stand 2014). Es gibt über 500 produktive Installationen. \footnote{Vgl. \cite{ADD+15}} \\ %PAPER: Scaling Spark in the Real World\\
+Zu den Mitwirkenden(Contributors) zählen über 400 Entwickler aus über 100 Unternehmen (Stand 2014). Es gibt über 500 produktive Installationen \cite{ADD+15}. \\ %PAPER: Scaling Spark in the Real World\\
 
 \noindent
 %http://spark.apache.org/community.html jährlich unter dem Namen Spark Summit Konferenzen statt. 
-Seit einigen Jahren finden weltweit jährlich, unter dem Namen \glqq{}Spark Summit\grqq{} Konferenzen statt.\footnote{Vgl. \cite{SPCOM}}\\
+Seit einigen Jahren finden weltweit jährlich, unter dem Namen \glqq{}Spark Summit\grqq{} Konferenzen statt \cite{SPCOM}. \\
 
 
 %"In einer Umfrage von Heise.de aus dem Jahr 2015 wurden 2.136 Teilnehmer zur Nutzung von Apache Spark befragt. 31 % der Befragten ..." (Eine Umfrage beauftragen? Tausenderpunkt; %2x Prozent bei der 31?^^)
 
 %DONE: https://www.heise.de/developer/meldung/Big-Data-Umfrage-zur-Verbreitung-zu-Apache-Spark-2529126.html
 \noindent
-In einer Umfrage von Heise.de aus dem Jahr 2015 wurden 2.136 Teilnehmer zur Nutzung von Apache Spark befragt.\footnote{Vgl. \cite{HEISEBIGDATA}}. 31\% der Befragten gaben an, den Einsatz derzeit zu prüfen, 13\% nutzen bereits Apache Spark und 20\% planten den Einsatz noch in dem damaligen Jahr. Die Nutzung innerhalb verschiedener Berufsgruppen war sehr ähnlich. Mit 16\%  lag bei den Telekommunikationsunternehmen der Einsatz am höchsten.\\
+In einer Umfrage von Heise.de aus dem Jahr 2015 wurden 2.136 Teilnehmer zur Nutzung von Apache Spark befragt \cite{HEISEBIGDATA}. 31\% der Befragten gaben an, den Einsatz derzeit zu prüfen, 13\% nutzen bereits Apache Spark und 20\% planten den Einsatz noch in dem damaligen Jahr. Die Nutzung innerhalb verschiedener Berufsgruppen war sehr ähnlich. Mit 16\%  lag bei den Telekommunikationsunternehmen der Einsatz am höchsten.\\
+
+\noindent
 Bei denen, die es bereits im Einsatz haben, lag Scala bei den Programmiersprachen mit großem Abstand vorn. Eine detaillierte Übersicht ist in \autoref{fig:nutzung} zu sehen.
 \begin{figure}[h]
   \centering

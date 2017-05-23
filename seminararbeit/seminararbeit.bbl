@@ -20,7 +20,7 @@
 \refsection{0}
   \sortlist[entry]{ynt/global/}
     \entry{ZC+12}{report}{}
-      \name{author}{8}{}{%
+      \name{author}{9}{}{%
         {{hash=00dc518b94dfa6349c86e70661a1a5ef}{%
            family={Zaharia},
            familyi={Z\bibinitperiod},
@@ -41,11 +41,16 @@
            familyi={D\bibinitperiod},
            given={Ankur},
            giveni={A\bibinitperiod}}}%
-        {{hash=d251a0164bf62f51597ff98c3705b1da}{%
-           family={Justin\bibnamedelima Ma},
-           familyi={J\bibinitperiod\bibinitdelim M\bibinitperiod},
-           given={Murphy\bibnamedelima McCauley},
-           giveni={M\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+        {{hash=c443d4c28f0cacfebd1b66027cee9098}{%
+           family={Ma},
+           familyi={M\bibinitperiod},
+           given={Justin},
+           giveni={J\bibinitperiod}}}%
+        {{hash=a7e9bbc361fd067983b764264a12e10e}{%
+           family={McCauley},
+           familyi={M\bibinitperiod},
+           given={Murphy},
+           giveni={M\bibinitperiod}}}%
         {{hash=9fc5630d12e8b22a1d2351a530caa51b}{%
            family={Franklin},
            familyi={F\bibinitperiod},
@@ -65,10 +70,10 @@
       \list{institution}{1}{%
         {University of California, Berkeley}%
       }
-      \strng{namehash}{43b7683e391995e2f59755c9e939df3c}
-      \strng{fullhash}{d405961b257e92b2d490ee9bb9b14d3d}
-      \strng{authornamehash}{43b7683e391995e2f59755c9e939df3c}
-      \strng{authorfullhash}{d405961b257e92b2d490ee9bb9b14d3d}
+      \strng{namehash}{afe796658a8bf89fd8d330fbc75c75fb}
+      \strng{fullhash}{afe796658a8bf89fd8d330fbc75c75fb}
+      \strng{authornamehash}{afe796658a8bf89fd8d330fbc75c75fb}
+      \strng{authorfullhash}{afe796658a8bf89fd8d330fbc75c75fb}
       \field{labelalpha}{Zah+12}
       \field{sortinit}{2}
       \field{sortinithash}{0aa614ace9f3a40ef5a67e7f7a184048}
@@ -134,9 +139,9 @@
       \list{institution}{1}{%
         {Databricks Inc.; MIT CSAIL}%
       }
-      \strng{namehash}{1bae7c2a3fe6ea29ffc01edd0ac606b5}
+      \strng{namehash}{bd81718f31b7a571d3d9d67517c18cb8}
       \strng{fullhash}{bd81718f31b7a571d3d9d67517c18cb8}
-      \strng{authornamehash}{1bae7c2a3fe6ea29ffc01edd0ac606b5}
+      \strng{authornamehash}{bd81718f31b7a571d3d9d67517c18cb8}
       \strng{authorfullhash}{bd81718f31b7a571d3d9d67517c18cb8}
       \field{labelalpha}{Arm+15}
       \field{sortinit}{2}
@@ -150,58 +155,58 @@
     \endentry
     \entry{AXL+15}{report}{}
       \name{author}{11}{}{%
-        {{hash=8d8bcafc5c34d557133c302cbcb32405}{%
-           family={Armbrusty},
+        {{hash=8eafad8289b06f72c2e8b7caf80a413a}{%
+           family={Armbrust},
            familyi={A\bibinitperiod},
            given={Michael},
            giveni={M\bibinitperiod}}}%
-        {{hash=7a5d7ec3c332c1c231d1d400fca324f2}{%
-           family={Xiny},
+        {{hash=fa12ff7c63d246671ad0d5036cccb4cd}{%
+           family={Xin},
            familyi={X\bibinitperiod},
            given={Reynold\bibnamedelima S.},
            giveni={R\bibinitperiod\bibinitdelim S\bibinitperiod}}}%
-        {{hash=8e5cdb748ef7a94462b89393fa03196c}{%
-           family={Liany},
+        {{hash=5aa904851b2181ca0d3be3e2246f7229}{%
+           family={Lian},
            familyi={L\bibinitperiod},
            given={Cheng},
            giveni={C\bibinitperiod}}}%
-        {{hash=14d2f837f8dcd3545207cf62f6d7b7cf}{%
-           family={Huaiy},
+        {{hash=cbb279ea2aed8be2bffed2fbad7d2f36}{%
+           family={Huai},
            familyi={H\bibinitperiod},
            given={Yin},
            giveni={Y\bibinitperiod}}}%
-        {{hash=9ac87cb6adbf6e1c1ff6afa8ca274471}{%
-           family={Liuy},
+        {{hash=dfafd64b4da8908562304387c1d8152d}{%
+           family={Liu},
            familyi={L\bibinitperiod},
            given={Davies},
            giveni={D\bibinitperiod}}}%
-        {{hash=01086ba3a1d14baed3fbe8cb038a6ed2}{%
-           family={Bradleyy},
+        {{hash=da601c8069b4ab3f99bf34f22975500c}{%
+           family={Bradley},
            familyi={B\bibinitperiod},
            given={Joseph\bibnamedelima K.},
            giveni={J\bibinitperiod\bibinitdelim K\bibinitperiod}}}%
-        {{hash=6e3f8f749f53df88d0992c81633753fa}{%
-           family={Mengy},
+        {{hash=2776c215c8df7c9787aea25db59709d0}{%
+           family={Meng},
            familyi={M\bibinitperiod},
            given={Xiangrui},
            giveni={X\bibinitperiod}}}%
-        {{hash=d642e6926dfd9ddc4f0d7aaaaed9fb0a}{%
-           family={Kaftanz},
+        {{hash=fcdb5789d0b6902b1b22fa4e061a4448}{%
+           family={Kaftan},
            familyi={K\bibinitperiod},
            given={Tomer},
            giveni={T\bibinitperiod}}}%
-        {{hash=4681e8f1810b05b48e78e476587dfb29}{%
-           family={Franklinyz},
+        {{hash=9fc5630d12e8b22a1d2351a530caa51b}{%
+           family={Franklin},
            familyi={F\bibinitperiod},
            given={Michael\bibnamedelima J.},
            giveni={M\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
-        {{hash=336d8ef51a9c3a94db8fcbbfdcfb8226}{%
-           family={Ghodsiy},
+        {{hash=dfd14c69d2338ce9cf556c819a32d286}{%
+           family={Ghodsi},
            familyi={G\bibinitperiod},
            given={Ali},
            giveni={A\bibinitperiod}}}%
-        {{hash=fc635b736f975002c053dbffd59b5c96}{%
-           family={Zahariay},
+        {{hash=00dc518b94dfa6349c86e70661a1a5ef}{%
+           family={Zaharia},
            familyi={Z\bibinitperiod},
            given={Matei},
            giveni={M\bibinitperiod}}}%
@@ -209,10 +214,10 @@
       \list{institution}{1}{%
         {Databricks Inc.; MIT CSAIL; AMPLab, UC Berkeley}%
       }
-      \strng{namehash}{95ad900dffb5cdc6dd742562ad562fc8}
-      \strng{fullhash}{13e9a4218d301b1990ea77e047136ac4}
-      \strng{authornamehash}{95ad900dffb5cdc6dd742562ad562fc8}
-      \strng{authorfullhash}{13e9a4218d301b1990ea77e047136ac4}
+      \strng{namehash}{0f8b7889e47dd845385e05b604d307e2}
+      \strng{fullhash}{0f8b7889e47dd845385e05b604d307e2}
+      \strng{authornamehash}{0f8b7889e47dd845385e05b604d307e2}
+      \strng{authorfullhash}{0f8b7889e47dd845385e05b604d307e2}
       \field{labelalpha}{Arm+15}
       \field{sortinit}{2}
       \field{sortinithash}{0aa614ace9f3a40ef5a67e7f7a184048}
@@ -279,9 +284,9 @@
       \list{publisher}{1}{%
         {O'Reilly Media, Inc.}%
       }
-      \strng{namehash}{5dfde570d513f5a9c876438297891eef}
+      \strng{namehash}{7efecabd449f4afdf8f2f7e982727ac6}
       \strng{fullhash}{7efecabd449f4afdf8f2f7e982727ac6}
-      \strng{authornamehash}{5dfde570d513f5a9c876438297891eef}
+      \strng{authornamehash}{7efecabd449f4afdf8f2f7e982727ac6}
       \strng{authorfullhash}{7efecabd449f4afdf8f2f7e982727ac6}
       \field{labelalpha}{Ryz+15}
       \field{sortinit}{2}
@@ -347,9 +352,9 @@
       \list{institution}{1}{%
         {AMPLab UC Berkeley, Databricks Inc., MIT CSAIL}%
       }
-      \strng{namehash}{e2149e5de1af492676870d0504d37d98}
+      \strng{namehash}{4773be5af1a266dc89b33754150c0685}
       \strng{fullhash}{4773be5af1a266dc89b33754150c0685}
-      \strng{authornamehash}{e2149e5de1af492676870d0504d37d98}
+      \strng{authornamehash}{4773be5af1a266dc89b33754150c0685}
       \strng{authorfullhash}{4773be5af1a266dc89b33754150c0685}
       \field{labelalpha}{Ven+15}
       \field{sortinit}{2}
@@ -438,9 +443,9 @@
       \list{institution}{1}{%
         {Communications Of The Acm}%
       }
-      \strng{namehash}{43b7683e391995e2f59755c9e939df3c}
+      \strng{namehash}{630783873ba2197fae1e352cdafaee24}
       \strng{fullhash}{630783873ba2197fae1e352cdafaee24}
-      \strng{authornamehash}{43b7683e391995e2f59755c9e939df3c}
+      \strng{authornamehash}{630783873ba2197fae1e352cdafaee24}
       \strng{authorfullhash}{630783873ba2197fae1e352cdafaee24}
       \field{labelalpha}{Zah+15}
       \field{sortinit}{2}

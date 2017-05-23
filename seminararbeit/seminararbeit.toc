@@ -8,7 +8,7 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {section}{\numberline {2.1}Kern-Bibliotheken / Komponenten}{4}{section.2.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {subsection}{\numberline {2.1.1}Grundlage des Systems (Spark-Core \& RDD\IeC {\textquoteright }s)}{6}{subsection.2.1.1}
+\contentsline {subsection}{\numberline {2.1.1}Grundlage des Systems (Spark-Core \& RDDs)}{6}{subsection.2.1.1}
 \defcounter {refsection}{0}\relax 
 \contentsline {subsection}{\numberline {2.1.2}SQL-Abfragen (Spark-SQL \& Data Frames)}{7}{subsection.2.1.2}
 \defcounter {refsection}{0}\relax 

@@ -36,7 +36,7 @@ public class AnalyseEmployees {
 		Dataset<Row> people = spark.read().json(getPathToDataFile());
 		//printSchema(people);
 		
-		// Creates a temporary view using the DataFrame
+		//Creates a temporary view using the DataFrame
 		people.createOrReplaceTempView("people");
 
 		//Learning (accept only employees with Astrology interests)
@@ -46,7 +46,7 @@ public class AnalyseEmployees {
 			new JavaLabeledEmployeeDocument(4L, "Bowling", 0.0)
 		), JavaLabeledEmployeeDocument.class);
 
-		// Configure an ML pipeline, which consists of three stages: tokenizer, hashingTF, and lr.
+		//Configure an ML pipeline, which consists of three stages: tokenizer, hashingTF, and lr.
 		Tokenizer tokenizer = new Tokenizer()
 		  .setInputCol("interests")
 		  .setOutputCol("words");
@@ -63,7 +63,7 @@ public class AnalyseEmployees {
 		Pipeline pipeline = new Pipeline()
 		  .setStages(new PipelineStage[] {tokenizer, hashingTF, lr});
 
-		// Fit the pipeline to training documents.
+		//Fit the pipeline to training documents.
 		PipelineModel model = pipeline.fit(training);
 
 		//show only hits

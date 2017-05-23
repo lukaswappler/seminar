@@ -17,8 +17,8 @@ Class=LaTeXView
 Document=chapter\anhang.tex
 
 [Frame0_View0,0]
-TopLine=14
-Cursor=782
+TopLine=0
+Cursor=575
 
 [Frame1]
 Flags=0
@@ -53,8 +53,8 @@ Class=LaTeXView
 Document=seminararbeit.tex
 
 [Frame2_View0,0]
-TopLine=0
-Cursor=168
+TopLine=54
+Cursor=1602
 
 [Frame3]
 Flags=0
@@ -71,8 +71,8 @@ Class=BibTeXView
 Document=literatur.bib
 
 [Frame3_View0,0]
-TopLine=0
-Cursor=398
+TopLine=21
+Cursor=975
 
 [Frame4]
 Flags=0
@@ -89,8 +89,8 @@ Class=LaTeXView
 Document=chapter\ausblick.tex
 
 [Frame4_View0,0]
-TopLine=0
-Cursor=397
+TopLine=13
+Cursor=1925
 
 [Frame5]
 Flags=0
@@ -125,8 +125,8 @@ Class=LaTeXView
 Document=chapter\performance.tex
 
 [Frame6_View0,0]
-TopLine=10
-Cursor=867
+TopLine=74
+Cursor=5853
 
 [Frame7]
 Flags=0
@@ -143,8 +143,8 @@ Class=LaTeXView
 Document=chapter\einleitung.tex
 
 [Frame7_View0,0]
-TopLine=6
-Cursor=1096
+TopLine=12
+Cursor=1779
 
 [Frame8]
 Flags=0
@@ -161,8 +161,8 @@ Class=LaTeXView
 Document=chapter\hauptteil.tex
 
 [Frame8_View0,0]
-TopLine=129
-Cursor=8732
+TopLine=141
+Cursor=9795
 
 [Frame9]
 Flags=0
@@ -180,11 +180,11 @@ Document=chapter\fazit.tex
 
 [Frame9_View0,0]
 TopLine=0
-Cursor=589
+Cursor=1447
 
 [SessionInfo]
 FrameCount=10
-ActiveFrame=8
+ActiveFrame=3
 
 [Bookmarks]
 chapter\hauptteil.tex=6 
