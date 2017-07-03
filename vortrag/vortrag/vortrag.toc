@@ -2,17 +2,17 @@
 \beamer@sectionintoc {3}{Apache Spark}{6}{0}{1}
 \beamer@sectionintoc {4}{Kern-Bibliotheken / Komponenten}{7}{0}{2}
 \beamer@subsubsectionintoc {4}{0}{1}{Spark-Core}{8}{0}{2}
-\beamer@subsubsectionintoc {4}{0}{2}{RDD\IeC {\textquoteright }s}{9}{0}{2}
+\beamer@subsubsectionintoc {4}{0}{2}{RDDs}{9}{0}{2}
 \beamer@subsectionintoc {4}{1}{SQL-Abfragen}{10}{0}{2}
 \beamer@subsubsectionintoc {4}{1}{1}{Spark-SQL}{10}{0}{2}
 \beamer@subsectionintoc {4}{2}{Verarbeitung von Datenstr\IeC {\"o}men (Spark-Streaming)}{11}{0}{2}
 \beamer@subsectionintoc {4}{3}{Berechnungen auf Graphen (GraphX)}{13}{0}{2}
 \beamer@subsectionintoc {4}{4}{Maschinelles Lernen (MLlib)}{15}{0}{2}
 \beamer@subsectionintoc {4}{5}{Skalierung von R Programmen (SparkR)}{17}{0}{2}
-\beamer@sectionintoc {5}{Demonstration}{19}{0}{3}
+\beamer@sectionintoc {5}{Demo}{19}{0}{3}
 \beamer@sectionintoc {6}{Performance}{21}{0}{4}
 \beamer@subsectionintoc {6}{1}{Besonderheiten bei der Speichernutzung}{22}{0}{4}
 \beamer@subsectionintoc {6}{2}{Netzwerk und I/O-Traffic}{23}{0}{4}
 \beamer@sectionintoc {7}{Nutzung und Verbreitung}{25}{0}{5}
 \beamer@sectionintoc {8}{Fazit}{27}{0}{6}
-\beamer@sectionintoc {9}{Ausblick und Weiterentwicklung}{28}{0}{7}
+\beamer@sectionintoc {9}{Ausblick und Weiterentwicklung}{29}{0}{7}

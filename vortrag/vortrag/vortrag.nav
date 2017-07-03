@@ -22,7 +22,7 @@
 \headcommand {\beamer@subsubsectionentry {0}{4}{0}{1}{8}{Spark-Core}}
 \headcommand {\slideentry {4}{0}{2}{8/8}{}{0}}
 \headcommand {\beamer@framepages {8}{8}}
-\headcommand {\beamer@subsubsectionentry {0}{4}{0}{2}{9}{RDD\IeC {\textquoteright }s}}
+\headcommand {\beamer@subsubsectionentry {0}{4}{0}{2}{9}{RDDs}}
 \headcommand {\slideentry {4}{0}{3}{9/9}{}{0}}
 \headcommand {\beamer@framepages {9}{9}}
 \headcommand {\beamer@subsectionentry {0}{4}{1}{10}{SQL-Abfragen}}\headcommand {\beamer@subsectionpages {7}{9}}
@@ -41,7 +41,7 @@
 \headcommand {\beamer@subsectionentry {0}{4}{5}{17}{Skalierung von R Programmen (SparkR)}}\headcommand {\beamer@subsectionpages {15}{16}}
 \headcommand {\slideentry {4}{5}{1}{17/18}{Skalierung von R Programmen (SparkR)}{0}}
 \headcommand {\beamer@framepages {17}{18}}
-\headcommand {\sectionentry {5}{Demonstration}{19}{Demonstration}{0}}
+\headcommand {\sectionentry {5}{Demo}{19}{Demo}{0}}
 \headcommand {\beamer@sectionpages {7}{18}}
 \headcommand {\beamer@subsectionpages {17}{18}}
 \headcommand {\slideentry {5}{0}{1}{19/19}{}{0}}
@@ -67,20 +67,20 @@
 \headcommand {\sectionentry {8}{Fazit}{27}{Fazit}{0}}
 \headcommand {\beamer@sectionpages {25}{26}}
 \headcommand {\beamer@subsectionpages {25}{26}}
-\headcommand {\slideentry {8}{0}{1}{27/27}{}{0}}
-\headcommand {\beamer@framepages {27}{27}}
-\headcommand {\sectionentry {9}{Ausblick und Weiterentwicklung}{28}{Ausblick und Weiterentwicklung}{0}}
-\headcommand {\beamer@sectionpages {27}{27}}
-\headcommand {\beamer@subsectionpages {27}{27}}
-\headcommand {\slideentry {9}{0}{1}{28/28}{}{0}}
-\headcommand {\beamer@framepages {28}{28}}
-\headcommand {\sectionentry {10}{Vielen Dank}{29}{Vielen Dank}{0}}
-\headcommand {\beamer@sectionpages {28}{28}}
-\headcommand {\beamer@subsectionpages {28}{28}}
-\headcommand {\slideentry {10}{0}{1}{29/29}{}{0}}
+\headcommand {\slideentry {8}{0}{1}{27/28}{}{0}}
+\headcommand {\beamer@framepages {27}{28}}
+\headcommand {\sectionentry {9}{Ausblick und Weiterentwicklung}{29}{Ausblick und Weiterentwicklung}{0}}
+\headcommand {\beamer@sectionpages {27}{28}}
+\headcommand {\beamer@subsectionpages {27}{28}}
+\headcommand {\slideentry {9}{0}{1}{29/29}{}{0}}
 \headcommand {\beamer@framepages {29}{29}}
-\headcommand {\beamer@partpages {1}{29}}
-\headcommand {\beamer@subsectionpages {29}{29}}
+\headcommand {\sectionentry {10}{Vielen Dank}{30}{Vielen Dank}{0}}
 \headcommand {\beamer@sectionpages {29}{29}}
-\headcommand {\beamer@documentpages {29}}
+\headcommand {\beamer@subsectionpages {29}{29}}
+\headcommand {\slideentry {10}{0}{1}{30/30}{}{0}}
+\headcommand {\beamer@framepages {30}{30}}
+\headcommand {\beamer@partpages {1}{30}}
+\headcommand {\beamer@subsectionpages {30}{30}}
+\headcommand {\beamer@sectionpages {30}{30}}
+\headcommand {\beamer@documentpages {30}}
 \headcommand {\def \inserttotalframenumber {21}}

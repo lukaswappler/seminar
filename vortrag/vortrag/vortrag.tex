@@ -8,7 +8,7 @@
 \title{Thema 2.3: Apache Spark}   
 \subtitle{Skalierbare verteilte Datenanalyse}
 \author{Lukas Wappler} 
-\date{\today} 
+\date{06.07.2017} 
 
 \usetheme{Malmoe}
 
@@ -96,7 +96,7 @@
 \end{center}
 \vspace{0.5cm} 
 \begin{flushright}
-\footnotesize{H.G. WELLS (1866-1946)\\ Science-Fiction-Roman-Autor\\ Der Krieg der Welten}
+\footnotesize{Herbert George Wells (1866-1946)\\ Science-Fiction-Roman-Autor\\ Der Krieg der Welten}
 \end{flushright}
 
 \end{frame}
@@ -168,9 +168,9 @@ Aufbau \& Architektur
 
 \end{frame}
 
-\subsubsection{RDD’s}
+\subsubsection{RDDs}
 \begin{frame} [t]
-\frametitle{RDD’s}
+\frametitle{RDDs}
 
 Resilient Distributed Datasets:
 \begin{itemize}
@@ -197,7 +197,7 @@ Operationen
 \begin{itemize}
 	\item eine Verbesserung von Shark
 	\item kombiniert prozedurale Algorithmen \& relationale Datenbankabfragen
-	\item neben RDD's werden auch DataFrames verwendet.	
+	\item neben RDDs werden auch DataFrames verwendet.	
 	\item Anbindung unterschiedlichster Datenquellen:
 		
 		
@@ -220,7 +220,7 @@ Operationen
 \frametitle{Verarbeitung von Datenströmen (Spark-Streaming)}
 
 \begin{itemize}
-	\item RDD's werden zu DStreams erweitert
+	\item RDDs werden zu DStreams erweitert
 	\item Daten werden in einzelne Pakete unterteilt
 	\item Transformationen können ausgeführt werden
 \end{itemize}
@@ -241,7 +241,7 @@ Operationen
 \begin{itemize}
 	\item Property-Graphen
 	\item Abbildung der Graphen in RDD-Tupeln
-	\item 1. RDD enthält Ecken
+	\item 1. RDD enthält Knoten
 	\item 2. RDD enthält Kanten	
 \end{itemize}
 
@@ -303,12 +303,12 @@ Wie wird das Problem gelöst:
 
 
 
-\section{Demonstration}
+\section{Demo}
 \begin{frame} [t]
-\frametitle{Demonstration}
+\frametitle{Demo}
 
 Apache Spark im Einsatz \\
-\textcolor[rgb]{0.75,0.75,0.75}{(Demo: Live oder Video.)}
+%\textcolor[rgb]{0.75,0.75,0.75}{(Demo: Live oder Video.)}
 
 \end{frame}
 
@@ -392,7 +392,7 @@ Optimierungen:
 
 \visible<2-> {
 	\begin{figure}[h]
-		\centering
+	
 		\fbox{\includegraphics[width=100mm]{../../seminararbeit/excel/Nutzung.png}}
 	\end{figure}
 }
@@ -406,28 +406,33 @@ Optimierungen:
 
 
 \begin{columns}[t]
-\begin{column}{5cm}
-	
-	Vorteile: \\
-	
-	\begin{itemize}
-		\item vielfältig einsetzbar
-		\item kann mit Speziallösungen mithalten
-		\item gute Dokumentation \& Literatur	
-		\item kostengünstig
-		\item flexibel
-	\end{itemize}
-\end{column}
-\begin{column}{5cm}
+\visible<1-> {
+	\begin{column}{5cm}
+		
+		Vorteile: \\
+		
+		\begin{itemize}
+			\item vielfältig einsetzbar
+			\item kann mit Speziallösungen mithalten
+			\item gute Dokumentation \& Literatur	
+			\item kostengünstig
+			\item flexibel
+		\end{itemize}
+	\end{column}
+}
+\visible<2-> {
+	\begin{column}{5cm}
 
-	Nachteile: \\
-	
-	\begin{itemize}		
-		\item Mischung verschiedener Datenstrukturen schwierig
-		\item veraltete News, Blogs oder Foren-Beiträge		
-	\end{itemize}
 
-\end{column}
+		Nachteile: \\
+		
+		\begin{itemize}		
+			\item Mischung verschiedener Datenstrukturen schwierig
+			\item veraltete News, Blogs oder Foren-Beiträge		
+		\end{itemize}
+
+	\end{column}
+}
 \end{columns}
 
 
