@@ -11,14 +11,14 @@ MaxPos.x=-1
 MaxPos.y=-1
 NormalPos.left=4
 NormalPos.top=26
-NormalPos.right=727
-NormalPos.bottom=130
+NormalPos.right=1703
+NormalPos.bottom=458
 Class=LaTeXView
 Document=vortrag.tex
 
 [Frame0_View0,0]
-TopLine=395
-Cursor=9093
+TopLine=363
+Cursor=8686
 
 [Frame1]
 Flags=0
@@ -29,13 +29,13 @@ MaxPos.x=-1
 MaxPos.y=-1
 NormalPos.left=4
 NormalPos.top=26
-NormalPos.right=727
-NormalPos.bottom=130
+NormalPos.right=1703
+NormalPos.bottom=458
 Class=LaTeXView
 Document=beamer-class-bsp-2011-6.tex
 
 [Frame1_View0,0]
-TopLine=190
+TopLine=192
 Cursor=4780
 
 [Frame2]
@@ -47,8 +47,8 @@ MaxPos.x=-1
 MaxPos.y=-1
 NormalPos.left=4
 NormalPos.top=26
-NormalPos.right=727
-NormalPos.bottom=130
+NormalPos.right=1703
+NormalPos.bottom=458
 Class=LaTeXView
 Document=Beamer-class-Bsp6.tex
 
